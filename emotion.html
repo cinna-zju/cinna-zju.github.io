@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./font.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+  <div class="ui stackable vertically padded grid centered">
+    <div class="row">
+      <div class="twelve wide column">
+        <div class="ui large breadcrumb">
+          <a class="section" href="./projects">Projects</a>
+          <div class="divider">/</div>
+          <div class="active section">
+            <h1 class="ui header">emotion computation</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui left aligned text container">
+      <p>Affective computing can help computers to understand human. Emotion detection can be
+      applied to a number of fields such as education, gaming and monitoring. The problem is
+      that most of these algorithms are built on single camera.
+      I try to improve the accuracy and robustness by adopting multiple cameras.
+      </p>
+      <p>The objective are developing a pipeline for processing camera video feeds and
+        using a model trained from 4 different angles to improve the performance.
+      </p>
+
+      <p>Most of the work was about data analysis. I tried to find some patterns from the data of different cameras.
+      </p>
+
+      <p>
+        I used Javascript SDK of <a className='link3' href='https://www.affectiva.com/'>Affectiva</a> to recognize the
+        emotion,
+        store these data in webSQL, and used python and sklearn to analyse.
+      </p>
+
+      <p>This research was conducted at North Carolina State Univeristy, USA with Boxuan Zhong and Zikun Qin, insturcted
+        by Edgar Lobaton.
+        Then we published a paper named <i>Emotion recognition with facial expressions and physiological signals</i> on
+        IEEE SSCI 2017.
+        The original paper is <a className='link3'
+          href='https://ieeexplore.ieee.org/abstract/document/8285365'>HERE</a>.
+      </p>
+    </div>
+
+    <div class="ten wide column">
+      <img class="ui image" src="img/affectiva/poster.jpg" />
+    </div>
+
+    <div class="ui divider"></div>
+    <div class="row">
+      <a href="./projects"><button class="ui red button">Back to projects</button></a>
+
+    </div>
+
+
+</body>

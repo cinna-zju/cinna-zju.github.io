@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./font.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+  <div class="ui stackable vertically padded grid centered">
+    <div class="row">
+      <div class="twelve wide column">
+        <div class="ui large breadcrumb">
+          <a class="section" href="./projects">Projects</a>
+          <div class="divider">/</div>
+          <div class="active section">
+            <h1 class="ui header">cityller</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <p>Cityller, combination of city and traveller, is a map App bringing back on-paper experience to help
+          non-local
+          travellers create their own itinerary quickly.
+          Users can select places and arrange the visiting order by drawing on the map and create their itinerary
+          accordingly.</p>
+        <p>This is originally a project of the one-week workshop <a
+            href='https://ex-situ.lri.fr/workshops/hci-bootcamp-2018'>2018 HCI bootcamp</a>, taught by Wendy Mackay at
+          Université Paris Sud. I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO.</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="ten wide column">
+        <img class="ui image" src="img/map/map3.jpg" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <h2 class="ui header">User research</h2>
+
+        <p>We interviewed eight users, mainly university students, using <b>story interview</b> method,
+          by asking a user questions that elicit recent stories about specific events or objects relevant to the
+          design brief.
+
+        </p>
+
+        <p>We analyzed the interviews and got some breakdowns. We grouped these breakdowns and found the main two
+          problems.</p>
+
+        <p>
+          <li>Making an itinerary on a map App is difficult</li>
+          <li>Itinerary apps don't offer transportation information</li>
+        </p>
+
+        <p>We then created 3 personas to represent the common property of users. And Jon was the <b>extreme
+            personna</b> who push the limits of the situation to test the usability.</p>
+      </div>
+    </div>
+
+
+
+    <div class="three column row">
+      <div class="column">
+        <img class="ui image" src="img/map/p1.png" />
+      </div>
+      <div class="column">
+        <img class="ui image" src="img/map/p2.png" />
+      </div>
+      <div class="column">
+        <img class="ui image" src="img/map/p3.png" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <p>Based on the interview, I created a user flow diagram to help me undestand user's action.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ten wide column">
+        <img class="ui image" src="img/map/flow.png" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <h2 class="ui header">Brainstorming</h2>
+        <p>We compared the map apps, paper maps and travel plan apps. Then we thought bringing the drawing experience on
+          paper map to the mobile device was a good idea.
+          We brainstormed and used the principle of <b>instrumental design</b> to help us generate ideas about
+          interaction.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ten wide column">
+        <img class="ui image" src="img/map/comp.png" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <p>Instrumental interaction was brought up by Michel Beaudouin-Lafon in his <a className='link3'
+            href='https://dl.acm.org/citation.cfm?id=332473'>paper</a>.
+          The idea is dividing things into domain object and instrument.
+          The key principles are reification, polymorphism and reuse.</p>
+        <p><br />
+          <li>Reification is to turn an operation into an object.</li>
+          <li>Polymorphism is to apply one interaction to different objects.</li>
+          <li>Reuse is to reuse the previous input or conmmand</li><br />
+        </p>
+        <p>We listed the <b>interaction table</b> to help us design something instrumental.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ten wide column">
+        <img class="ui image" src="./img/map/f1.png" />
+      </div>
+      <div class="ten wide column">
+        <img class="ui image" src="./img/map/f2.png" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <h2 class="ui header">Design</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="fourteen wide column">
+        <img class="ui image" src="./img/map/paper.jpg" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <p>
+          We made our paper prototype using transparent clipboard to simulate the interaction process.
+          And we shot a video demo to capture our interactions.
+        </p>
+        <p><b>1. Add interesting place</b><br />Draw line passing the object points. The order will be set to the order
+          of
+          passing.</p>
+      </div>
+    </div>
+    <div class="row">
+      <video src="./img/map/add.mov" width='480' controls="true" />
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <p><b>2. Delete</b><br />Users can simply swipe the bubble out from the sidebar to delete it. The sidebar is the
+          reification of a backpack that users can add, delete and sort their objects.</p>
+      </div>
+    </div>
+    <div class="row">
+      <video src="./img/map/del.mov" width='480' controls="true" />
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <p><b>3. set visiting order</b><br />By drag and drop the place bubble, users can arrange the visiting order.
+        </p>
+
+      </div>
+    </div>
+    <div class="row">
+      <video src="./img/map/reorder.mov" width='480' controls="true" />
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <h2 class="ui headr">Evaluation</h2>
+        <p>We showed the video to the classmates in the workshop and got some feedbacks.</p>
+        <p>Then we used <b>generative walkthough</b> to evaluate our product, with the principles of instrument design.
+        </p>
+        <p>Here are some points we got from this walkthrough.
+          <li>Location Reuse: search history, exsited point</li>
+          <li>Place reuse: add to favorite</li>
+          <li>Event Reification: paper card</li>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui left aligned text container">
+        <h2 class="ui headr">Wireframe</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve wide column">
+        <img class="ui image" src="./img/map/wire.png" />
+      </div>
+    </div>
+
+    <div class="ui divider"></div>
+    <div class="row">
+      <a href="./projects"><button class="ui pink button">Back to projects</button></a>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
