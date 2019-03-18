@@ -18,5 +18,18 @@
   "permission": false,
   "autoInstall": false,
   "rtl": false,
+  "components": [
+    "reset",
+    "site",
+    "button",
+    "container",
+    "divider",
+    "header",
+    "icon",
+    "image",
+    "breadcrumb",
+    "grid",
+    "transition"
+  ],
   "version": "2.4.2"
 }

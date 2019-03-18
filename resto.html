@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./font.css">
 
@@ -10,10 +12,22 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136440891-1');
+</script>
+
+
+
 </head>
 
 <body>
-  <div class="ui stackable vertically padded grid centered">
+  <div class="ui stackable vertically padded horizontally padded grid centered">
     <div class="row">
       <div class="twelve wide column">
         <div class="ui large breadcrumb">
@@ -21,14 +35,16 @@
           <div class="divider">/</div>
           <div class="active section">
             <h1 class="ui header">digiCrous</h1>
+
           </div>
         </div>
       </div>
     </div>
 
+
     <div class="ui left aligned text container">
       <p>This is a project of <i>Advanced Design of Interactive Systems</i>, taught by Wendy Mackay at Université Paris
-        Sud. </p>
+        Sud.</p>
       <h1 class="ui header">1 / Discovery</h1>
       <h2 class="ui header">User research</h2>
       <p>Crous is a French organization that provides accommodation and meals for students. We tried to improve the
@@ -41,11 +57,16 @@
 
     </div>
 
+    <div class="row"></div>
+
     <div class="row">
-      <div class="twelve wide column">
+      <div class="ten wide column">
         <img class="ui image" src="img/resto/data2.png" />
       </div>
     </div>
+
+    <div class="row"></div>
+
 
     <div class="ui left aligned text container">
       <p>From the interview and questionnaire results, we found that there were 4 common problems.
@@ -172,42 +193,38 @@
       <h2 class="ui header">Prototype</h2>
     </div>
 
-    <div class="row">
-      <div class="three wide column">
+    <div class="equal width row">
+      <div class="column">
         <p>Nearby</p>
-        <img class="ui image" src="img/resto/p1.png" />
-      </div>
-      <div class="three wide column">
-        <p>Menu</p>
-        <img class="ui image" src="img/resto/p2.png" />
-      </div>
-      <div class="three wide column">
-        <p>Details</p>
-        <img class="ui image" src="img/resto/p3.png" />
-      </div>
-      <div class="three wide column">
-        <p>Recharge notification</p>
         <img class="ui image" src="img/resto/p4.png" />
       </div>
 
+      <div class="column">
+        <p>Menu</p>
+        <img class="ui image" src="img/resto/p2.png" />
+      </div>
+
+      <div class="column">
+        <p>Details</p>
+        <img class="ui image" src="img/resto/p3.png" />
+      </div>
+
+      <div class="three wide column">
+          <p>Add a dish</p>
+          <video src="img/resto/int1.mp4" width='200' controls="true" />
+        </div>
+        <div class="three wide column">
+          <p>Filter</p>
+          <video src="img/resto/int2.mp4" width='200' controls="true" />
+        </div>
+        <div class="three wide column">
+          <p>Last menu</p>
+          <video src="img/resto/int3.mp4" width='200' controls="true" />
+        </div>
+
+
     </div>
 
-    <div class="row">
-      <div class="three wide column">
-        <p>Add a dish to my plate</p>
-        <video src="img/resto/int1.mp4" width='240' controls="true" />
-      </div>
-      <div class="three wide column">
-        <p>Choose a filter</p>
-        <video src="img/resto/int2.mp4" width='240' controls="true" />
-      </div>
-      <div class="three wide column">
-        <p>Get my last menu</p>
-        <video src="img/resto/int3.mp4" width='240' controls="true" />
-      </div>
-
-
-    </div>
 
     <div class="ui left aligned text container">
       <h1 class="ui header">4 / Evaluation</h1>
@@ -221,8 +238,11 @@
         <li>Add a price tag after user finished their choice</li>
         <li>Add a notification when some food user chose have sold out</li>
       </p>
+      <br/>
       <h1 class="ui header">5 / Redesign</h1>
+
     </div>
+
 
     <div class="row">
       <div class="three wide column">
@@ -234,7 +254,7 @@
         <img class="ui image" src="img/resto/p6.png" />
       </div>
       <div class="three wide column">
-        <p>Sold out notification</p>
+        <p>When sold out</p>
         <img class="ui image" src="img/resto/p7.png" />
       </div>
     </div>
