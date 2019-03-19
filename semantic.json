@@ -29,7 +29,8 @@
     "image",
     "breadcrumb",
     "grid",
-    "transition"
+    "transition",
+    "menu"
   ],
   "version": "2.4.2"
 }
