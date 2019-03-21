@@ -21,8 +21,7 @@
 
 p{
   font-size: 17px;
-  
-  word-spacing: 3px; 
+  word-spacing: 2px; 
 }
 
 #project{
@@ -112,6 +111,6 @@ p a:hover {
 
 
 .intro{
-  color: #6d6d6d;
+  border-left: 2px solid #555555;
+  padding-left: 12px;
 }
-

@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+  <title>hotkey menu transition - Shuo</title>
+
+
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./font.css">
 
@@ -13,14 +16,14 @@
   <script src="semantic/dist/semantic.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-136440891-1');
-</script>
+    gtag('config', 'UA-136440891-1');
+  </script>
 
 
 
@@ -40,40 +43,82 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="two wide column"></div>
+      <div class="five wide column">
+        <div class="intro">
+          <h3 class="ui inverted header">INTRO</h3>
+          <p>This is a visualization tool to help researchers deal with their data about a HCI experiment easily. The
+            experiment is about how a user transist from menu to hotkey in order to select a command.</p>
+          <p>This is the project of <i>Information Visualization</i>. I worked with Lemeng XU.</p>
+        </div>
+
+      </div>
+      <div class="one wide column"></div>
+      <div class="four wide column">
+        <div class="intro">
+          <h3 class="ui inverted header">TIME</h3>
+          <p>Dec 2018 - Feb 2019</p>
+        </div>
+        <div>
+          <p><br /><br /></p>
+        </div>
+
+        <div class="intro">
+          <h3 class="ui inverted header">ROLE</h3>
+          <p>Design<br />Coding</p>
+        </div>
+
+      </div>
+
+    </div>
+
     <div class="ten wide column">
-      <img class="ui image" src="img/infovis/main.png"/>
-      <p><br/>We developed this platform using <a href="https://p5js.org">p5.js</a>. Click <a className='link3' href='https://cinna-zju.github.io/infoVis/test/'>Here</a> to try it. </p>
+      <img class="ui image" src="img/infovis/main.png" />
+      <p><br />We developed this platform using <a href="https://p5js.org">p5.js</a>. Click <a className='link3'
+          href='https://cinna-zju.github.io/infoVis/test/'>Here</a> to try it. </p>
     </div>
 
     <div class="ten wide column">
       <h2 class="ui inverted header">Introduction</h2>
-      <p>Emmanouil Giannisakis and Gilles Bailly, researchers at Sorbonne Université, are studying how people transit from menu selection to keyboard shortcuts. They have a dataset about how users' behavior changes regarding performance
+      <p>Emmanouil Giannisakis and Gilles Bailly, researchers at Sorbonne Université, are studying how people transit
+        from menu selection to keyboard shortcuts. They have a dataset about how users' behavior changes regarding
+        performance
         and strategy choice while they selected commands.</p>
-        <img class="ui image" src="img/infovis/intro.png"/>
-      
-      <p>The goal of this visualization is to present the entire data set in a visual form so that they can observe and compare the data of each subject, and discover some common patterns.</p>
+      <img class="ui image" src="img/infovis/intro.png" />
 
-      <p>This is the project of the course <i>Infomation Visualization</i> at Université Paris Sud. I worked with Lemeng Xu. My work is coding and designing the visualization.</p>
+      <p>The goal of this visualization is to present the entire data set in a visual form so that they can observe and
+        compare the data of each subject, and discover some common patterns.</p>
+
+      <p>This is the project of the course <i>Infomation Visualization</i> at Université Paris Sud. I worked with Lemeng
+        Xu. My work is coding and designing the visualization.</p>
       <h2 class="ui inverted header">Design</h2>
-      <p>In the class, we learned how to use visual elements, like shape, size, color, shadow, transparancy and motion, to represent the data and the relationship behind it.</p>
-      <p>At first, we talked with Emmanouil and Gilles to know what the question is. They introduced the dataset to us and showed their past work. Then we found their main concern is about <b>TRANSITION</b>.</p>
-      <p>Since there are about 20k rows of data, the concept of our design is to divide it, first by subjects, then by commands and finally by trials. Different information is displayed according to the different views.</p>
-      <p>In the sketch phase, we used the <b>10 plus 10 method</b> to come up some ideas. Based on a common starting point, group members work individually to quickly sketch several ideas each, making around 10 ideas per group. They share the ideas within the group and choose one sketch as the starting point for the next round.  </p>
+      <p>In the class, we learned how to use visual elements, like shape, size, color, shadow, transparancy and motion,
+        to represent the data and the relationship behind it.</p>
+      <p>At first, we talked with Emmanouil and Gilles to know what the question is. They introduced the dataset to us
+        and showed their past work. Then we found their main concern is about <b>TRANSITION</b>.</p>
+      <p>Since there are about 20k rows of data, the concept of our design is to divide it, first by subjects, then by
+        commands and finally by trials. Different information is displayed according to the different views.</p>
+      <p>In the sketch phase, we used the <b>10 plus 10 method</b> to come up some ideas. Based on a common starting
+        point, group members work individually to quickly sketch several ideas each, making around 10 ideas per group.
+        They share the ideas within the group and choose one sketch as the starting point for the next round. </p>
       <p>The graphs in the first column are from the first phase. The other graphs are some variations.</p>
-    
+
     </div>
 
     <div class="twelve wide column">
-      <img class="ui image" src="img/infovis/sketch.png"/>
+      <img class="ui image" src="img/infovis/sketch.png" />
     </div>
 
     <div class="ten wide column">
-      <p>Then we talked with them again about the first demo and our ideas. They liked it and wanted to see some high-level information. Then we add some new graphs and modified our design based on the first demo.</p>
+      <p>Then we talked with them again about the first demo and our ideas. They liked it and wanted to see some
+        high-level information. Then we add some new graphs and modified our design based on the first demo.</p>
     </div>
 
     <div class="ten wide column">
       <h3 class="ui inverted header">Color map</h3>
-      <p> we used the color map of red, yellow and purple to represent different phases of transitions. Grey means no transition. Vivid colors are clear on the grey background and can attract user's attention.</p>
+      <p> we used the color map of red, yellow and purple to represent different phases of transitions. Grey means no
+        transition. Vivid colors are clear on the grey background and can attract user's attention.</p>
     </div>
 
     <div class="equal width row" style="color: #ffffff">
@@ -85,59 +130,88 @@
     </div>
 
     <div class="ten wide column">
-        <h3 class="ui inverted header">Layout</h3>
-        <p>The advantage of this layout is that researchers can compare the data of 42 subjects
-            and go deep into the experimental data of each subject to seek subtle and interesting findings.
+      <h3 class="ui inverted header">Layout</h3>
+      <p>The advantage of this layout is that researchers can compare the data of 42 subjects
+        and go deep into the experimental data of each subject to seek subtle and interesting findings.
       </p>
-      </div>
-  
-      <div class="fourteen wide column">
-          <img class="ui image" src="img/infovis/layout.png"/>
-      </div>
+    </div>
+
+    <div class="fourteen wide column">
+      <img class="ui image" src="img/infovis/layout.png" />
+    </div>
 
     <div class="ten wide column">
       <h3 class="ui inverted header">Elements</h3>
     </div>
 
+
     <div class="row">
-      <div class="four wide column">
-        <img class="ui small image" src="img/infovis/sub.png"/>
-        <p>We used bar chart to show the data of one subject. Each subject had different action preference. The bar chart showed how the subject reacted to different commands and his preference.</p>
+
+      <div class="two wide column">
+        <img class="ui image" src="img/infovis/sub.png" />
       </div>
 
-      <div class="four wide column">
-        <img class="ui small image" src="img/infovis/line.png"/>
-        <p>The other thing we cared is the action time. We had the time of each trial. At first,  we ploted a scatter graph. Then we changed it to the line graph to see the trends better. Finally, we fill the color to represent the transition phase. The white point means the average time of each phase.</p>
+      <div class="three wide column">
+        <p>We used bar chart to show the data of one subject. Each subject had different action preference. The bar
+          chart showed how the subject reacted to different commands and his preference.</p>
+      </div>
+      <div class="two wide column">
+        <img class="ui image" src="img/infovis/line.png" />
       </div>
 
-      <div class="four wide column">
-        <img class="ui small image" src="img/infovis/grid.png"/>
-            <p>To compare the estimated phase and actual states of each trials better, we added a grid graph showing the method a subject used in each trial.</p>
+      <div class="three wide column">
+        <p>The other thing we cared is the action time. We had the time of each trial. At first, we ploted a scatter
+          graph. Then we changed it to the line graph to see the trends better. Finally, we fill the color to represent
+          the transition phase. The white point means the average time of each phase.</p>
+      </div>
+
+      <div class="two wide column">
+        <img class="ui image" src="img/infovis/grid.png" />
+      </div>
+
+      <div class="three wide column">
+        <p>To compare the estimated phase and actual states of each trials better, we added a grid graph showing the
+          method a subject used in each trial.</p>
+
       </div>
     </div>
 
-    <div class="ten wide column">
-      <h3 class="ui inverted header">Interaction</h3>
-      <p>We decided to develop this visualization on web. Comparing to other solutions, like tableau or static pictures, web-based visualization can be highly customized.</p>
-      <p>The interaction method is mouse and keyboard. Users can use mouse to select subjects and use keyboard to switch the subject they are viewing. Then we came up an idea to use the mouse cursor as an indicator showing the detail information.</p>
-      <p>The cursor moves on the line chart. The corresponding grid will be highlighted and information will be displayed.</p>
-    </div>
-
-    <div class="eight wide column">
-      <img class="ui image" src="img/infovis/indi.png"/>
-    </div>
+    <div class="row"></div>
 
 
-
-
-    <div class="ui divider"></div>
     <div class="row">
-      <a href="./index"><button class="ui grey button">Back to HOME</button></a>
+        <div class="five wide column">
+            <h3 class="ui inverted header">Interaction</h3>
+            <p>We decided to develop this visualization on web. Comparing to other solutions, like tableau or static
+              pictures, web-based visualization can be highly customized.</p>
+            <p>The interaction method is mouse and keyboard. Users can use mouse to select subjects and use keyboard to
+              switch the subject they are viewing. Then we came up an idea to use the mouse cursor as an indicator showing
+              the detail information.</p>
+            <p>The cursor moves on the line chart. The corresponding grid will be highlighted and information will be
+              displayed.</p>
+          </div>
+      <div class="six wide column">
+
+        <img class="ui image" src="img/infovis/indi.png" />
+      </div>
+
+
     </div>
-    
+
+
+
+
+
+
+
+    <div class="row">
+      <a href="./index"><button class="ui basic inverted grey button">Back to HOME</button></a>
+    </div>
+
 
 
   </div>
 
 </body>
+
 </html>a

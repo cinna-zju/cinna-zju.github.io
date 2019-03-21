@@ -5,22 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+  <title>cityller - Shuo</title>
+
+
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./font.css">
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- <script src="jquery-3.1.1.min.js"/> -->
+
   <script src="semantic/dist/semantic.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-136440891-1');
-</script>
+    gtag('config', 'UA-136440891-1');
+  </script>
 
 
 
@@ -41,11 +46,33 @@
     </div>
 
     <div class="row">
-      <div class="ui left aligned text container">
-        <p class="intro">Cityller is a map app to bring back paper map experience to help travellers create their own itinerary quickly.
-        This is originally a project of the one-week workshop <a href='https://ex-situ.lri.fr/workshops/hci-bootcamp-2018'>2018 HCI bootcamp</a>, taught by Wendy Mackay at
-          Université Paris Sud. I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO. The output was a video prototype. I refined this project by myself later.</p>
+      <div class="two wide column"></div>
+      <div class="five wide column">
+        <div class="intro">
+            <h3 class="ui header">INTRO</h3>
+            <p >Cityller is a map app to bring back paper map experience to help travellers create their own
+              itinerary quickly.</p>
+              <p>This is originally a project of the one-week workshop <a
+                href='https://ex-situ.lri.fr/workshops/hci-bootcamp-2018'>2018 HCI bootcamp</a>, taught by Wendy Mackay at
+              Université Paris Sud. I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO.</p>
+        </div>
+
       </div>
+      <div class="one wide column"></div>
+      <div class="four wide column">
+        <div class="intro">
+          <h3 class="ui header">TIME</h3>
+          <p>Oct 2018</p>
+        </div>
+
+        <div><p><br/><br/></p></div>
+
+        <div class="intro">
+          <h3 class="ui header">ROLE</h3>
+          <p>Interview<br/>Brainstorming<br/>Prototype<br/>Wireframe</p>
+        </div>
+      </div>
+
     </div>
 
     <div class="row">
@@ -53,7 +80,8 @@
         <h2 class="ui header">User research</h2>
 
         <p>We interviewed eight users, mainly university students, using <b>story interview</b> method,
-          by asking a user questions that elicit recent stories about making itinerary to capture <b>interaction points</b> and problems.
+          by asking a user questions that elicit recent stories about making itinerary to capture <b>interaction
+            points</b> and problems.
         </p>
 
         <p>We analyzed the interviews, got some breakdowns, grouped these breakdowns and found the main two
@@ -71,14 +99,15 @@
 
 
 
-    <div class="three column row">
-      <div class="column">
+    <div class="row">
+      <div class="one wide column"></div>
+      <div class="five wide column">
         <img class="ui image" src="img/map/p1.png" />
       </div>
-      <div class="column">
+      <div class="five wide column">
         <img class="ui image" src="img/map/p2.png" />
       </div>
-      <div class="column">
+      <div class="five wide column">
         <img class="ui image" src="img/map/p3.png" />
       </div>
     </div>
@@ -100,7 +129,7 @@
         <h2 class="ui header">Brainstorming</h2>
         <p>We compared the map apps, paper maps and travel plan apps. Then we thought bringing the drawing experience on
           paper map to the mobile device was a good idea because drawing was quickly and intuitively.
-          
+
         </p>
       </div>
     </div>
@@ -114,8 +143,10 @@
     <div class="row">
       <div class="ui left aligned text container">
         <p>We used <b>instrumental design</b>, brought up by Michel Beaudouin-Lafon in his <a className='link3'
-          href='https://dl.acm.org/citation.cfm?id=332473'>paper</a>, to generate ideas about how a user interacted with our app.  
-          The idea is dividing things into domain object and instrument. The key principles are reification, polymorphism and reuse.</p>
+            href='https://dl.acm.org/citation.cfm?id=332473'>paper</a>, to generate ideas about how a user interacted
+          with our app.
+          The idea is dividing things into domain object and instrument. The key principles are reification,
+          polymorphism and reuse.</p>
         <p>
           <li>Reification is to turn an operation into an object.</li>
           <li>Polymorphism is to apply one interaction to different objects.</li>
@@ -126,12 +157,12 @@
     </div>
 
     <div class="row">
-      <div class="ten wide column">
-        <img class="ui image" src="./img/map/f1.png" />
+      <div class="twelve wide column">
+        <img class="ui image" src="./img/map/table.png" />
       </div>
-      <div class="ten wide column">
+      <!-- <div class="ten wide column">
         <img class="ui image" src="./img/map/f2.png" />
-      </div>
+      </div> -->
     </div>
 
     <div class="row">
@@ -149,7 +180,7 @@
     <div class="row">
       <div class="ui left aligned text container">
         <p>
-          We made our paper prototype to simulate the interaction process and shot a video to capture interactions.
+          We made a paper prototype to simulate the interaction process and shot a video to capture interactions.
         </p>
         <p><b>1. Add interesting place</b><br />Draw line passing the object points. The order will be set to the order
           of passing.</p>
@@ -171,7 +202,7 @@
 
     <div class="row">
       <div class="ui left aligned text container">
-        <p><b>3. set visiting order</b><br />By drag and drop the place bubble, users can arrange the visiting order.
+        <p><b>3. set visiting order</b><br />Users can drag and drop the place bubble to arrange the visiting order.
         </p>
 
       </div>
@@ -205,8 +236,17 @@
       </div>
     </div>
 
+
     <div class="row">
-      <a href="./index"><button class="ui pink button">Back to HOME</button></a>
+      <div class="twelve wide column">
+          <h2 class="ui headr">Information card</h2>
+
+        <img class="ui image" src="./img/map/card.png" />
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="./index"><button class="ui basic pink button">Back to HOME</button></a>
 
     </div>
 
