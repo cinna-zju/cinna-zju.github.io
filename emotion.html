@@ -15,14 +15,14 @@
   <script src="semantic/dist/semantic.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-136440891-1');
-</script>
+    gtag('config', 'UA-136440891-1');
+  </script>
 
 
 
@@ -42,32 +42,56 @@
       </div>
     </div>
 
-    <div class="ui left aligned text container">
-      <p>Affective computing can help computers to understand human. Emotion detection can be
-      applied to a number of fields such as education, gaming and monitoring. The problem is
-      that most of these algorithms are built on single camera.
-      I try to improve the accuracy and robustness by adopting multiple cameras.
-      </p>
-      <p>The objective are developing a pipeline for processing camera video feeds and
-        using a model trained from 4 different angles to improve the performance.
-      </p>
+    <div class="row">
+      <div class="two wide column"></div>
+      <div class="five wide column">
+        <div class="intro">
+          <h3 class="ui header">INTRO</h3>
+          <p>Emotion computation can be
+            applied to a number of fields such as education, gaming and monitoring. The problem is
+            that most of these algorithms are built on single camera. I improved the accuracy and robustness by adopting multiple cameras.
+          </p>
 
-      <p>Most of the work was about data analysis. I tried to find some patterns from the data of different cameras.
-      </p>
+          <p>This research was conducted at North Carolina State Univeristy, USA with Boxuan Zhong and Zikun Qin,
+            insturcted by Edgar Lobaton.
+            
+          </p>
+
+        </div>
+
+      </div>
+      <div class="one wide column"></div>
+      <div class="four wide column">
+        <div class="intro">
+          <h3 class="ui header">TIME</h3>
+          <p>Jul 2017</p>
+        </div>
+
+        <div>
+          <p><br /><br /></p>
+        </div>
+
+        <div class="intro">
+          <h3 class="ui header">ROLE</h3>
+          <p>Data analysis<br />Web coding<br />Machine learning model training
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ui left aligned text container">
 
       <p>
         I used Javascript SDK of <a className='link3' href='https://www.affectiva.com/'>Affectiva</a> to recognize the
-        emotion,
-        store these data in webSQL, and used python and sklearn to analyse.
+        emotion from video feeds, stored these data in webSQL, and used python to analyse. Then I trained a SVM model using sklearn. 
       </p>
 
-      <p>This research was conducted at North Carolina State Univeristy, USA with Boxuan Zhong and Zikun Qin, insturcted
-        by Edgar Lobaton.
-        Then we published a paper named <i>Emotion recognition with facial expressions and physiological signals</i> on
-        IEEE SSCI 2017.
+      <p>Then we published a paper named <i>Emotion recognition with facial expressions and physiological signals</i>
+        on IEEE SSCI 2017.
         The original paper is <a className='link3'
-          href='https://ieeexplore.ieee.org/abstract/document/8285365'>HERE</a>.
-      </p>
+          href='https://ieeexplore.ieee.org/abstract/document/8285365'>HERE</a>.</p>
+
+
     </div>
 
     <div class="fourteen wide column">

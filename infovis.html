@@ -7,7 +7,6 @@
 
   <title>hotkey menu transition - Shuo</title>
 
-
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./font.css">
 
@@ -24,8 +23,6 @@
 
     gtag('config', 'UA-136440891-1');
   </script>
-
-
 
 </head>
 
@@ -90,12 +87,9 @@
       <p>The goal of this visualization is to present the entire data set in a visual form so that they can observe and
         compare the data of each subject, and discover some common patterns.</p>
 
-      <p>This is the project of the course <i>Infomation Visualization</i> at Université Paris Sud. I worked with Lemeng
-        Xu. My work is coding and designing the visualization.</p>
       <h2 class="ui inverted header">Design</h2>
-      <p>In the class, we learned how to use visual elements, like shape, size, color, shadow, transparancy and motion,
-        to represent the data and the relationship behind it.</p>
-      <p>At first, we talked with Emmanouil and Gilles to know what the question is. They introduced the dataset to us
+
+      <p>We talked with Emmanouil and Gilles to know what the question is. They introduced the dataset to us
         and showed their past work. Then we found their main concern is about <b>TRANSITION</b>.</p>
       <p>Since there are about 20k rows of data, the concept of our design is to divide it, first by subjects, then by
         commands and finally by trials. Different information is displayed according to the different views.</p>
@@ -115,19 +109,22 @@
         high-level information. Then we add some new graphs and modified our design based on the first demo.</p>
     </div>
 
-    <div class="ten wide column">
-      <h3 class="ui inverted header">Color map</h3>
-      <p> we used the color map of red, yellow and purple to represent different phases of transitions. Grey means no
-        transition. Vivid colors are clear on the grey background and can attract user's attention.</p>
+    <div class="row">
+      <div class="four wide column">
+        <h3 class="ui inverted header">Color map</h3>
+        <p> we used the color map of red, yellow and purple to represent different phases of transitions. Grey means no
+          transition. Vivid colors are clear on the grey background and can attract user's attention.</p>
+      </div>
+
+      <div class="one wide column"></div>
+
+      <div class="five wide column">
+        <img class="ui image" src="img/infovis/color.png" />
+      </div>
     </div>
 
-    <div class="equal width row" style="color: #ffffff">
-      <div class="column" style="background-color: #ff5562">#ff5562</div>
-      <div class="column" style="background-color: #ffb43a">#ffb43a</div>
-      <div class="column" style="background-color: #776ce2">#776ce2</div>
-      <div class="column" style="background-color: #4f4f4f">#4f4f4f</div>
-      <div class="column" style="background-color: #333333">#333333</div>
-    </div>
+
+
 
     <div class="ten wide column">
       <h3 class="ui inverted header">Layout</h3>
@@ -136,60 +133,29 @@
       </p>
     </div>
 
-    <div class="fourteen wide column">
+    <div class="twelve wide column">
       <img class="ui image" src="img/infovis/layout.png" />
     </div>
 
     <div class="ten wide column">
       <h3 class="ui inverted header">Elements</h3>
-    </div>
+      <img class="ui image" src="img/infovis/elements.png" />
 
-
-    <div class="row">
-
-      <div class="two wide column">
-        <img class="ui image" src="img/infovis/sub.png" />
-      </div>
-
-      <div class="three wide column">
-        <p>We used bar chart to show the data of one subject. Each subject had different action preference. The bar
-          chart showed how the subject reacted to different commands and his preference.</p>
-      </div>
-      <div class="two wide column">
-        <img class="ui image" src="img/infovis/line.png" />
-      </div>
-
-      <div class="three wide column">
-        <p>The other thing we cared is the action time. We had the time of each trial. At first, we ploted a scatter
-          graph. Then we changed it to the line graph to see the trends better. Finally, we fill the color to represent
-          the transition phase. The white point means the average time of each phase.</p>
-      </div>
-
-      <div class="two wide column">
-        <img class="ui image" src="img/infovis/grid.png" />
-      </div>
-
-      <div class="three wide column">
-        <p>To compare the estimated phase and actual states of each trials better, we added a grid graph showing the
-          method a subject used in each trial.</p>
-
-      </div>
     </div>
 
     <div class="row"></div>
 
 
     <div class="row">
-        <div class="five wide column">
-            <h3 class="ui inverted header">Interaction</h3>
-            <p>We decided to develop this visualization on web. Comparing to other solutions, like tableau or static
-              pictures, web-based visualization can be highly customized.</p>
-            <p>The interaction method is mouse and keyboard. Users can use mouse to select subjects and use keyboard to
-              switch the subject they are viewing. Then we came up an idea to use the mouse cursor as an indicator showing
-              the detail information.</p>
-            <p>The cursor moves on the line chart. The corresponding grid will be highlighted and information will be
-              displayed.</p>
-          </div>
+      <div class="four wide column">
+        <h3 class="ui inverted header">Interaction</h3>
+        <p>We decided to develop this visualization on web because it can be highly customized.</p>
+        <p>The interaction method is mouse and keyboard. Users can use mouse to select subjects and use keyboard to
+          switch the subject they are viewing. Then we came up an idea to use the mouse cursor as an indicator showing
+          the detail information.</p>
+        <p>The cursor moves on the line chart. The corresponding grid will be highlighted and information will be
+          displayed.</p>
+      </div>
       <div class="six wide column">
 
         <img class="ui image" src="img/infovis/indi.png" />
@@ -198,17 +164,9 @@
 
     </div>
 
-
-
-
-
-
-
     <div class="row">
       <a href="./index"><button class="ui basic inverted grey button">Back to HOME</button></a>
     </div>
-
-
 
   </div>
 
