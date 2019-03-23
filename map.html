@@ -50,7 +50,7 @@
       <div class="five wide column">
         <div class="intro">
           <h3 class="ui header">INTRO</h3>
-          <p>Cityller is a travel itinerary app to bring back the quick and free paper map experience.</p>
+          <p>Cityller is a travel itinerary app based on an interactive map, which provides an immersional experience with fewer page jumping.</p>
           <p>This is originally a project of the one-week workshop <a
               href='https://ex-situ.lri.fr/workshops/hci-bootcamp-2018'>2018 HCI bootcamp</a>, taught by Wendy Mackay at
             Université Paris Sud. I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO.</p>
@@ -87,9 +87,9 @@
           problems.</p>
 
         <p>
-          <li>1. Making an itinerary on a map App is difficult</li>
-          <li>2. Watch their phones a lot of times to get insturctions when navigation</li>
-          <li>3. Itinerary apps don't provide transportation information</li>
+          <li>Making an itinerary on a map App is difficult</li>
+          <li>Watch their phones a lot of times to get insturctions when navigation</li>
+          <li>Itinerary apps don't provide transportation information</li>
         </p>
 
         <p>We created 3 personas to represent the users we designed for. Jon was the <b>extreme
@@ -166,20 +166,16 @@
     <div class="row">
       <div class="eight wide column">
         <p>We made a paper prototype to simulate the interaction process and shot a video to capture interactions.</p>
+        <p>Then I found some problems.
+          <li>Drawing on small screen devices was not a comfortable interaction.</li>
+          <li>The drawing line would be conflict with the actual transportation routes</li>
+        </p>
+        <p>But we still wanted to keep immersional experience on paper map. I changed the drawing on map view to clicking and used the line to show order only.
+          Then we designed a sidebar. The sidebar was the reification of a backpack.</p>
       </div>
     </div>
 
 
-
-    <div class="row">
-      <div class="six wide column">
-        <video src="./img/map/add.mov" width='480' controls="true" />
-      </div>
-      <div class="three wide column">
-        <p><b>1. Add interesting place</b><br />Draw line passing the object points. The order will be set to the order
-          of passing.</p>
-      </div>
-    </div>
 
     <div class="row">
       <div class="six wide column">
@@ -187,8 +183,7 @@
 
       </div>
       <div class="three wide column">
-        <p><b>2. Delete</b><br />Users can simply swipe the bubble out from the sidebar. The sidebar is the
-          reification of a backpack that users can add, delete and sort their objects.</p>
+        <p><b>1. Delete</b><br />Users can simply swipe the bubble out from the sidebar. </p>
       </div>
     </div>
 
@@ -198,7 +193,7 @@
 
       </div>
       <div class="three wide column">
-        <p><b>3. Set visiting order</b><br />Users can drag and drop the place bubble to arrange the visiting order.
+        <p><b>2. Set visiting order</b><br />Users can drag and drop the place bubble to arrange the visiting order.
         </p>
       </div>
     </div>
@@ -211,7 +206,9 @@
 
     <div class="row">
       <div class="ten wide column">
+        <p>Main editing process</p>
         <img class="ui image" src="./img/map/w1.png" />
+        <p>Search process</p>
         <img class="ui image" src="./img/map/w2.png" />
 
       </div>
@@ -227,7 +224,10 @@
 
     <div class="row">
       <div class="ui left aligned text container">
-        <p>For Silvia, she could easily find other's shared itinerary and made her own change.</p>
+        <p>For Silvia, she could easily find other's shared itinerary and made some changes to meet her own needs.</p>
+
+        <p>Users can view other's itinerary in both map view and itinerary view to get the relative location and
+          possible transportations.</p>
 
         <h3 class="ui headr">Wireframe</h3>
       </div>
@@ -240,23 +240,45 @@
     </div>
 
     <div class="row">
-        <div class="eight wide column">
-          <h2 class="ui header">02 Watching phone lessly</h2>
-          <div class="ui divider"></div>
+      <div class="eight wide column">
+        <h2 class="ui header">02 Watching phone lessly</h2>
+        <div class="ui divider"></div>
 
 
-        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="four wide column"></div>
+      <div class="two wide column">
+        <p>In the interviews, some users mentioned they got the metro to the wrong direction or can't find which direction to go when using Google Maps.</p>
+        <p>I analysed the transportation information of Google Maps and found some problems.</p>
+
+      </div>
+      <div class="nine wide column">
+        <img class="ui image" src="./img/map/gm.png">
       </div>
 
-      <div class="row">
-        <div class="eight wide column">
-          <p>To reduce the times of taking out the phone to see where to go, I redesigned this transportation information part.</p>
-        </div>
-        <div class="ten wide column">
+      <div class="one wide column"></div>
+    </div>
 
-            <img class="ui image" src="./img/map/card.png" />
-          </div>
+    <div class="row">
+      <div class="four wide column"></div>
+      <div class="two wide column">
+          <p>To reduce the times of taking out the phone to see where to go, I redesigned this transportation information
+              part.</p>
+              
       </div>
+      <div class="nine wide column">
+
+        <img class="ui image" src="./img/map/card.png" />
+      </div>
+
+      <div class="one wide column"></div>
+
+
+
+    </div>
 
     <div class="row">
       <a href="./index"><button class="ui basic pink button">Back to HOME</button></a>
