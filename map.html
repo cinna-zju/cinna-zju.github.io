@@ -50,7 +50,8 @@
       <div class="five wide column">
         <div class="intro">
           <h3 class="ui header">INTRO</h3>
-          <p>Cityller is a travel itinerary app based on an interactive map, which provides an immersional experience with fewer page jumping.</p>
+          <p>Cityller is a travel itinerary app based on an interactive map, which provides an immersional experience
+            with fewer page jumping.</p>
           <p>This is originally a project of the one-week workshop <a
               href='https://ex-situ.lri.fr/workshops/hci-bootcamp-2018'>2018 HCI bootcamp</a>, taught by Wendy Mackay at
             Université Paris Sud. I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO.</p>
@@ -79,7 +80,7 @@
     <div class="row">
       <div class="eight wide column">
         <h2 class="ui header">User research</h2>
-        <p>We interviewed eight users, mainly university students, using <b>story interview</b> method,
+        <p>We interviewed 8 users, mainly university students, using <b>story interview</b> method,
           by asking a user questions that elicit recent stories about making itinerary。
         </p>
 
@@ -87,65 +88,58 @@
           problems.</p>
 
         <p>
-          <li>Making an itinerary on a map App is difficult</li>
-          <li>Watch their phones a lot of times to get insturctions when navigation</li>
-          <li>Itinerary apps don't provide transportation information</li>
+          <li>They spend a lot of time creating an itinerary, jumping between different apps.</li>
+          <li>They don't know where to visit.</li>
+          <li>They watch their phones very often when navigation</li>
         </p>
 
-        <p>We created 3 personas to represent the users we designed for. Jon was the <b>extreme
-            personna</b> who pushed the limits of the situation to test the usability.</p>
+        <p>For these problems, we created 2 personas to represent the users we designed for.</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="one wide column"></div>
-
-      <div class="five wide column">
-        <img class="ui image" src="img/map/p1.png" />
-
-      </div>
-      <div class="five wide column">
-        <img class="ui image" src="img/map/p2.png" />
-      </div>
-      <div class="five wide column">
-        <img class="ui image" src="img/map/p3.png" />
-      </div>
-    </div>
 
     <div class="row">
-      <div class="ui left aligned text container">
-        <h2 class="ui header">01 Creating itinerary smoothly</h2>
+      <div class="eight wide column">
+        <h2 class="ui header">01 Smooth creation experience</h2>
         <div class="ui divider"></div>
       </div>
     </div>
 
     <div class="row">
       <div class="eight wide column">
-        <p>This feature was designed for Jon to provide a smooth and quick experience of creating a itinerary.</p>
-        <h3 class="ui header">Brainstorming</h3>
-        <p>We compared the map apps, paper maps and travel plan apps. Then we thought bringing the drawing experience on
-          paper map to the mobile device was a good idea because drawing was quickly and intuitively.</p>
-        <p>Some basic interactions with paper map were marking something and drawing lines.</p>
+        <img class="ui image" src="img/map/p1.png" />
       </div>
 
     </div>
 
     <div class="row">
       <div class="eight wide column">
+
+        <h3 class="ui header">Brainstorming</h3>
+        <p>We used <b>extreme personna</b> who pushed the limits of the situation to test the usability. Jon was a very
+          frequent user so the interaction should be simple and efficiency.</p>
+        <p>We compared the map apps, paper maps and travel plan apps. Then we tried to combine the experience of these.
+          Users can create an itinerary based on map with additional informations.</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ten wide column">
         <img class="ui image" src="img/map/comp.png" />
       </div>
     </div>
 
     <div class="row">
       <div class="eight wide column">
-        <p>We used <b>instrumental design</b>, brought up by Michel Beaudouin-Lafon in his <a className='link3'
-            href='https://dl.acm.org/citation.cfm?id=332473'>paper</a>, to generate ideas about how a user interacted
-          with our app. The key principles are reification, polymorphism and reuse.</p>
+        <p>We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a>, to
+          generate ideas about how a user interacted
+          with the map. Some objects of interest are listed in map view and itinerary view.</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="eight wide column">
+      <div class="ten wide column">
         <img class="ui image" src="./img/map/table.png" />
       </div>
     </div>
@@ -166,12 +160,15 @@
     <div class="row">
       <div class="eight wide column">
         <p>We made a paper prototype to simulate the interaction process and shot a video to capture interactions.</p>
-        <p>Then I found some problems.
-          <li>Drawing on small screen devices was not a comfortable interaction.</li>
-          <li>The drawing line would be conflict with the actual transportation routes</li>
+
+        <p>We tried to use the marking and drawing from paper map on the mobile device. But I found some problems.
+          <li>Drawing on small screens was not comfortable </li>
+          <li>The drawing line would be conflict with the actual transportation routes.</li>
         </p>
-        <p>But we still wanted to keep immersional experience on paper map. I changed the drawing on map view to clicking and used the line to show order only.
-          Then we designed a sidebar. The sidebar was the reification of a backpack.</p>
+        <p>I changed the interaction to clicking and used the line to show the actual transportation routes.</p>
+        <h3 class="ui header">Sidebar</h3>
+        <p>Then we designed a sidebar where users can set the order quickly. The sidebar was the reification of a
+          backpack.</p>
       </div>
     </div>
 
@@ -199,16 +196,8 @@
     </div>
 
     <div class="row">
-      <div class="ui left aligned text container">
-        <h3 class="ui headr">Wireframe</h3>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="ten wide column">
-        <p>Main editing process</p>
+      <div class="twelve wide column">
         <img class="ui image" src="./img/map/w1.png" />
-        <p>Search process</p>
         <img class="ui image" src="./img/map/w2.png" />
 
       </div>
@@ -216,32 +205,35 @@
 
     <div class="row">
       <div class="eight wide column">
-        <h2 class="ui header">02 Browsing & Modifying freely</h2>
+        <h2 class="ui header">02 Browsing & Modifying experience</h2>
         <div class="ui divider"></div>
 
+
       </div>
     </div>
 
     <div class="row">
-      <div class="ui left aligned text container">
-        <p>For Silvia, she could easily find other's shared itinerary and made some changes to meet her own needs.</p>
+      <div class="eight wide column">
+        <img class="ui image" src="img/map/p2.png" />
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="eight wide column">
         <p>Users can view other's itinerary in both map view and itinerary view to get the relative location and
-          possible transportations.</p>
-
-        <h3 class="ui headr">Wireframe</h3>
+          possible transportations. And they can make some changes to meet their own needs.</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="ten wide column">
+      <div class="twelve wide column">
         <img class="ui image" src="./img/map/w3.png" />
       </div>
     </div>
 
     <div class="row">
       <div class="eight wide column">
-        <h2 class="ui header">03 Watching phone lessly</h2>
+        <h2 class="ui header">03 Better navigation experience</h2>
         <div class="ui divider"></div>
 
 
@@ -251,7 +243,8 @@
     <div class="row">
       <div class="four wide column"></div>
       <div class="two wide column">
-        <p>In the interviews, some users mentioned they got the metro to the wrong direction or can't find which direction to go when using Google Maps.</p>
+        <p>In the interviews, some users mentioned they got the metro to the wrong direction or can't find which
+          direction to go when using Google Maps.</p>
         <p>I analysed the transportation information of Google Maps and found some problems.</p>
 
       </div>
@@ -264,8 +257,8 @@
 
     <div class="row">
       <div class="eight wide column">
-          <p>To reduce the times of taking out the phone to see where to go, I redesigned this transportation information
-              part.</p>
+        <p>To reduce the times of taking out the phone to see where to go, I redesigned this transportation information
+          part.</p>
       </div>
     </div>
 
@@ -276,7 +269,7 @@
     </div>
 
     <div class="row">
-      <a href="./index"><button class="ui basic pink button">Back to HOME</button></a>
+      <a href="./index"><button class="ui basic pink button">Home</button></a>
 
     </div>
 
