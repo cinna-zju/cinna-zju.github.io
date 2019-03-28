@@ -65,12 +65,6 @@
           <p><a href='https://ex-situ.lri.fr/workshops/hci-bootcamp-2018'>2018 HCI bootcamp</a></p>
         </div>
 
-        <div><br /><br /></div>
-
-        <div class="intro">
-          <h3 class="ui header">DURATION</h3>
-          <p>1 week</p>
-        </div>
 
         <div><br /><br /></div>
 
@@ -92,23 +86,50 @@
       <div class="eight wide column">
         <div class="hl">
           <p class="p-hl-title">The problem</p>
-          <p class="p-hl">Users spend a lot of time making an itinerary</p>
+          <p class="p-hl">Travellers spend a lot of time making an itinerary before or during journey. They had to use different apps to make it. And travel plan app can't suggest some places based on location.</p>
           <p>We interviewed 8 users, mainly university students, using <b>story interview</b> method.</p>
-          <p>Many users complaied about they would spend several hours to make an itinerary.
-            For those who don't use a travel plan app. They have to use different apps. For example, they use Google
-            Maps or Google search to find some information about a place.
-            Then they write these information down in a text editor.</p>
-          <p>But the existed travel plan app still have a problem. They are not based on map so it will be difficult to
-            make an itinerary after their departure.</p>
+          
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="five wide column">
+        <img class="ui image" src="./img/map/process1.png"/>
+        
+      </div>
+      <div class="three wide column">
+          <!-- <i class="huge frown outline icon"></i> -->
+          <p>They use Google maps or Google search to find some places and write these information down in a text editor.</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="eight wide column">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="two wide column"></div>
+        <div class="three wide column">
+          <img class="ui image" src="./img/map/process2.png"/>
+        </div>
+        <div class="three wide column">
+            <!-- <i class="huge frown outline icon"></i> -->
+            <p>The map in the travel app is just for display and not interactable. So it's hard to do something based on current location.</p>
+            <p>If users want to make an itinerary after they arrived at the hotel, the travel plan app can't suggest some places near me.</p>
+        </div>
+      </div>
+
+
 
     <div class="row">
       <div class="eight wide column">
         <div class="hl">
           <p class="p-hl-title">The goal</p>
-          <p class="p-hl">Help travellers create their itinerary quickly and smoothly.</p>
+          <p class="p-hl">Help travellers create their itinerary quickly and smoothly at any time.</p>
 
         </div>
       </div>
@@ -118,8 +139,7 @@
 
     <div class="row">
       <div class="eight wide column">
-        <p>We analysed the interview and find some issues behind the problem. Then we created 2 personas to represent
-          the users we designed for. We used <b>extreme
+        <p>We analysed the interview and find some issues behind the problem. Then we created 2 personas. Jon is a <b>extreme
             personna</b> who pushed the limits of the situation to test the usability. </p>
       </div>
     </div>
@@ -179,12 +199,10 @@
         <div class="hl">
           <p class="p-hl-title">Insight</p>
           <p class="p-hl"><i>Creating an itinerary based on map is convenient and natural.</i></p>
-          <p>We compared the map apps, paper maps and travel plan apps.
-            Users can browse and circle some interesting places out on a paper map.
-            Users can click to see details and transportations on a map app.
-            Users can find suggestions on a travel plan app.
-            Our idea was to combine the experience of the three different tools.
-            <span style="color: #ff5357">Users can create an itinerary based on a digital map.</span></p>
+          
+          <p>We compared the map apps, paper maps and travel plan apps. 
+            Our idea was to combine the experience of the three different tools. 
+            Users can get details from map apps and suggestions from travel apps.</p>
 
         </div>
       </div>
@@ -192,29 +210,48 @@
     </div>
 
     <div class="row">
-      <div class="eight wide column">
-        <p>For frequent users, like Jon, the interaction should be simple and efficiency.
-          We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to
-          generate ideas about the <span style="color: #ff5357">connection between the map and the itinerary</span>.
-          Some objects of interest are listed both in map view and itinerary view.</p>
-      </div>
+
+      <div class="five wide column">
+          <img class="ui image" src="./img/map/map.jpeg"/>
+        </div>
+
+        <div class="four wide column">
+            <div class="hl">
+                <p class="p-hl-title">Inspiration</p>
+                <p class="p-hl"><i>The interaction with paper map</i></p>
+          <p>Before digital ages, travellers made an itinerary with paper maps and guide books like <i>lonely planent</i>.</p>
+            <p>They can browse and mark some interesting places on a paper map. This gave us some inspiration.</p>
+          </div>
+             
+          </div>
     </div>
 
     <div class="row">
+      <div class="eight wide column">
+          <p>We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to
+          think about <span style="color: #ff5357">the connection between the map and the itinerary.</span></p>
+      </div>
+    </div>
 
+    <div class="row" style="background: #fafafa">
       <div class="nine wide column">
         <img class="ui image" src="./img/map/table.png" />
       </div>
     </div>
 
     <div class="row">
-      <div class="eight wide column">
-        <img class="ui image" src="./img/map/paper.jpg" />
-        <p>At first, We used the interaction from paper map, like marking and drawing, on the mobile device. But I found
-            some problems.
-        </p>
 
       </div>
+    <div class="row">
+      <div class="five wide column">
+        <img class="ui image" src="./img/map/paper.jpg" />
+      </div>
+
+      <div class="three wide column">
+        <p>We made a paper prototype to test our idea. When I tried to draw something, I found some problems.</p>
+
+
+    </div>
     </div>
 
     <div class="row">
@@ -222,21 +259,23 @@
         <div class="hl">
           <p class="p-hl-title">Problem 1</p>
           <p class="p-hl">Drawing on a small screen is not comfortable</p>
-
-          <br />
-          <p class="p-hl-title">Solution</p>
-          <p class="p-hl">Change drawing to clicking.</p>
+          <p>It is true that drawing app on the phone usually don't have good experience.</p>
         </div>
       </div>
       <div class="four wide column">
         <div class="hl">
           <p class="p-hl-title">Problem 2</p>
-          <p class="p-hl">The line user drawed would be conflict with the actual transportation routes.</p>
-
-          <br />
-          <p class="p-hl-title">Solution</p>
-          <p class="p-hl">Lines only showes the actual transportation routes</p>
+          <p class="p-hl">Lines are conflict with the actual transportation routes.</p>
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="eight wide column">
+          <div class="hl">
+              <p class="p-hl-title">Solution</p>
+              <p class="p-hl">I changed drawing to clicking. Users can still direct interact with the app. And lines only showed the actual transportation routes.</p>
+            </div>
       </div>
     </div>
 
@@ -247,8 +286,15 @@
       <div class="eight wide column">
         <p class="p-hl-title">New Problem</p>
         <p class="p-hl">How do users set order quickly without drawing?</p>
-        <p>We designed a sidebar, like a backpack, where users can set the visiting order or delete items quickly.</p>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="six wide column">
+        <img class="ui image" src="img/map/backpack.jpg"/>
+      </div>
+      <div class="two wide column">
+          <p>We designed a sidebar, like a backpack, where users can set the visiting order or delete items by direct manipulation.</p>
       </div>
     </div>
 
@@ -292,6 +338,7 @@
       <div class="eight wide column">
         <p class="p-hl-title">Wireframe</p>
         <p class="p-hl">Search a place</p>
+        <p>In the search page, users can see a search history and popular place.</p>
       </div>
     </div>
     <div class="row">
@@ -308,6 +355,17 @@
                 possible transportations. And they can make some changes to meet their own needs.</p>
           </div>
     </div>
+
+    <div class="row">
+        <div class="five wide column">
+          <img class="ui image" src="./img/map/view.png" />
+        </div>
+        <div class="three wide column">
+          <h3 class="ui header">Consistency</h3>
+          <p>We designed a consistent experience for creating a itinerary and modifying other's itinerary. 
+            The interface and interaction were almost the same for the same views in different functions.</p>
+        </div>
+      </div>
 
 
     <div class="row">
