@@ -11,21 +11,21 @@
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./font.css">
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <!-- <script src="jquery-3.1.1.min.js"/> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+  <script src="jquery-3.1.1.min.js"></script>
 
   <script src="semantic/dist/semantic.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-136440891-1');
-  </script>
+  </script> -->
 
 
 
@@ -86,22 +86,23 @@
       <div class="eight wide column">
         <div class="hl">
           <p class="p-hl-title">The problem</p>
-          <p class="p-hl">Travellers spend a lot of time making an itinerary before or during journey. They had to use different apps to make it. And travel plan app can't suggest some places based on location.</p>
+          <p class="p-hl">Travellers spend a lot of time making an itinerary before or during journey. They had to use
+            different apps to make it. And travel plan app can't suggest some places based on location.</p>
           <p>We interviewed 8 users, mainly university students, using <b>story interview</b> method.</p>
-          
+
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="five wide column">
-        <img class="ui image" src="./img/map/process1.png"/>
-        
+        <img class="ui image" src="./img/map/process1.png" />
+
       </div>
       <div class="three wide column">
-          <!-- <i class="huge frown outline icon"></i> -->
-          <p>They use Google maps or Google search to find some places and write these information down in a text editor.</p>
-
+        <h3 class="ui header">Too complex</h3>
+        <p>They searched interesting places, marked these places in Google maps and writed these information down in a
+          text editor.</p>
       </div>
     </div>
 
@@ -113,15 +114,17 @@
 
     <div class="row">
       <div class="two wide column"></div>
-        <div class="three wide column">
-          <img class="ui image" src="./img/map/process2.png"/>
-        </div>
-        <div class="three wide column">
-            <!-- <i class="huge frown outline icon"></i> -->
-            <p>The map in the travel app is just for display and not interactable. So it's hard to do something based on current location.</p>
-            <p>If users want to make an itinerary after they arrived at the hotel, the travel plan app can't suggest some places near me.</p>
-        </div>
+      <div class="three wide column">
+        <img class="ui image" src="./img/map/process2.png" />
       </div>
+      <div class="three wide column">
+        <h3 class="ui header">Not based on location</h3>
+        <p>The map in the travel app is just for display and not interactable. So it's hard to do something based on
+          current location.</p>
+        <p>If users want to make an itinerary after they arrived at the hotel, these app can't suggest some places near
+          me.</p>
+      </div>
+    </div>
 
 
 
@@ -139,8 +142,8 @@
 
     <div class="row">
       <div class="eight wide column">
-        <p>We analysed the interview and find some issues behind the problem. Then we created 2 personas. Jon is a <b>extreme
-            personna</b> who pushed the limits of the situation to test the usability. </p>
+        <p>We analysed the interview and find some issues behind the problem. Then we created 2 personas. Jon is a
+          <b>extreme personna</b> who pushed the limits of the situation to test the usability. </p>
       </div>
     </div>
 
@@ -185,24 +188,21 @@
     </div>
 
 
-    <div class="row">
-      <div class="eight wide column">
 
-      </div>
-    </div>
 
     <div class="row">
-      <div class="five wide column">
+      <div class="four wide column">
         <img class="ui image" src="img/map/concept.png" />
       </div>
       <div class="four wide column">
         <div class="hl">
           <p class="p-hl-title">Insight</p>
           <p class="p-hl"><i>Creating an itinerary based on map is convenient and natural.</i></p>
-          
-          <p>We compared the map apps, paper maps and travel plan apps. 
-            Our idea was to combine the experience of the three different tools. 
-            Users can get details from map apps and suggestions from travel apps.</p>
+
+          <p>We compared the map apps, paper maps and travel plan apps. Users can get details from map apps and
+            suggestions from travel apps.
+            Our idea was to <b>combine the experience of the three different tools</b>.
+          </p>
 
         </div>
       </div>
@@ -211,47 +211,29 @@
 
     <div class="row">
 
-      <div class="five wide column">
-          <img class="ui image" src="./img/map/map.jpeg"/>
+      <div class="four wide column">
+        <img class="ui image" src="./img/map/map.jpeg" />
+      </div>
+
+      <div class="four wide column">
+        <div class="hl">
+          <p class="p-hl-title">Inspiration</p>
+          <p class="p-hl"><i>The interaction with paper map</i></p>
+          <p>Before digital ages, travellers can browse and mark some interesting places on a paper map.</p>
+          <p>They can also draw lines to show the routes and visiting order.</p>
         </div>
 
-        <div class="four wide column">
-            <div class="hl">
-                <p class="p-hl-title">Inspiration</p>
-                <p class="p-hl"><i>The interaction with paper map</i></p>
-          <p>Before digital ages, travellers made an itinerary with paper maps and guide books like <i>lonely planent</i>.</p>
-            <p>They can browse and mark some interesting places on a paper map. This gave us some inspiration.</p>
-          </div>
-             
-          </div>
-    </div>
-
-    <div class="row">
-      <div class="eight wide column">
-          <p>We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to
-          think about <span style="color: #ff5357">the connection between the map and the itinerary.</span></p>
-      </div>
-    </div>
-
-    <div class="row" style="background: #fafafa">
-      <div class="nine wide column">
-        <img class="ui image" src="./img/map/table.png" />
       </div>
     </div>
 
     <div class="row">
-
-      </div>
-    <div class="row">
-      <div class="five wide column">
+      <div class="four wide column">
         <img class="ui image" src="./img/map/paper.jpg" />
       </div>
 
-      <div class="three wide column">
-        <p>We made a paper prototype to test our idea. When I tried to draw something, I found some problems.</p>
-
-
-    </div>
+      <div class="four wide column">
+        <p>We made a paper prototype to test the experience of drawing lines. Then I found some problems.</p>
+      </div>
     </div>
 
     <div class="row">
@@ -266,21 +248,30 @@
         <div class="hl">
           <p class="p-hl-title">Problem 2</p>
           <p class="p-hl">Lines are conflict with the actual transportation routes.</p>
+          <p>One object with two meanings is confusing.</p>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="eight wide column">
-          <div class="hl">
-              <p class="p-hl-title">Solution</p>
-              <p class="p-hl">I changed drawing to clicking. Users can still direct interact with the app. And lines only showed the actual transportation routes.</p>
-            </div>
+      <div class="four wide column">
+        <div class="hl">
+          <p class="p-hl-title">Solution</p>
+          <p class="p-hl">Change marking to clicking.</p>
+          <p>Users can interact with the map directly. Clicking is a more common interaction with phone. And it's fast.
+          </p>
+        </div>
+      </div>
+      <div class="four wide column">
+        <p class="p-hl-title">Solution</p>
+        <p class="p-hl">Use line to show the actual routes.</p>
+        <p>Nowadays, most travellers take public transportation and they don't know the routes. So we removed the
+          drawing
+          The routes will be calculated by this app and displayed as lines. The default order will be set as the order
+          some places are added.
+        </p>
       </div>
     </div>
-
-
-
 
     <div class="row">
       <div class="eight wide column">
@@ -291,10 +282,11 @@
 
     <div class="row">
       <div class="six wide column">
-        <img class="ui image" src="img/map/backpack.jpg"/>
+        <img class="ui image" src="img/map/backpack.jpg" />
       </div>
       <div class="two wide column">
-          <p>We designed a sidebar, like a backpack, where users can set the visiting order or delete items by direct manipulation.</p>
+        <p>We designed a sidebar, like a backpack, where users can set the visiting order or delete items by direct
+          manipulation.</p>
       </div>
     </div>
 
@@ -320,6 +312,27 @@
         </p>
       </div>
     </div>
+
+
+    <div class="row">
+      <div class="eight wide column">
+        <p>We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to
+          think about <b>the connection between map and itinerary</b>. And made some wireframes.</p>
+      </div>
+    </div>
+
+    <div class="row" style="background: #fafafa">
+      <div class="nine wide column">
+        <img class="ui image" src="./img/map/table.png" />
+      </div>
+    </div>
+
+
+
+
+
+
+
 
     <div class="row">
       <div class="eight wide column">
@@ -348,24 +361,24 @@
     </div>
 
     <div class="row">
-        <div class="eight wide column">
-            <p class="p-hl-title">Addressing issue 2</p>
-            <p class="p-hl">Design a quick process for Silvia</p>
-            <p>Users can view other's itinerary in both map view and itinerary view to get the relative location and
-                possible transportations. And they can make some changes to meet their own needs.</p>
-          </div>
+      <div class="eight wide column">
+        <p class="p-hl-title">Addressing issue 2</p>
+        <p class="p-hl">Design a quick process for Silvia</p>
+        <p>Users can view other's itinerary in both map view and itinerary view to get the relative location and
+          possible transportations. And they can make some changes to meet their own needs.</p>
+      </div>
     </div>
 
     <div class="row">
-        <div class="five wide column">
-          <img class="ui image" src="./img/map/view.png" />
-        </div>
-        <div class="three wide column">
-          <h3 class="ui header">Consistency</h3>
-          <p>We designed a consistent experience for creating a itinerary and modifying other's itinerary. 
-            The interface and interaction were almost the same for the same views in different functions.</p>
-        </div>
+      <div class="five wide column">
+        <img class="ui image" src="./img/map/view.png" />
       </div>
+      <div class="three wide column">
+        <h3 class="ui header">Consistency</h3>
+        <p>We designed a consistent experience for creating a itinerary and modifying other's itinerary.
+          The interface and interaction were almost the same.</p>
+      </div>
+    </div>
 
 
     <div class="row">
@@ -379,7 +392,8 @@
       <div class="eight wide column">
         <p class="p-hl-title">Problem</p>
         <p class="p-hl">Users got on the metro to the wrong direction.</p>
-        <p>Some users told me they sometimes go to the wrong direction when using Google Maps. I analysed the transportation page of Google Maps and found some problems.</p>
+        <p>Some users told me they sometimes go to the wrong direction when using Google Maps. I analysed the
+          transportation page of Google Maps and found some problems.</p>
       </div>
     </div>
     <div class="row">
@@ -388,27 +402,36 @@
       </div>
     </div>
 
+
+
     <div class="row">
       <div class="eight wide column">
-
-
-          
+        <p class="p-hl-title">Redesign</p>
+        <p class="p-hl">Convey information step by step</p>
+        <p>Users can concentrate on what to do next and the important information are obvious.</p>
       </div>
     </div>
 
     <div class="row">
-        <div class="eight wide column">
-          <p class="p-hl-title">Redesign</p>
-          <p class="p-hl">Convey information step by step</p>
-          <p>Users can concentrate on what to do next and the important information are obvious.</p>
-        </div>
-      </div>
+      <div class="eight wide column">
 
+        <img class="ui image" src="./img/map/concept2.png" />
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight wide column">
+        <p>Then I designed the details of card. Information are grouped and important information are highlighted.</p>
+
+      </div>
+    </div>
     <div class="row">
       <div class="fourteen wide column">
         <img class="ui image" src="./img/map/card.png" />
       </div>
     </div>
+
+
 
     <div class="row">
       <a href="./index"><button class="ui basic pink button">Home</button></a>
