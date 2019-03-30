@@ -11,21 +11,21 @@
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="./font.css">
 
-  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
-  <script src="jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- <script src="jquery-3.1.1.min.js"></script> -->
 
   <script src="semantic/dist/semantic.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136440891-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-136440891-1');
-  </script> -->
+  </script>
 
 
 
@@ -87,9 +87,8 @@
         <div class="hl">
           <p class="p-hl-title">The problem</p>
           <p class="p-hl">Travellers spend a lot of time making an itinerary before or during journey. They had to use
-            different apps to make it. And travel plan app can't suggest some places based on location.</p>
-          <p>We interviewed 8 users, mainly university students, using <b>story interview</b> method.</p>
-
+            different apps to make it. And travel plan app doesn't have location based service.</p>
+          <p>We interviewed 8 university students, using <b>story interview</b> method.</p>
         </div>
       </div>
     </div>
@@ -100,33 +99,26 @@
 
       </div>
       <div class="three wide column">
-        <h3 class="ui header">Too complex</h3>
-        <p>They searched interesting places, marked these places in Google maps and writed these information down in a
+        <h3 class="ui header">Jumping between different apps</h3>
+        <p>They searched interesting places in Google, marked these places in Google maps and writed these information
+          down in a
           text editor.</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="eight wide column">
-
-      </div>
-    </div>
 
     <div class="row">
-      <div class="two wide column"></div>
-      <div class="three wide column">
-        <img class="ui image" src="./img/map/process2.png" />
+      <div class="five wide column">
+        <img class="ui small bordered centered image" src="./img/map/process2.png" />
       </div>
       <div class="three wide column">
-        <h3 class="ui header">Not based on location</h3>
-        <p>The map in the travel app is just for display and not interactable. So it's hard to do something based on
-          current location.</p>
-        <p>If users want to make an itinerary after they arrived at the hotel, these app can't suggest some places near
+        <h3 class="ui header">No location based service</h3>
+        <p>It's hard to do something based on current location. If travellers want to walk around after they arrived at
+          the hotel, these apps can't show the location of interesting places near
           me.</p>
+        <p>It's hard to find some less popular places from the list view.</p>
       </div>
     </div>
-
-
 
     <div class="row">
       <div class="eight wide column">
@@ -142,19 +134,46 @@
 
     <div class="row">
       <div class="eight wide column">
-        <p>We analysed the interview and find some issues behind the problem. Then we created 2 personas. Jon is a
+        <p>We found some issues behind the problem and created 2 personas. Jon is an
           <b>extreme personna</b> who pushed the limits of the situation to test the usability. </p>
       </div>
     </div>
 
     <div class="row">
-      <div class="seven wide column">
+      <div class="four wide column">
         <div class="hl">
           <p class="p-hl-title">Issue 1</p>
           <p class="p-hl"><i>They spend a lot of time jumping between different apps.</i></p>
-
         </div>
+      </div>
+
+      <div class="four wide column">
+        <div class="hl">
+          <p class="p-hl-title">Issue 2</p>
+          <p class="p-hl"><i>They don't know where to visit.</i></p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="two wide column">
         <img class="ui image" src="img/map/p1.png" />
+      </div>
+      <div class="five wide column">
+        <p class="p-hl-title">Persona</p>
+
+        <p class="p-hl">I want to make an itinerary in seconds.</p>
+
+        <p><b>Behavior</b></p>
+        <li>change his itinerary a lot</li>
+        <li>have many places to visit</li>
+
+        <br />
+
+        <p><b>Goal</b></p>
+        <li>create an itinerary as soon as possible</li>
       </div>
       <div class="one wide column"></div>
 
@@ -162,33 +181,34 @@
 
 
     <div class="row">
-      <div class="seven wide column">
-        <div class="hl">
-          <p class="p-hl-title">Issue 2</p>
-          <p class="p-hl"><i>They don't know where to visit.</i></p>
-        </div>
+      <div class="two wide column">
         <img class="ui image" src="img/map/p2.png" />
+      </div>
+      <div class="five wide column">
+        <p class="p-hl-title">Persona</p>
 
+        <p class="p-hl">I want to refer other's itinerary.</p>
+
+        <p><b>Behavior</b></p>
+        <li>not have a lot of travel experience</li>
+
+        <br />
+
+        <p><b>Goal</b></p>
+        <li>browse other's itinerary</li>
+        <li>modify it to fit her own needs.</li>
       </div>
       <div class="one wide column"></div>
-
     </div>
-
-
 
     <div class="row">
       <div class="eight wide column">
         <div class="hl">
           <p class="p-hl-title">Addressing issue 1</p>
-
           <p class="p-hl">Design a smooth experience for Jon</p>
         </div>
-
       </div>
     </div>
-
-
-
 
     <div class="row">
       <div class="four wide column">
@@ -206,7 +226,6 @@
 
         </div>
       </div>
-
     </div>
 
     <div class="row">
@@ -222,7 +241,6 @@
           <p>Before digital ages, travellers can browse and mark some interesting places on a paper map.</p>
           <p>They can also draw lines to show the routes and visiting order.</p>
         </div>
-
       </div>
     </div>
 
@@ -313,31 +331,44 @@
       </div>
     </div>
 
-
     <div class="row">
       <div class="eight wide column">
-        <p>We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to
-          think about <b>the connection between map and itinerary</b>. And made some wireframes.</p>
+        <div class="bordered">
+            <div class="hl">
+                <p class="p-hl-title">Thinking</p>
+                <p class="p-hl">Intuitive and quickly</p>
+                <p>The sidebar matches users mental model so they can learn it quickly. The interaction is simple and
+                  efficient.
+                  And this design seperates the adding and ordering. So they can focus on one thing at one time.</p>
+              </div>
+        </div>
       </div>
     </div>
 
+
+
     <div class="row" style="background: #fafafa">
-      <div class="nine wide column">
+      <div class="eight wide column">
+        <div class="hl">
+          <p class="p-hl-title">Problem</p>
+          <p class="p-hl">How to combine map and itinerary?</p>
+          <p>In other travel apps, the map is isolated and only used to show information.
+            We used <a className='link3' href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to
+            think about <b>the connection between map and itinerary</b>.</p>
+
+        </div>
+
         <img class="ui image" src="./img/map/table.png" />
       </div>
     </div>
-
-
-
-
-
-
 
 
     <div class="row">
       <div class="eight wide column">
         <p class="p-hl-title">Wireframe</p>
         <p class="p-hl">Create a new itinerary</p>
+        
+         
       </div>
     </div>
 
@@ -348,10 +379,23 @@
     </div>
 
     <div class="row">
+        <div class="eight wide column">
+          <div class="bordered">
+              <div class="hl">
+                  <p class="p-hl-title">Thinking</p>
+                  <p class="p-hl">Editing in map, viewing in list</p>
+                  <p>The idea is to edit in map and get the result in itinerary view. Editing in map is more clear. 
+                      Users can see the location, relative distance and many other information. And the itinerary view is easy to read.</p>
+                </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
       <div class="eight wide column">
         <p class="p-hl-title">Wireframe</p>
         <p class="p-hl">Search a place</p>
-        <p>In the search page, users can see a search history and popular place.</p>
+        
       </div>
     </div>
     <div class="row">
@@ -359,6 +403,20 @@
         <img class="ui image" src="./img/map/w2.png" />
       </div>
     </div>
+
+    <div class="row">
+        <div class="eight wide column">
+          <div class="bordered">
+              <div class="hl">
+                  <p class="p-hl-title">Thinking</p>
+                  <p class="p-hl">Minimize distraction</p>
+                  <p>In the search page, users can see a search history and popular place. 
+                      I designed a fast process to minimize the distraction. After searching, users go back to editing page directly, only with the result highlighted. 
+                      And they can click to see more information.</p>
+                </div>
+          </div>
+        </div>
+      </div>
 
     <div class="row">
       <div class="eight wide column">
@@ -377,6 +435,7 @@
         <h3 class="ui header">Consistency</h3>
         <p>We designed a consistent experience for creating a itinerary and modifying other's itinerary.
           The interface and interaction were almost the same.</p>
+        <p>Besides, this design can reduce the development time. Many components can be reused.</p>
       </div>
     </div>
 
@@ -421,8 +480,10 @@
     </div>
     <div class="row">
       <div class="eight wide column">
-        <p>Then I designed the details of card. Information are grouped and important information are highlighted.</p>
-
+        <p>Then I designed the details of card. Information are grouped and important information are highlighted. 
+          The color of each cardis the same as the metro line.</p>
+        <p>The goal of this design is to help users remember information about their next step. 
+          During each step, they don't need to watch their phone again.</p>
       </div>
     </div>
     <div class="row">
@@ -430,8 +491,6 @@
         <img class="ui image" src="./img/map/card.png" />
       </div>
     </div>
-
-
 
     <div class="row">
       <a href="./index"><button class="ui basic pink button">Home</button></a>

@@ -24,8 +24,7 @@ p{
 }
 
 li{
-  /* font-size: 17px; */
-  line-height: 150%;
+  font-size: 16px;
 
 }
 
@@ -136,3 +135,9 @@ p a:hover {
   padding-left: 12px;
 }
 
+
+.bordered{
+  border: 2px solid #555555;
+
+  padding: 12px;
+}
