@@ -41,13 +41,13 @@ li{
 }
 
 .icon{
-  color: #7e7e7e;
+  color: #ffffff;
   border-bottom: 0px;
 }
 
 .icon:hover{
-  color:#555555;
-  transition: none;
+  color:#9a9a9a;
+  transition: 0.2s;
   box-shadow: none;
 }
 
@@ -92,14 +92,6 @@ p a:hover {
   
 }
 
-.hl{
-  /* background: #def8ea; */
-  /* margin-top:48px;
-  margin-bottom: 48px; */
-  /* border-left: 2px solid #555555;
-  padding-left: 12px; */
-
-}
 .p-hl{
   font-size: 24px;
   font-style: italic;
@@ -112,22 +104,26 @@ p a:hover {
 
 
 .preface{
-  font-weight: 900;
-  font-size: 6.5vw;
-  color: #ff6f61;
-  line-height: 110%;
+  font-size: 4.5rem;
 }
 
-.preface a{
+.small-intro{
+  font-size: 1.4rem;
+  color:#ffffff;
+  font-style: italic;
+  
+}
+
+/* .preface a{
   color: #555555;
   border-bottom: 0.1em solid #fadc23;
-}
+} */
 
-.preface a:hover{
+/* .preface a:hover{
   color: #555555;
   transition: box-shadow .2s linear;
   box-shadow: inset 0 -0.4em #fadc23;
-}
+} */
 
 
 .intro{
