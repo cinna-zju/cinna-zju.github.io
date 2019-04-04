@@ -51,7 +51,8 @@
         <div class="intro">
           <h3 class="ui header">INTRO</h3>
           <p>Cityller is a travel plan app based on an interactive map to help travellers make their itinerary quickly.
-            The design idea is from paper maps to provide a immersional experience.</p>
+            The design idea is to combine the advantages of different tools, like paper map, map apps and travel apps
+            and provide an immersional experience.</p>
 
           <p>I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO.</p>
         </div>
@@ -93,7 +94,7 @@
             Then they marked these places in Google maps.
             And they writed some information, like opening hours and price, in a document.
             Then they do it agian to add more places and set a visiting order.
-            After that, if they travlled with someone else, it's hard for them to edit it together. </p>
+            After that, if they travlled with someone else, they shared the document to others. </p>
         </div>
       </div>
     </div>
@@ -179,8 +180,8 @@
 
     <div class="row">
       <div class="eight wide column">
-        <p class="p-hl-title">Insight</p>
-        <p class="p-hl"><i>Creating an itinerary on map is natural.</i></p>
+        <p class="p-hl-title">Brainstorming</p>
+        <p class="p-hl"><i>Bring the advantages of differnet tools together</i></p>
 
         <p>We compared the map apps, paper maps and travel plan apps. Users can get details from map apps and
           suggestions from travel apps.
@@ -198,10 +199,10 @@
 
 
 
-    <div class="row" style="background: #fafafa">
+    <div class="row">
       <div class="four wide column">
-        <p class="p-hl-title">Idea</p>
-        <p class="p-hl">The interaction with paper map</p>
+        <p class="p-hl-title">Insight</p>
+        <p class="p-hl">Drawing on a paper map is natural</p>
         <p>Before digital ages, travellers can browse and mark some interesting places on a paper map.
           They can also draw lines to show the routes and visiting order.</p>
         <br />
@@ -220,8 +221,9 @@
 
         <div class="hl">
           <p class="p-hl-title">Solution</p>
-          <p class="p-hl">Change marking to clicking.</p>
-          <p>Users can interact with the map directly. Clicking is a more common interaction with phone. And it's fast.
+          <p class="p-hl">Change drawing to clicking.</p>
+          <p>Users can interact with the map directly by clicking, which is a more common interaction with phone. And
+            it's fast.
           </p>
         </div>
 
@@ -286,19 +288,15 @@
     <div class="row" style="background: #fafafa">
       <div class="eight wide column">
         <div class="hl">
-          <p class="p-hl-title">Problem</p>
-          <p class="p-hl">How to combine map and itinerary?</p>
+          <p class="p-hl-title">Idea</p>
+          <p class="p-hl">Edit in map, view in list</p>
+          <p>The idea is to edit in map and get the result in itinerary view. Editing in map is more clear and natural.
+            Users can see the location, relative distance and many other information. And in the itinerary view,
+            they can glance the itinerary and find the transportation information.
+          </p>
+          <p>Users can view other's itinerary in both map view and itinerary. After choosing, they can edit it in map
+              view.</p>
 
-          <div class="bordered">
-            <div class="hl">
-              <p class="p-hl-title">Thinking</p>
-              <p class="p-hl">Edit in map, view in list</p>
-              <p>The idea is to edit in map and get the result in itinerary view. Editing in map is more clear.
-                Users can see the location, relative distance and many other information. And in the itinerary view,
-                they can see the transportation information.
-              </p>
-            </div>
-          </div>
 
         </div>
 
@@ -306,14 +304,26 @@
     </div>
 
     <div class="row" style="background: #fafafa">
+      <div class="five wide column">
+          <img class="ui image" src="./img/map/view.png" />
+
+      </div>
+    </div>
+
+
+
+    <div class="row" style="background: #fafafa">
       <div class="eight wide column">
-        <p>In other travel apps, the map is isolated and not interactable.
-          We used <i>interaction table</i> from <a className='link3'
+          <p>We used <i>interaction table</i> from <a className='link3'
             href='https://dl.acm.org/citation.cfm?id=332473'>instrumental design</a> to generate ideas
           connecting the map and itinerary in our design.</p>
+      </div>
+    </div>
+
+
+    <div class="row" style="background: #fafafa">
+      <div class="ten wide column">
         <img class="ui image" src="./img/map/table.png" />
-
-
       </div>
     </div>
 
@@ -387,6 +397,8 @@
       </div>
     </div>
 
+
+
     <div class="row">
       <div class="twelve wide column">
         <img class="ui image" src="./img/map/w3.png" />
@@ -394,20 +406,16 @@
     </div>
 
     <div class="row">
-      <div class="five wide column">
-        <img class="ui image" src="./img/map/view.png" />
-      </div>
-      <div class="three wide column">
-        <div class="bordered">
+        <div class="eight wide column">
+          <div class="bordered">
             <p class="p-hl-title">Thinking</p>
             <p class="p-hl">Consistency</p>
-            <p>Users can view other's itinerary in both map view and itinerary. After choosing, they can edit it in map view. The
-              interface and interaction are almost the same</p>
-            <p>Besides, this design can simplify the development. Many components can be reused.</p>
+            <p>The interface and interaction are almost the same as editing own itinerary. Besides, this design can simplify the development. Many components can be reused.</p>
+          </div>
         </div>
-      
       </div>
-    </div>
+
+   
 
     <div class="row" style="background: #fafafa">
       <div class="eight wide column">
@@ -429,10 +437,11 @@
       <div class="eight wide column">
         <p class="p-hl-title">Idea</p>
         <p class="p-hl">Convey information step by step</p>
-        <p>Users can concentrate on what to do next and the important information are obvious. 
+        <p>Users can concentrate on what to do next and the important information are obvious.
           The goal of this design is to help users remember information about their next step.
-            During each step, they don't need to watch their phone again.</p>
-        <p>The idea came from the sticky notes. We used them one by one, put information of the same group on one page and arranged them freely.</p>
+          During each step, they don't need to watch their phone again.</p>
+        <p>The idea came from the sticky notes. We used them one by one, put information of the same group on one page
+          and arranged them freely.</p>
       </div>
     </div>
 
