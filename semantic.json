@@ -30,7 +30,8 @@
     "breadcrumb",
     "grid",
     "transition",
-    "menu"
+    "menu",
+    "sticky"
   ],
   "version": "2.4.2"
 }

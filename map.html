@@ -53,7 +53,7 @@
       <div class="three wide column">
           <div class="intro">
               <h3 class="ui header">INTRO</h3>
-              <p>Cityller is a travel plan app, combining the advantages of different tools and provide an immersional experience.</p>
+              <p>Cityller is a travel plan app based on an interactive map to help travellers make their itinerary quickly.</p>
     
               <p>I worked with Yuanyang ZHONG, Lemeng XU and Qiwei GAO.</p>
             </div>
@@ -76,13 +76,11 @@
       <div class="eight wide column">
         <div class="hl">
           <p class="p-hl-title">The problem</p>
-          <p class="p-hl">Travellers spend a lot of time making a travel itinerary because they often jump between
-            different apps</p>
+          <p class="p-hl">Travellers spend a lot of time making a travel itinerary because there are many jumpings interupting them.</p>
           <p>We interviewed 8 university students, using <i>story interview</i> method.</p> 
-          <p>They didn't know where to visit. So they searched interesting places in Google.
-            Then they marked these places in Google maps.
-            And they writed some information, like opening hours and price, in a document.
-            Then they do it agian to add more places and set a visiting order.
+          <p>The process was a little complex. They searched interesting places in Google and marked these places in Google maps.
+            Then they searched some information, like opening hours and price, and logged it in a document.
+            They did it agian to add more places.
            </p>
             <br/><br/>
         <img class="ui image" src="./img/map/process1.png" />
@@ -90,7 +88,19 @@
         </div>
       </div>
       <div class="four wide column"></div>
+    </div>
 
+    <div class="row">
+      <div class="five wide column">
+        <p>The existed travel itinerary apps has some limitations. 
+          They usually have many pages so users cannot focus on their task.
+        </p>
+        <p>For example, I need to choose itinerary, choose date, choose place types, choose places, then go to map view to arrange the order and go back to check the itinerary.</p>
+
+      </div>
+      <div class="three wide column">
+        <img class="ui image" src="img/map/process2.png"/>
+      </div>
     </div>
 
 
@@ -154,9 +164,7 @@
       <div class="eight wide column">
         <p class="p-hl-title">Brainstorming</p>
         <p class="p-hl"><i>Bring the advantages of differnet tools together</i></p>
-
-        <p>We compared the map apps, paper maps and travel plan apps. Users can get details from map apps and
-          suggestions from travel apps.
+        <p>We compared the map apps, paper maps and travel plan apps. 
           Our idea was to <b>combine the experience of the three different tools</b>.
         </p>
       </div>
@@ -175,8 +183,8 @@
       <div class="six wide column">
         <p class="p-hl-title">Insight</p>
         <p class="p-hl">Drawing on a paper map is natural</p>
-        <p>Before digital ages, travellers can browse and mark some interesting places on a paper map.
-          They can also draw lines to show the routes and visiting order.</p>
+        <p>In the past, travellers can browse and mark some interesting places on a paper map.
+          They draw lines to show the routes and visiting order.</p>
           <img class="ui image" src="./img/map/map.jpeg" />
 
       </div>
@@ -253,11 +261,16 @@
       <div class="eight wide column">
           <div class="bordered">
               <div class="hl">
-                <p class="p-hl-title">Thinking</p>
-                <p class="p-hl">Intuitive and quickly</p>
-                <p>The interaction is simple and efficient. By using the idea of backpack, the sidebar is very close to
-                  user's mental model.
-                </p>
+                  <p class="p-hl-title">Thinking</p>
+                  <p class="p-hl">Skeuomorphism is about concept, not detail</p>
+                  <p>We usually use skeuomorphism to match user's mental model.
+                    But sometimes we cannot use the same interaction due to different medias. 
+                      And I think there is no need to be exact the same. </p>
+                  <p>Here we used the concept of a paper map and a backpack.
+                    Map has strong connections to itinerary and backpack is used to collect items. 
+                    But we used different interactions.
+                    Clicking on a map is strange for the paper map but it is suitable for the phone.
+                  </p>
               </div>
             </div>
       </div>
@@ -330,10 +343,11 @@
         <div class="bordered">
           <div class="hl">
             <p class="p-hl-title">Thinking</p>
-            <p class="p-hl">Show recommended places in different levels</p>
-            <p>Users can zoom in and out to see different suggested places. At first, they will see the most famous
-              attractions.
-              Then if they don't find it, they can zoom in to see more but less popular places.</p>
+            <p class="p-hl">Provide more information when users need</p>
+            <p>Too much information will confuse users. 
+              We designed an adaptive way to show the places.
+              More recommended places will appear whem zooming in.
+             </p>
 
               <p class="p-hl">Location based service is convenient</h3>
                 <p>When travellers didn't make a plan before their voyage starting, location based service can help them create a plan very quickly.
