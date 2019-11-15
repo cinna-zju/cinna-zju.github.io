@@ -70,7 +70,80 @@
     </div>
 
     <div class="ui left aligned text container">
-      <p>We are working on the concept now.</p>
+      <h3 class="ui header">Idea 2019/10/31</h3>
+      <p>My initial idea is a top-view coop boss fighting game, kind of like <i>Titan Souls</i>. 
+        The control is kind of like <i>The binding of Issac</i>. 
+        And in the coop mode, the player need to avoid the attacking from both the boss and the other player.</p>
+      <p>Then we go to the idea of shape shifting. The idea is from the tale of druid. The background is the forest.
+        The character can transform to different animals to solve the puzzle. 
+        And finally, our idea is to build a story-based adventure game and the core gameplay is transforming.
+        But I am a little worried about the fun of our game.
+      </p>
+
+      <h3 class="ui header">Story 2019/11/4</h3>
+      <p>
+        I am playing <i>Hollow Knight</i> recently. And I am so impressed by the atomsphere and story of it.
+        So I want to write a story with a dark kernal and maybe a bad ending.
+
+      </p>
+      <p><b>Character</b></p>
+      <p>
+        <li>A girl can see fragments of souls of different animals</li>
+        <li>She can collect these fragments</li>
+        <li>She can transform to use the power of different animals by consuming the fragments</li>
+      </p>
+
+      <p><b>Openning</b></p>
+      <p>
+          One snowy night, a girl woke up from a strange dream. 
+          She felt someone was calling her. 
+          When she went out, she found everyone except her was falling into a deep sleep and couldn’t be waken up. 
+          Then She saw a white thing disappeared at the entrance of the forest. 
+          So she stepped into the forest to see what’s going on…
+      </p>
+
+      <p>Then I fulfilled the story.</p>
+      <p>
+          Long long ago, Louhi was defeated by a hero and sealed inside the hero. Animals guarded this seal.
+
+          But the seal became weaker and weaker...
+          
+          One snowy night, a girl woke up from a strange dream. She felt someone was calling her. When she went out, she found everyone except her was falling into a deep sleep and couldn’t be waken up. Then She saw a white thing disappeared at the entrance of the forest. So she stepped into the forest to see what’s going on…
+          
+          She saw some soul fragments in the forest. These soul fragments were from the death of animals. After she collected several fragments, a soul of an old huge bear appeared and told her the use of souls.
+          
+          Then she collected and used these fragments. Finally she was in the center of the forest and heard the whispering of the hero. The hero asked the girl to break the seal and he would seal it again.
+          
+          The girl broke the seal but the hero’s soul run out of power and disappeared. The girl sealed Louhi inside her.          
+      </p>
+
+      <h3>Dev</h3>
+      <p>We start developing based on a low-poly 3D game kit. And I am working on the transforming part.</p>
+      <p>The basic idea is to use another gameobject to control the transform. The player is the parent object and is used to save current position. 
+        And the different characters are the children object. 
+        When a new character is called, destroy the old character, instantiate the new character and set the position.
+      </p>
+
+      <p></p>
+
+      <p>Bug 1: The character falls through the ground</p>
+      <p>
+        The reason is that the collider of the character intersects with the ground. 
+        So we change the position and the size of the collider. But it doesn't work. 
+        When I change to the second character, I notice the y-position is so low. Then I change the position of the object.
+        Problem Solved! 
+      </p>
+      <p>And we should remember that the character controller contains a capsule collider.</p>
+
+      <p>Bug 2: The collision between character and pick-ups</p>
+      <p>
+        Character controller doesn't have OnCollisionEnter(). So we use OnControllerColliderHit().
+        But this method has another problem. It invokes several times when the character walks over a pick-up.
+        Then we move the scripts from the character to the pick-up. And I set the pick-up's colloder as trigger.
+        Also BE AWARE OF the capital of the function name: OnTriggerEnter().
+        Then everything works well.
+      </p>
+
 
 
   
