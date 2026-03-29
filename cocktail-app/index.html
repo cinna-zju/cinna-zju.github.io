@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="鸡尾酒百科 - 探索经典与现代鸡尾酒的世界">
+  <title>鸡尾酒百科</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="navbar-title">
+        <svg class="navbar-logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <defs>
+            <linearGradient id="cocktailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FF6B6B"/>
+              <stop offset="30%" style="stop-color:#EE5A5A"/>
+              <stop offset="70%" style="stop-color:#C0392B"/>
+              <stop offset="100%" style="stop-color:#A93226"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="16" cy="5" rx="10" ry="2.5" fill="#E74C3C" opacity="0.9"/>
+          <path d="M6 5 Q6 14 10 20 L16 22 L22 20 Q26 14 26 5 Z" fill="url(#cocktailGrad)" opacity="0.9"/>
+          <path d="M6 5 Q6 14 10 20 L16 22 L22 20 Q26 14 26 5 Z" fill="none" stroke="#C0392B" stroke-width="1"/>
+          <ellipse cx="16" cy="6" rx="9" ry="1.5" fill="#F1948A" opacity="0.6"/>
+          <path d="M16 22 L16 29" stroke="#BDC3C7" stroke-width="1.5"/>
+          <ellipse cx="16" cy="29" rx="4" ry="1" fill="#BDC3C7"/>
+          <circle cx="13" cy="10" r="1.5" fill="rgba(255,255,255,0.4)"/>
+          <circle cx="19" cy="12" r="1" fill="rgba(255,255,255,0.3)"/>
+        </svg>
+        鸡尾酒百科
+      </h1>
+      <div class="search-wrapper">
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="搜索鸡尾酒..."
+          aria-label="搜索鸡尾酒"
+        >
+        <button id="search-clear" class="search-clear" aria-label="清除搜索">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <button id="filter-toggle" class="filter-toggle" aria-label="打开筛选器">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <aside id="filter-panel" class="filter-panel">
+      <div class="filter-header">
+        <h2 class="filter-title">筛选</h2>
+        <button id="filter-close" class="filter-close" aria-label="关闭筛选器">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    <div class="filter-group">
+      <h3 class="filter-group-title">基酒</h3>
+      <div class="filter-options" id="base-spirit-filters">
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="伏特加">
+          <span>伏特加</span>
+        </label>
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="金酒">
+          <span>金酒</span>
+        </label>
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="朗姆酒">
+          <span>朗姆酒</span>
+        </label>
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="威士忌">
+          <span>威士忌</span>
+        </label>
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="龙舌兰">
+          <span>龙舌兰</span>
+        </label>
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="白兰地">
+          <span>白兰地</span>
+        </label>
+        <label class="filter-tag">
+          <input type="checkbox" name="baseSpirit" value="利口酒">
+          <span>利口酒</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-group-title">风味</h3>
+      <div class="filter-options" id="flavor-filters">
+        <span class="filter-tag" data-flavor="清爽">清爽</span>
+        <span class="filter-tag" data-flavor="果味">果味</span>
+        <span class="filter-tag" data-flavor="甜味">甜味</span>
+        <span class="filter-tag" data-flavor="酸味">酸味</span>
+        <span class="filter-tag" data-flavor="苦味">苦味</span>
+        <span class="filter-tag" data-flavor="香料">香料</span>
+        <span class="filter-tag" data-flavor="奶油">奶油</span>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-group-title">酒精度</h3>
+      <div class="filter-options" id="alcohol-filters">
+        <span class="filter-tag" data-level="低">低 (&lt;15%)</span>
+        <span class="filter-tag" data-level="中">中 (15-25%)</span>
+        <span class="filter-tag" data-level="高">高 (&gt;25%)</span>
+      </div>
+    </div>
+
+      <div class="filter-actions">
+        <button id="filter-clear" class="btn btn-secondary">清除筛选</button>
+      </div>
+    </aside>
+    <section class="results-bar">
+      <p class="results-count">共 <span id="cocktail-count">0</span> 款鸡尾酒</p>
+    </section>
+
+    <section id="cocktail-grid" class="cocktail-grid">
+      <!-- 鸡尾酒卡片将由 JavaScript 动态渲染 -->
+    </section>
+
+    <section id="empty-state" class="empty-state hidden">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <p>未找到匹配的鸡尾酒</p>
+      <button class="btn btn-primary" id="empty-clear">清除筛选条件</button>
+    </section>
+  </main>
+
+  <dialog id="detail-modal" class="detail-modal">
+    <article class="detail-content">
+      <header class="detail-header">
+        <button id="detail-close" class="detail-close" aria-label="关闭详情">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <figure class="detail-image">
+        <img id="detail-img" src="" alt="">
+      </figure>
+
+      <section class="detail-info">
+        <h2 id="detail-name" class="detail-name"></h2>
+        <p id="detail-name-en" class="detail-name-en"></p>
+
+        <div class="detail-attributes">
+          <span class="attribute">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <span id="detail-spirit"></span>
+          </span>
+          <span class="attribute">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            <span id="detail-alcohol"></span>%
+          </span>
+          <span class="attribute">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 6v6l4 2"></path>
+            </svg>
+            <span id="detail-difficulty"></span>
+          </span>
+          <span class="attribute">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+            <span id="detail-glass"></span>
+          </span>
+        </div>
+
+        <div id="detail-flavors" class="detail-flavors"></div>
+      </section>
+
+      <section class="detail-section">
+        <h3 class="detail-section-title">配方材料</h3>
+        <ul id="detail-ingredients" class="detail-ingredients"></ul>
+      </section>
+
+      <section class="detail-section">
+        <h3 class="detail-section-title">装饰物</h3>
+        <p id="detail-garnish" class="detail-garnish"></p>
+      </section>
+
+      <section class="detail-section">
+        <h3 class="detail-section-title">调制步骤</h3>
+        <ol id="detail-steps" class="detail-steps"></ol>
+      </section>
+
+      <section class="detail-section">
+        <h3 class="detail-section-title">背景故事</h3>
+        <p id="detail-history" class="detail-history"></p>
+      </section>
+    </article>
+  </dialog>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

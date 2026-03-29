@@ -1,0 +1,3121 @@
+[
+  {
+    "id": "margarita",
+    "name": "玛格丽特",
+    "nameEn": "Margarita",
+    "image": "margarita.jpg",
+    "category": "经典",
+    "glassType": "玛格丽特杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "酸味",
+      "清爽",
+      "果味"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "龙舌兰酒",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "25",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "25",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "盐边，青柠角",
+    "preparation": [
+      "用青柠角擦拭杯口边缘，蘸上盐制作盐边",
+      "在调酒壶中加入冰块",
+      "倒入龙舌兰酒、君度橙酒和青柠汁",
+      "用力摇晃10-15秒",
+      "过滤倒入准备好的杯中",
+      "用青柠角装饰"
+    ],
+    "history": "玛格丽特是世界上最流行的龙舌兰鸡尾酒，起源于1930年代的墨西哥。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "墨西哥",
+      "派对"
+    ]
+  },
+  {
+    "id": "mojito",
+    "name": "莫吉托",
+    "nameEn": "Mojito",
+    "image": "mojito.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 10,
+    "flavor": [
+      "清爽",
+      "薄荷",
+      "甜味"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "白砂糖",
+        "amount": "2",
+        "unit": "茶匙"
+      },
+      {
+        "name": "苏打水",
+        "amount": "适量",
+        "unit": ""
+      },
+      {
+        "name": "薄荷叶",
+        "amount": "6-8",
+        "unit": "片"
+      }
+    ],
+    "garnish": "薄荷枝，青柠角",
+    "preparation": [
+      "将薄荷叶和白砂糖放入杯中",
+      "轻轻捣压薄荷叶释放香气",
+      "加入青柠汁搅拌至糖溶解",
+      "加入碎冰",
+      "倒入朗姆酒",
+      "加满苏打水",
+      "轻轻搅拌均匀",
+      "用薄荷枝和青柠角装饰"
+    ],
+    "history": "莫吉托起源于古巴，是海明威最喜爱的鸡尾酒之一。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "古巴",
+      "夏日",
+      "清爽"
+    ]
+  },
+  {
+    "id": "old-fashioned",
+    "name": "古典鸡尾酒",
+    "nameEn": "Old Fashioned",
+    "image": "old-fashioned.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 32,
+    "flavor": [
+      "苦味",
+      "香料",
+      "甜味"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "波本威士忌",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "方糖",
+        "amount": "1",
+        "unit": "块"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2-3",
+        "unit": "滴"
+      },
+      {
+        "name": "水",
+        "amount": "少许",
+        "unit": ""
+      }
+    ],
+    "garnish": "橙皮，樱桃",
+    "preparation": [
+      "将方糖放入杯中",
+      "滴入苦精，加少许水",
+      "用吧匙压碎方糖并搅拌",
+      "加入一大块方冰",
+      "倒入波本威士忌",
+      "轻轻搅拌15-20次",
+      "用橙皮挤出油脂并装饰，加樱桃"
+    ],
+    "history": "古典鸡尾酒是鸡尾酒的鼻祖，最早可追溯到1800年代初期。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "威士忌爱好者"
+    ]
+  },
+  {
+    "id": "martini",
+    "name": "马天尼",
+    "nameEn": "Martini",
+    "image": "martini.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 30,
+    "flavor": [
+      "清爽",
+      "草本",
+      "苦味"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "干味美思",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橄榄或柠檬皮",
+    "preparation": [
+      "将金酒和干味美思加入装满冰的调酒杯",
+      "用吧匙搅拌30秒",
+      "过滤倒入冰镇的马天尼杯中",
+      "用橄榄或柠檬皮装饰"
+    ],
+    "history": "马天尼是调酒界的标志性饮品，被誉为鸡尾酒之王。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "优雅",
+      "经典"
+    ]
+  },
+  {
+    "id": "negroni",
+    "name": "尼格罗尼",
+    "nameEn": "Negroni",
+    "image": "negroni.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 24,
+    "flavor": [
+      "苦味",
+      "草本",
+      "甜味"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "金巴利",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "甜味美思",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "在古典杯中加入大块冰",
+      "依次倒入金酒、金巴利和甜味美思",
+      "轻轻搅拌15-20次",
+      "用橙皮挤出油脂并装饰"
+    ],
+    "history": "尼格罗尼诞生于1919年的意大利佛罗伦萨。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "意大利",
+      "苦味",
+      "开胃酒"
+    ]
+  },
+  {
+    "id": "daiquiri",
+    "name": "大吉利",
+    "nameEn": "Daiquiri",
+    "image": "daiquiri.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "酸味",
+      "清爽",
+      "甜味"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠皮",
+    "preparation": [
+      "将所有材料加入装满冰的调酒壶",
+      "用力摇晃10-15秒",
+      "过滤倒入冰镇的笛形杯",
+      "用青柠皮装饰"
+    ],
+    "history": "大吉利诞生于1898年的古巴。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "古巴",
+      "清爽",
+      "夏日"
+    ]
+  },
+  {
+    "id": "whiskey-sour",
+    "name": "威士忌酸",
+    "nameEn": "Whiskey Sour",
+    "image": "whiskey-sour.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "酸味",
+      "甜味",
+      "果味"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "波本威士忌",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "蛋清",
+        "amount": "可选",
+        "unit": ""
+      }
+    ],
+    "garnish": "樱桃，橙片",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "先干摇（不加冰）10秒使蛋清乳化",
+      "加入冰块继续摇晃15秒",
+      "过滤倒入装有冰块的古典杯",
+      "用樱桃和橙片装饰"
+    ],
+    "history": "威士忌酸的历史可以追溯到1862年。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "酸酒家族"
+    ]
+  },
+  {
+    "id": "pina-colada",
+    "name": "椰林飘香",
+    "nameEn": "Piña Colada",
+    "image": "pina-colada.jpg",
+    "category": "热带",
+    "glassType": "飓风杯",
+    "alcoholContent": 12,
+    "flavor": [
+      "甜味",
+      "奶油",
+      "果味"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "椰浆",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "菠萝汁",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "菠萝块",
+        "amount": "3-4",
+        "unit": "块"
+      }
+    ],
+    "garnish": "菠萝角，樱桃，椰丝",
+    "preparation": [
+      "将所有材料和一杯冰放入搅拌机",
+      "搅拌至顺滑",
+      "倒入飓风杯",
+      "用菠萝角、樱桃和椰丝装饰"
+    ],
+    "history": "椰林飘香诞生于1954年的波多黎各。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "波多黎各",
+      "热带",
+      "夏日",
+      "派对"
+    ]
+  },
+  {
+    "id": "manhattan",
+    "name": "曼哈顿",
+    "nameEn": "Manhattan",
+    "image": "manhattan.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 30,
+    "flavor": [
+      "苦味",
+      "甜味",
+      "香料"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "黑麦威士忌",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "甜味美思",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "1-2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "樱桃",
+    "preparation": [
+      "将所有材料加入装满冰的调酒杯",
+      "用吧匙搅拌30秒",
+      "过滤倒入冰镇的笛形杯",
+      "用樱桃装饰"
+    ],
+    "history": "曼哈顿是调酒界的另一经典，诞生于1880年代的纽约。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "纽约",
+      "威士忌爱好者"
+    ]
+  },
+  {
+    "id": "cosmopolitan",
+    "name": "大都会",
+    "nameEn": "Cosmopolitan",
+    "image": "cosmopolitan.jpg",
+    "category": "现代",
+    "glassType": "马天尼杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "酸味",
+      "果味",
+      "清爽"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "40",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "蔓越莓汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将所有材料加入装满冰的调酒壶",
+      "用力摇晃10-15秒",
+      "过滤倒入冰镇的笛形杯",
+      "用橙皮挤出油脂并装饰"
+    ],
+    "history": "大都会在1980年代末由调酒师Toby Cecchini在纽约改良定型。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "现代经典",
+      "都市"
+    ]
+  },
+  {
+    "id": "whiskey-highball",
+    "name": "威士忌Highball",
+    "nameEn": "Whiskey Highball",
+    "image": "whiskey-highball.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "清爽",
+      "气泡",
+      "简单"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "苏格兰威士忌",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "120",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬片",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入威士忌",
+      "加满干姜水",
+      "轻轻搅拌",
+      "用柠檬片装饰"
+    ],
+    "history": "Highball是一种经典的烈酒兑饮料饮用方式。",
+    "difficulty": "简单",
+    "tags": [
+      "日本",
+      "清爽",
+      "简单"
+    ]
+  },
+  {
+    "id": "gin-fizz",
+    "name": "金菲士",
+    "nameEn": "Gin Fizz",
+    "image": "gin-fizz.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "清爽",
+      "酸味",
+      "气泡"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "苏打水",
+        "amount": "适量",
+        "unit": ""
+      }
+    ],
+    "garnish": "柠檬片",
+    "preparation": [
+      "将金酒、柠檬汁和糖浆加入调酒壶",
+      "加冰摇晃10秒",
+      "过滤倒入高球杯",
+      "加满苏打水",
+      "用柠檬片装饰"
+    ],
+    "history": "Gin Fizz属于Fizz家族鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "清爽",
+      "气泡"
+    ]
+  },
+  {
+    "id": "tom-collins",
+    "name": "汤姆柯林斯",
+    "nameEn": "Tom Collins",
+    "image": "tom-collins.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "清爽",
+      "酸味",
+      "气泡"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "苏打水",
+        "amount": "适量",
+        "unit": ""
+      }
+    ],
+    "garnish": "柠檬片，樱桃",
+    "preparation": [
+      "在调酒壶中加入冰块",
+      "倒入金酒、柠檬汁和糖浆",
+      "摇晃10秒",
+      "过滤倒入高球杯",
+      "加满苏打水",
+      "用柠檬片和樱桃装饰"
+    ],
+    "history": "Tom Collins诞生于19世纪中期的英国。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "英国",
+      "清爽",
+      "气泡"
+    ]
+  },
+  {
+    "id": "aperol-spritz",
+    "name": "阿佩罗橙光",
+    "nameEn": "Aperol Spritz",
+    "image": "aperol-spritz.jpg",
+    "category": "开胃酒",
+    "glassType": "葡萄酒杯",
+    "alcoholContent": 11,
+    "flavor": [
+      "苦味",
+      "清爽",
+      "果味",
+      "气泡"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "阿佩罗利口酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "普罗赛克起泡酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "苏打水",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙片",
+    "preparation": [
+      "在酒杯中加入冰块",
+      "依次倒入阿佩罗利口酒和普罗赛克",
+      "加少量苏打水",
+      "轻轻搅拌",
+      "用橙片装饰"
+    ],
+    "history": "Aperol Spritz是意大利最受欢迎的开胃鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "意大利",
+      "开胃酒",
+      "夏日",
+      "清爽"
+    ]
+  },
+  {
+    "id": "bellini",
+    "name": "贝里尼",
+    "nameEn": "Bellini",
+    "image": "bellini.jpg",
+    "category": "开胃酒",
+    "glassType": "香槟杯",
+    "alcoholContent": 10,
+    "flavor": [
+      "果味",
+      "甜味",
+      "清爽"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "白桃茸",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "普罗赛克起泡酒",
+        "amount": "100",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "桃子片",
+    "preparation": [
+      "将白桃茸放入搅拌机打成果泥",
+      "过滤去渣",
+      "与普罗赛克混合",
+      "倒入冰镇的香槟杯中",
+      "用桃子片装饰"
+    ],
+    "history": "贝里尼由威尼斯Harry's Bar的调酒师Giuseppe Cipriani于1934年创作。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "意大利",
+      "威尼斯",
+      "果味",
+      "浪漫"
+    ]
+  },
+  {
+    "id": "french-75",
+    "name": "法式75",
+    "nameEn": "French 75",
+    "image": "french-75.jpg",
+    "category": "经典",
+    "glassType": "香槟杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "果味",
+      "清爽",
+      "气泡",
+      "花香"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "香槟",
+        "amount": "90",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬皮",
+    "preparation": [
+      "将金酒、柠檬汁和糖浆加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入香槟杯",
+      "加满香槟",
+      "用柠檬皮装饰"
+    ],
+    "history": "法式75诞生于1920年代的巴黎。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "法国",
+      "巴黎",
+      "优雅",
+      "气泡"
+    ]
+  },
+  {
+    "id": "sidecar",
+    "name": "边车",
+    "nameEn": "Sidecar",
+    "image": "sidecar.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 30,
+    "flavor": [
+      "酸味",
+      "甜味",
+      "柑橘"
+    ],
+    "baseSpirit": "白兰地",
+    "ingredients": [
+      {
+        "name": "干邑白兰地",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "20",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "糖边，橙片",
+    "preparation": [
+      "将杯口沾湿，裹上糖边",
+      "将所有材料加入调酒壶",
+      "加冰摇晃10秒",
+      "过滤倒入笛形杯",
+      "用橙片装饰"
+    ],
+    "history": "边车是经典的法式鸡尾酒，诞生于1920年代的巴黎。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "法国",
+      "巴黎",
+      "优雅"
+    ]
+  },
+  {
+    "id": "sazerac",
+    "name": "萨兹拉克",
+    "nameEn": "Sazerac",
+    "image": "sazerac.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 33,
+    "flavor": [
+      "苦味",
+      "香料",
+      "茴香",
+      "甜味"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "黑麦威士忌",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "佩诺茴香酒",
+        "amount": "5",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2-3",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "柠檬皮",
+    "preparation": [
+      "在古典杯中倒入佩诺茴香酒并转动使其挂杯后倒出",
+      "将威士忌、糖浆和苦精加入另一杯中",
+      "加冰搅拌",
+      "倒入处理过的古典杯",
+      "用柠檬皮装饰"
+    ],
+    "history": "Sazerac诞生于1850年代的新奥尔良。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "新奥尔良",
+      "历史",
+      "香料"
+    ]
+  },
+  {
+    "id": "vieux-carre",
+    "name": "老广场",
+    "nameEn": "Vieux Carré",
+    "image": "vieux-carre.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 26,
+    "flavor": [
+      "苦味",
+      "甜味",
+      "香料",
+      "复杂"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "黑麦威士忌",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "干邑白兰地",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "本尼迪克丁利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "甜味美思",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "橙皮，樱桃",
+    "preparation": [
+      "将所有材料加入调酒杯",
+      "加冰搅拌",
+      "过滤倒入古典杯",
+      "用橙皮和樱桃装饰"
+    ],
+    "history": "老广场于1930年代在新奥尔良的Roosevelt酒店创造。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "新奥尔良",
+      "复杂"
+    ]
+  },
+  {
+    "id": "mint-julep",
+    "name": "薄荷朱利普",
+    "nameEn": "Mint Julep",
+    "image": "mint-julep.jpg",
+    "category": "经典",
+    "glassType": "金属杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "薄荷",
+      "清爽",
+      "甜味",
+      "草本"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "波本威士忌",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "新鲜薄荷叶",
+        "amount": "8-10",
+        "unit": "片"
+      },
+      {
+        "name": "糖浆",
+        "amount": "20",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "薄荷枝，樱桃",
+    "preparation": [
+      "将薄荷叶和糖浆放入杯中",
+      "捣压薄荷叶释放香气",
+      "加入波本威士忌",
+      "加碎冰搅拌",
+      "堆满碎冰",
+      "用薄荷枝和樱桃装饰"
+    ],
+    "history": "薄荷朱利普是美国南部的传统饮品。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "南部",
+      "肯塔基",
+      "夏日"
+    ]
+  },
+  {
+    "id": "espresso-martini",
+    "name": "意式浓缩马天尼",
+    "nameEn": "Espresso Martini",
+    "image": "espresso-martini.jpg",
+    "category": "现代",
+    "glassType": "马天尼杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "咖啡",
+      "苦味",
+      "甜味",
+      "提神"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "现用意式浓缩咖啡",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "咖啡利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "咖啡豆",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰用力摇晃",
+      "过滤倒入冰镇的笛形杯",
+      "放上三颗咖啡豆作为装饰"
+    ],
+    "history": "意式浓缩马天尼由伦敦Fred's Club的调酒师Dick Bradsell于1983年创造。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "英国",
+      "咖啡",
+      "提神",
+      "现代经典"
+    ]
+  },
+  {
+    "id": "white-russian",
+    "name": "白俄罗斯",
+    "nameEn": "White Russian",
+    "image": "white-russian.jpg",
+    "category": "现代",
+    "glassType": "古典杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "奶油",
+      "咖啡",
+      "甜味"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "咖啡利口酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "淡奶油",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "肉桂棒",
+    "preparation": [
+      "在古典杯中加入冰块",
+      "倒入伏特加和咖啡利口酒",
+      "轻轻倒入淡奶油使其漂浮",
+      "用肉桂棒搅拌后饮用"
+    ],
+    "history": "白俄罗斯于1940年代创造，1998年电影《谋杀绿脚趾》使其闻名。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "电影",
+      "奶油",
+      "咖啡"
+    ]
+  },
+  {
+    "id": "black-russian",
+    "name": "黑俄罗斯",
+    "nameEn": "Black Russian",
+    "image": "black-russian.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "咖啡",
+      "苦味",
+      "浓烈"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "咖啡利口酒",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "在古典杯中加入冰块",
+      "倒入咖啡利口酒",
+      "加入伏特加",
+      "轻轻搅拌"
+    ],
+    "history": "黑俄罗斯于1949年在布鲁塞尔的Hotel Metropole创造。",
+    "difficulty": "简单",
+    "tags": [
+      "比利时",
+      "咖啡",
+      "经典"
+    ]
+  },
+  {
+    "id": "screwdriver",
+    "name": "螺丝起子",
+    "nameEn": "Screwdriver",
+    "image": "screwdriver.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "果味",
+      "清爽",
+      "简单"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "橙汁",
+        "amount": "120",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙片",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入伏特加",
+      "加满橙汁",
+      "轻轻搅拌",
+      "用橙片装饰"
+    ],
+    "history": "螺丝起子是经典的伏特加鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "美国",
+      "橙汁",
+      "简单",
+      "经典"
+    ]
+  },
+  {
+    "id": "bloody-mary",
+    "name": "血腥玛丽",
+    "nameEn": "Bloody Mary",
+    "image": "bloody-mary.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "咸味",
+      "酸味",
+      "辣味",
+      "浓郁"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "番茄汁",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "柠檬汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "辣酱油",
+        "amount": "少许",
+        "unit": ""
+      },
+      {
+        "name": "塔巴斯科辣酱",
+        "amount": "少许",
+        "unit": ""
+      },
+      {
+        "name": "盐和胡椒",
+        "amount": "适量",
+        "unit": ""
+      }
+    ],
+    "garnish": "芹菜梗，柠檬片，培根",
+    "preparation": [
+      "在调酒壶中加入冰块和所有材料",
+      "用力摇晃",
+      "倒入高球杯",
+      "用芹菜、柠檬片和培根装饰"
+    ],
+    "history": "血腥玛丽据说是1930年代在巴黎Harry's New York Bar发明。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "法国",
+      "巴黎",
+      "早午餐",
+      "咸味"
+    ]
+  },
+  {
+    "id": "moscow-mule",
+    "name": "莫斯科骡子",
+    "nameEn": "Moscow Mule",
+    "image": "moscow-mule.jpg",
+    "category": "经典",
+    "glassType": "铜杯",
+    "alcoholContent": 16,
+    "flavor": [
+      "姜味",
+      "清爽",
+      "气泡",
+      "酸甜"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "120",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片，薄荷枝",
+    "preparation": [
+      "在铜杯中加入冰块",
+      "倒入伏特加",
+      "加入青柠汁",
+      "加满干姜水",
+      "轻轻搅拌",
+      "用青柠片和薄荷枝装饰"
+    ],
+    "history": "莫斯科骡子于1941年在美国创造。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "姜味",
+      "清爽"
+    ]
+  },
+  {
+    "id": "caipirinha",
+    "name": "凯匹林纳",
+    "nameEn": "Caipirinha",
+    "image": "caipirinha.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "酸味",
+      "清爽",
+      "草本",
+      "甜味"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "卡沙萨朗姆酒",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠",
+        "amount": "1",
+        "unit": "个"
+      },
+      {
+        "name": "白砂糖",
+        "amount": "2",
+        "unit": "茶匙"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "将青柠切块放入杯中",
+      "加入白砂糖",
+      "捣压青柠释放汁液",
+      "加入卡沙萨朗姆酒",
+      "加碎冰搅拌"
+    ],
+    "history": "凯匹林纳是巴西的国酒。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "巴西",
+      "清爽",
+      "热带"
+    ]
+  },
+  {
+    "id": "dark-n-stormy",
+    "name": "暗黑风暴",
+    "nameEn": "Dark n Stormy",
+    "image": "dark-n-stormy.jpg",
+    "category": "热带",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "姜味",
+      "甜味",
+      "清爽"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "深色朗姆酒",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "100",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入深色朗姆酒",
+      "加入青柠汁",
+      "加满干姜水",
+      "轻轻搅拌",
+      "用青柠片装饰"
+    ],
+    "history": "暗黑风暴诞生于百慕大的Gosling's朗姆酒公司。",
+    "difficulty": "简单",
+    "tags": [
+      "百慕大",
+      "姜味",
+      "热带",
+      "清爽"
+    ]
+  },
+  {
+    "id": "planters-punch",
+    "name": "种植者潘趣",
+    "nameEn": "Planter's Punch",
+    "image": "planters-punch.jpg",
+    "category": "热带",
+    "glassType": "高球杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "果味",
+      "酸味",
+      "甜味",
+      "浓郁"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "深色朗姆酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨橙汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨菠萝汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "柠檬汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙片，菠萝块，樱桃",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入高球杯",
+      "用水果装饰"
+    ],
+    "history": "种植者潘趣诞生于牙买加的种植园。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "牙买加",
+      "热带",
+      "果味"
+    ]
+  },
+  {
+    "id": "mai-tai",
+    "name": "迈泰",
+    "nameEn": "Mai Tai",
+    "image": "mai-tai.jpg",
+    "category": "热带",
+    "glassType": "古典杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "果味",
+      "酸味",
+      "甜味",
+      "浓郁"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "深色朗姆酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "橙利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "杏仁糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "薄荷枝，橙片",
+    "preparation": [
+      "将白朗姆酒、橙利口酒、杏仁糖浆和青柠汁加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入古典杯",
+      "加入深色朗姆酒使其下沉",
+      "用薄荷枝和橙片装饰"
+    ],
+    "history": "迈泰于1944年在加州Oakland的Trader Vic's餐厅创造。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "热带",
+      "派对",
+      "经典"
+    ]
+  },
+  {
+    "id": "zombie",
+    "name": "僵尸",
+    "nameEn": "Zombie",
+    "image": "zombie.jpg",
+    "category": "热带",
+    "glassType": "飓风杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "果味",
+      "酸味",
+      "甜味",
+      "浓郁"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "深色朗姆酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "金朗姆酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "菠萝汁",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "橙汁",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "薄荷枝，橙片，菠萝块",
+    "preparation": [
+      "将除高浓度朗姆酒外的所有材料加入调酒壶",
+      "加冰摇晃",
+      "倒入飓风杯",
+      "在最上层倒入高浓度朗姆酒",
+      "用薄荷枝和水果装饰"
+    ],
+    "history": "僵尸由Trader Vic's餐厅的创始人Victor Bergeron于1934年创造。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "热带",
+      "派对",
+      "烈性"
+    ]
+  },
+  {
+    "id": "singapore-sling",
+    "name": "新加坡司令",
+    "nameEn": "Singapore Sling",
+    "image": "singapore-sling.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "果味",
+      "酸味",
+      "清爽",
+      "复杂"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "樱桃白兰地",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "7",
+        "unit": "ml"
+      },
+      {
+        "name": "本尼迪克丁利口酒",
+        "amount": "7",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "菠萝汁",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "1-2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "樱桃，橙片，菠萝块",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入高球杯",
+      "加满冰块",
+      "用水果装饰"
+    ],
+    "history": "新加坡司令由华裔调酒师严文玉于1915年在新加坡莱佛士酒店创造。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "新加坡",
+      "经典",
+      "果味"
+    ]
+  },
+  {
+    "id": "aviation",
+    "name": "飞行",
+    "nameEn": "Aviation",
+    "image": "aviation.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "花香",
+      "清爽",
+      "酸味",
+      "草本"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "黑樱桃利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "樱桃",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入冰镇的笛形杯",
+      "用樱桃装饰"
+    ],
+    "history": "飞行鸡尾酒于1910年代由调酒师Hugo Ensslin在德国创造。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "德国",
+      "花香",
+      "优雅"
+    ]
+  },
+  {
+    "id": "bramble",
+    "name": "荆棘",
+    "nameEn": "Bramble",
+    "image": "bramble.jpg",
+    "category": "现代",
+    "glassType": "古典杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "果味",
+      "酸味",
+      "甜味",
+      "清爽"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "25",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "黑莓利口酒",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "黑莓，柠檬片",
+    "preparation": [
+      "将金酒、柠檬汁和糖浆加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入古典杯",
+      "在酒液上方缓缓倒入黑莓利口酒",
+      "用黑莓和柠檬片装饰"
+    ],
+    "history": "荆棘由伦敦Dick Bradsell于1980年代创造。",
+    "difficulty": "简单",
+    "tags": [
+      "英国",
+      "果味",
+      "现代经典",
+      "清爽"
+    ]
+  },
+  {
+    "id": "last-word",
+    "name": "最后一言",
+    "nameEn": "Last Word",
+    "image": "last-word.jpg",
+    "category": "现代",
+    "glassType": "马天尼杯",
+    "alcoholContent": 24,
+    "flavor": [
+      "草本",
+      "酸味",
+      "果味",
+      "复杂"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "绿查特酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "Maraschino利口酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "22",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠皮",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入冰镇的笛形杯",
+      "用青柠皮装饰"
+    ],
+    "history": "最后一言诞生于1920年代底特律的Detroit Athletic Club。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "现代经典",
+      "复杂"
+    ]
+  },
+  {
+    "id": "paper-plane",
+    "name": "纸飞机",
+    "nameEn": "Paper Plane",
+    "image": "paper-plane.jpg",
+    "category": "现代",
+    "glassType": "马天尼杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "酸味",
+      "果味",
+      "清爽",
+      "复杂"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "波本威士忌",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "阿佩罗利口酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "阿玛罗利口酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入笛形杯"
+    ],
+    "history": "纸飞机于2000年代由纽约Milk & Honey酒吧的调酒师Sam Ross创造。",
+    "difficulty": "简单",
+    "tags": [
+      "美国",
+      "现代经典",
+      "酸味",
+      "果味"
+    ]
+  },
+  {
+    "id": "penicillin",
+    "name": "青霉素",
+    "nameEn": "Penicillin",
+    "image": "penicillin.jpg",
+    "category": "现代",
+    "glassType": "古典杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "姜味",
+      "酸味",
+      "烟熏",
+      "清爽"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "苏格兰调和威士忌",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "艾雷岛威士忌",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "25",
+        "unit": "ml"
+      },
+      {
+        "name": "姜糖浆",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "蜂蜜糖浆",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "姜片，柠檬片",
+    "preparation": [
+      "将调和威士忌、柠檬汁、姜糖浆和蜂蜜糖浆加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入古典杯",
+      "在最上层加入艾雷岛威士忌",
+      "用姜片和柠檬片装饰"
+    ],
+    "history": "青霉素由纽约Milk & Honey酒吧的调酒师Sam Ross于2005年创造。",
+    "difficulty": "中等",
+    "tags": [
+      "美国",
+      "现代经典",
+      "姜味",
+      "烟熏"
+    ]
+  },
+  {
+    "id": "champagne-cocktail",
+    "name": "香槟鸡尾酒",
+    "nameEn": "Champagne Cocktail",
+    "image": "champagne-cocktail.jpg",
+    "category": "经典",
+    "glassType": "香槟杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "果味",
+      "香料",
+      "清爽",
+      "优雅"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "香槟",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "方糖",
+        "amount": "1",
+        "unit": "块"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2-3",
+        "unit": "滴"
+      },
+      {
+        "name": "干邑白兰地",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬皮，樱桃",
+    "preparation": [
+      "将方糖放入杯中",
+      "滴入苦精",
+      "加入干邑白兰地",
+      "加满香槟",
+      "用柠檬皮和樱桃装饰"
+    ],
+    "history": "香槟鸡尾酒是最古老的香槟鸡尾酒之一。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "法国",
+      "优雅",
+      "庆典"
+    ]
+  },
+  {
+    "id": "mimosa",
+    "name": "含羞草",
+    "nameEn": "Mimosa",
+    "image": "mimosa.jpg",
+    "category": "开胃酒",
+    "glassType": "香槟杯",
+    "alcoholContent": 8,
+    "flavor": [
+      "果味",
+      "清爽",
+      "酸甜",
+      "轻快"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "普罗赛克起泡酒",
+        "amount": "75",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨橙汁",
+        "amount": "75",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙片",
+    "preparation": [
+      "将香槟杯冰镇",
+      "倒入等量的橙汁和香槟",
+      "轻轻搅拌",
+      "用橙片装饰"
+    ],
+    "history": "含羞草于1920年代在巴黎Ritz酒店创造。",
+    "difficulty": "简单",
+    "tags": [
+      "法国",
+      "早午餐",
+      "清爽",
+      "简单"
+    ]
+  },
+  {
+    "id": "kir",
+    "name": "基尔",
+    "nameEn": "Kir",
+    "image": "kir.jpg",
+    "category": "开胃酒",
+    "glassType": "葡萄酒杯",
+    "alcoholContent": 10,
+    "flavor": [
+      "果味",
+      "清爽",
+      "微甜"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "勃艮第白葡萄酒",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "黑加仑利口酒",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "将黑加仑利口酒倒入酒杯",
+      "加入白葡萄酒",
+      "轻轻搅拌"
+    ],
+    "history": "基尔鸡尾酒以法国第戎市市长Félix Kir的名字命名。",
+    "difficulty": "简单",
+    "tags": [
+      "法国",
+      "开胃酒",
+      "简单",
+      "清爽"
+    ]
+  },
+  {
+    "id": "kir-royal",
+    "name": "皇家基尔",
+    "nameEn": "Kir Royal",
+    "image": "kir-royal.jpg",
+    "category": "开胃酒",
+    "glassType": "香槟杯",
+    "alcoholContent": 12,
+    "flavor": [
+      "果味",
+      "气泡",
+      "清爽",
+      "优雅"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "香槟",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "黑加仑利口酒",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬皮",
+    "preparation": [
+      "将黑加仑利口酒倒入香槟杯",
+      "加满香槟",
+      "用柠檬皮装饰"
+    ],
+    "history": "皇家基尔是基尔鸡尾酒的香槟版本。",
+    "difficulty": "简单",
+    "tags": [
+      "法国",
+      "庆典",
+      "优雅",
+      "气泡"
+    ]
+  },
+  {
+    "id": "americano",
+    "name": "美式咖啡",
+    "nameEn": "Americano",
+    "image": "americano.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "苦味",
+      "清爽",
+      "草本"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "金巴利",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "苏打水",
+        "amount": "适量",
+        "unit": ""
+      }
+    ],
+    "garnish": "橙片",
+    "preparation": [
+      "在古典杯中加入冰块",
+      "倒入金酒和金巴利",
+      "加满苏打水",
+      "用橙片装饰"
+    ],
+    "history": "美式咖啡诞生于1919年的意大利。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "意大利",
+      "开胃酒",
+      "清爽"
+    ]
+  },
+  {
+    "id": "hugo",
+    "name": "雨果",
+    "nameEn": "Hugo",
+    "image": "hugo.jpg",
+    "category": "开胃酒",
+    "glassType": "高球杯",
+    "alcoholContent": 10,
+    "flavor": [
+      "花香",
+      "清爽",
+      "气泡",
+      "草本"
+    ],
+    "baseSpirit": "葡萄酒",
+    "ingredients": [
+      {
+        "name": "普罗赛克起泡酒",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "接骨木花利口酒",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "苏打水",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "新鲜薄荷叶",
+        "amount": "6-8",
+        "unit": "片"
+      }
+    ],
+    "garnish": "薄荷枝，柠檬片",
+    "preparation": [
+      "在杯中加入薄荷叶",
+      "轻轻捣压释放香气",
+      "加入冰块",
+      "倒入普罗赛克和接骨木花利口酒",
+      "加苏打水",
+      "用薄荷枝和柠檬片装饰"
+    ],
+    "history": "雨果是德国/奥地利近年来最流行的鸡尾酒之一。",
+    "difficulty": "简单",
+    "tags": [
+      "德国",
+      "奥地利",
+      "花香",
+      "夏日",
+      "清爽"
+    ]
+  },
+  {
+    "id": "corpse-reviver",
+    "name": "尸体复活",
+    "nameEn": "Corpse Reviver",
+    "image": "corpse-reviver.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "柑橘",
+      "草本",
+      "复杂",
+      "酸味"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "白兰地",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "金巴利",
+        "amount": "22",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入笛形杯",
+      "用橙皮装饰"
+    ],
+    "history": "尸体系列鸡尾酒在19世纪非常流行。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "经典",
+      "柑橘",
+      "复杂"
+    ]
+  },
+  {
+    "id": "between-the-sheets",
+    "name": "床第之间",
+    "nameEn": "Between the Sheets",
+    "image": "between-the-sheets.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 28,
+    "flavor": [
+      "柑橘",
+      "甜味",
+      "复杂",
+      "浓郁"
+    ],
+    "baseSpirit": "白兰地",
+    "ingredients": [
+      {
+        "name": "白兰地",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "白朗姆酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬皮",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入笛形杯",
+      "用柠檬皮装饰"
+    ],
+    "history": "床第之间是Sidecar的变体，于1920年代在巴黎创造。",
+    "difficulty": "简单",
+    "tags": [
+      "法国",
+      "巴黎",
+      "经典",
+      "浓郁"
+    ]
+  },
+  {
+    "id": "tequila-sunrise",
+    "name": "日出",
+    "nameEn": "Tequila Sunrise",
+    "image": "tequila-sunrise.jpg",
+    "category": "热带",
+    "glassType": "高球杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "果味",
+      "酸味",
+      "清爽",
+      "美观"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "龙舌兰酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨橙汁",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙片，樱桃",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入龙舌兰酒和橙汁",
+      "轻轻搅拌",
+      "沿杯壁缓缓倒入石榴糖浆",
+      "用橙片和樱桃装饰"
+    ],
+    "history": "龙舌兰日出最早可追溯到1930年代的墨西哥。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "墨西哥",
+      "热带",
+      "美观"
+    ]
+  },
+  {
+    "id": "paloma",
+    "name": "帕洛玛",
+    "nameEn": "Paloma",
+    "image": "paloma.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "柑橘",
+      "清爽",
+      "气泡",
+      "果味"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "龙舌兰酒",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "西柚汁",
+        "amount": "80",
+        "unit": "ml"
+      },
+      {
+        "name": "苏打水",
+        "amount": "适量",
+        "unit": ""
+      },
+      {
+        "name": "盐",
+        "amount": "少许",
+        "unit": ""
+      }
+    ],
+    "garnish": "西柚片，青柠片",
+    "preparation": [
+      "在杯中加入冰块和盐",
+      "倒入龙舌兰酒",
+      "加入青柠汁和西柚汁",
+      "加满苏打水",
+      "轻轻搅拌",
+      "用西柚片和青柠片装饰"
+    ],
+    "history": "帕洛玛是墨西哥最受欢迎的龙舌兰鸡尾酒之一。",
+    "difficulty": "简单",
+    "tags": [
+      "墨西哥",
+      "清爽",
+      "气泡",
+      "经典"
+    ]
+  },
+  {
+    "id": "el-diablo",
+    "name": "恶魔",
+    "nameEn": "El Diablo",
+    "image": "el-diablo.jpg",
+    "category": "热带",
+    "glassType": "高球杯",
+    "alcoholContent": 16,
+    "flavor": [
+      "姜味",
+      "果味",
+      "气泡",
+      "酸甜"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "龙舌兰酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "黑加仑利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "90",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "将龙舌兰酒、黑加仑利口酒和青柠汁加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入高球杯",
+      "加满干姜水",
+      "用青柠片装饰"
+    ],
+    "history": "El Diablo是1930年代墨西哥的经典鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "墨西哥",
+      "热带",
+      "姜味",
+      "气泡"
+    ]
+  },
+  {
+    "id": "mexican-mule",
+    "name": "墨西哥骡子",
+    "nameEn": "Mexican Mule",
+    "image": "mexican-mule.jpg",
+    "category": "经典",
+    "glassType": "铜杯",
+    "alcoholContent": 16,
+    "flavor": [
+      "姜味",
+      "清爽",
+      "酸味",
+      "气泡"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "龙舌兰酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "120",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片，薄荷枝",
+    "preparation": [
+      "在铜杯中加入冰块",
+      "倒入龙舌兰酒和青柠汁",
+      "加满干姜水",
+      "轻轻搅拌",
+      "用青柠片和薄荷枝装饰"
+    ],
+    "history": "墨西哥骡子是莫斯科骡子的龙舌兰版本。",
+    "difficulty": "简单",
+    "tags": [
+      "墨西哥",
+      "姜味",
+      "清爽",
+      "铜杯"
+    ]
+  },
+  {
+    "id": "mezcal-mule",
+    "name": "梅斯卡尔骡子",
+    "nameEn": "Mezcal Mule",
+    "image": "mezcal-mule.jpg",
+    "category": "经典",
+    "glassType": "铜杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "烟熏",
+      "姜味",
+      "清爽",
+      "复杂"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "梅斯卡尔",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "120",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "在铜杯中加入冰块",
+      "倒入梅斯卡尔和青柠汁",
+      "加满干姜水",
+      "轻轻搅拌",
+      "用青柠片装饰"
+    ],
+    "history": "梅斯卡尔骡子将梅斯卡尔的烟熏风味与姜汁结合。",
+    "difficulty": "简单",
+    "tags": [
+      "墨西哥",
+      "烟熏",
+      "姜味",
+      "进阶"
+    ]
+  },
+  {
+    "id": "b-52",
+    "name": "B-52",
+    "nameEn": "B-52",
+    "image": "b-52.jpg",
+    "category": "SHOT",
+    "glassType": "利口酒杯",
+    "alcoholContent": 25,
+    "flavor": [
+      "咖啡",
+      "奶油",
+      "甜味",
+      "分层"
+    ],
+    "baseSpirit": "利口酒",
+    "ingredients": [
+      {
+        "name": "咖啡利口酒",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "百利甜酒",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "橙皮利口酒",
+        "amount": "20",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "先倒入咖啡利口酒",
+      "用勺子背抵住杯壁，缓缓倒入百利甜酒",
+      "同样方法倒入橙皮利口酒",
+      "点燃最上层饮用（可选）"
+    ],
+    "history": "B-52轰炸机是1970年代的经典鸡尾酒。",
+    "difficulty": "中等",
+    "tags": [
+      "派对",
+      "分层",
+      "咖啡",
+      "经典"
+    ]
+  },
+  {
+    "id": "jagerbomb",
+    "name": "野格炸弹",
+    "nameEn": "Jägerbomb",
+    "image": "jagerbomb.jpg",
+    "category": "SHOT",
+    "glassType": "岩石杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "草药",
+      "能量",
+      "刺激"
+    ],
+    "baseSpirit": "利口酒",
+    "ingredients": [
+      {
+        "name": "野格利口酒",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "能量饮料",
+        "amount": "100",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "在杯中加入冰块",
+      "倒入能量饮料",
+      "将装有野格利口酒的小杯放入",
+      "饮用时将野格酒倒入饮料中一饮而尽"
+    ],
+    "history": "野格炸弹于2000年代在欧洲派对场景中流行。",
+    "difficulty": "简单",
+    "tags": [
+      "派对",
+      "能量",
+      "德国",
+      "激烈"
+    ]
+  },
+  {
+    "id": "lemon-drop",
+    "name": "柠檬drop",
+    "nameEn": "Lemon Drop",
+    "image": "lemon-drop.jpg",
+    "category": "SHOT",
+    "glassType": "马天尼杯",
+    "alcoholContent": 30,
+    "flavor": [
+      "酸味",
+      "柑橘",
+      "甜味",
+      "清爽"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "柠檬伏特加",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "糖边，柠檬片",
+    "preparation": [
+      "将杯口沾湿，裹上糖边",
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入笛形杯",
+      "用柠檬片装饰"
+    ],
+    "history": "柠檬drop是1970年代在美国创造的经典鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "派对",
+      "酸味",
+      "柑橘",
+      "清爽"
+    ]
+  },
+  {
+    "id": "kamikaze",
+    "name": "神风特攻队",
+    "nameEn": "Kamikaze",
+    "image": "kamikaze.jpg",
+    "category": "SHOT",
+    "glassType": "马天尼杯",
+    "alcoholContent": 28,
+    "flavor": [
+      "酸味",
+      "柑橘",
+      "清爽",
+      "刺激"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入笛形杯",
+      "用青柠片装饰"
+    ],
+    "history": "神风特攻队是1970年代的经典鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "派对",
+      "柑橘",
+      "SHOT",
+      "经典"
+    ]
+  },
+  {
+    "id": "blue-lagoon",
+    "name": "蓝泻湖",
+    "nameEn": "Blue Lagoon",
+    "image": "blue-lagoon.jpg",
+    "category": "SHOT",
+    "glassType": "利口酒杯",
+    "alcoholContent": 25,
+    "flavor": [
+      "柑橘",
+      "甜味",
+      "蓝色",
+      "分层"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "蓝橙利口酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "柠檬汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬片，樱桃",
+    "preparation": [
+      "将伏特加和蓝橙利口酒加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入杯中",
+      "用柠檬片和樱桃装饰"
+    ],
+    "history": "蓝泻湖于1960年代创造。",
+    "difficulty": "简单",
+    "tags": [
+      "派对",
+      "蓝色",
+      "柑橘",
+      "美观"
+    ]
+  },
+  {
+    "id": "cuba-libre",
+    "name": "自由古巴",
+    "nameEn": "Cuba Libre",
+    "image": "cuba-libre.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "果味",
+      "清爽",
+      "气泡",
+      "简单"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "可口可乐",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "青柠汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入朗姆酒",
+      "加入青柠汁",
+      "加满可口可乐",
+      "轻轻搅拌",
+      "用青柠片装饰"
+    ],
+    "history": "自由古巴诞生于1900年的古巴。",
+    "difficulty": "简单",
+    "tags": [
+      "古巴",
+      "经典",
+      "可乐",
+      "派对"
+    ]
+  },
+  {
+    "id": "long-island-iced-tea",
+    "name": "长岛冰茶",
+    "nameEn": "Long Island Iced Tea",
+    "image": "long-island-iced-tea.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 25,
+    "flavor": [
+      "复杂",
+      "柑橘",
+      "甜味",
+      "浓郁"
+    ],
+    "baseSpirit": "多重基酒",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "金酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "白朗姆酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "龙舌兰酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "橙利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "25",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "可口可乐",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬片，吸管",
+    "preparation": [
+      "将除可口可乐外的所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入高球杯",
+      "加满可口可乐",
+      "用柠檬片装饰，配吸管"
+    ],
+    "history": "长岛冰茶于1970年代在美国长岛创建。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典",
+      "烈性",
+      "派对"
+    ]
+  },
+  {
+    "id": "tequila-old-fashioned",
+    "name": "龙舌兰古典",
+    "nameEn": "Tequila Old Fashioned",
+    "image": "tequila-old-fashioned.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 28,
+    "flavor": [
+      "香料",
+      "烟熏",
+      "甜味",
+      "复杂"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "龙舌兰酒（静置）",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "龙舌兰糖浆",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2-3",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将龙舌兰糖浆和苦精放入杯中",
+      "加少许水",
+      "加入龙舌兰酒",
+      "加入大块方冰",
+      "搅拌15-20次",
+      "用橙皮装饰"
+    ],
+    "history": "龙舌兰古典是经典古典鸡尾酒的龙舌兰版本。",
+    "difficulty": "简单",
+    "tags": [
+      "墨西哥",
+      "经典",
+      "烟熏",
+      "香料"
+    ]
+  },
+  {
+    "id": "oaxaca-old-fashioned",
+    "name": "瓦哈卡古典",
+    "nameEn": "Oaxaca Old Fashioned",
+    "image": "oaxaca-old-fashioned.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 28,
+    "flavor": [
+      "烟熏",
+      "香料",
+      "甜味",
+      "复杂"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "梅斯卡尔",
+        "amount": "35",
+        "unit": "ml"
+      },
+      {
+        "name": "龙舌兰酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "龙舌兰糖浆",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2",
+        "unit": "滴"
+      },
+      {
+        "name": "橙皮",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将梅斯卡尔、龙舌兰、糖浆和苦精加入调酒杯",
+      "加冰搅拌",
+      "过滤倒入古典杯",
+      "用橙皮装饰"
+    ],
+    "history": "瓦哈卡古典是现代调酒师对经典古典的创新演绎。",
+    "difficulty": "中等",
+    "tags": [
+      "墨西哥",
+      "现代经典",
+      "烟熏",
+      "复杂"
+    ]
+  },
+  {
+    "id": "naked-and-famous",
+    "name": "赤身裸体",
+    "nameEn": "Naked and Famous",
+    "image": "naked-and-famous.jpg",
+    "category": "现代",
+    "glassType": "马天尼杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "草本",
+      "果味",
+      "酸味",
+      "平衡"
+    ],
+    "baseSpirit": "龙舌兰",
+    "ingredients": [
+      {
+        "name": "梅斯卡尔",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "黄查特酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "阿佩罗利口酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "22",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃",
+      "过滤倒入笛形杯"
+    ],
+    "history": "赤身裸体由纽约Death & Co酒吧的调酒师于2010年代创造。",
+    "difficulty": "简单",
+    "tags": [
+      "美国",
+      "现代经典",
+      "Equal Parts",
+      "平衡"
+    ]
+  }
+]
