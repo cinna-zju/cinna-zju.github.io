@@ -442,6 +442,16 @@ const darkenColor = (color, percent) => {
   return '#' + (0x1000000 + R * 0x10000 + G * 0x100 + B).toString(16).slice(1)
 }
 
+const getStepAction = (step) => {
+  const text = step.toLowerCase()
+  if (text.includes('倒入') || text.includes('加入') || text.includes('添加')) return 'pour'
+  if (text.includes('摇晃') || text.includes('摇和')) return 'shake'
+  if (text.includes('搅拌') || text.includes('搅匀')) return 'stir'
+  if (text.includes('过滤') || text.includes('倒入杯中')) return 'pour'
+  if (text.includes('装饰')) return 'garnish'
+  return 'default'
+}
+
 // 生成占位图
 const generatePlaceholder = (cocktail) => {
   const canvas = document.createElement('canvas')
@@ -837,10 +847,16 @@ const showCocktailDetail = (cocktail) => {
     elements.detailGarnish.textContent = cocktail.garnish
   }
 
-  // 设置调制步骤
+  // 设置调制步骤（带动画）
   if (elements.detailSteps) {
     elements.detailSteps.innerHTML = cocktail.preparation
-      .map(step => `<li>${step}</li>`)
+      .map((step, index) => {
+        const actionType = getStepAction(step)
+        return `<li class="step-item" style="animation-delay: ${index * 0.1}s">
+          <span class="step-icon step-${actionType}"></span>
+          <span class="step-text">${step}</span>
+        </li>`
+      })
       .join('')
   }
 
@@ -856,6 +872,14 @@ const showCocktailDetail = (cocktail) => {
     elements.modal.setAttribute('open', '')
   }
   document.body.style.overflow = 'hidden'
+
+  // 定位到弹窗头部（延迟执行确保DOM渲染完成）
+  requestAnimationFrame(() => {
+    const content = document.querySelector('.detail-content')
+    if (content) {
+      content.scrollTop = 0
+    }
+  })
 }
 
 // 关闭详情模态框
