@@ -3,6 +3,25 @@
 // 常量定义
 const COCKTAILS_URL = './data/cocktails.json'
 const BASE_SPIRITS = ['伏特加', '金酒', '朗姆酒', '威士忌', '龙舌兰', '白兰地', '利口酒']
+
+// 酒保问候语
+const GREETINGS = [
+  '今晚想喝点什么？',
+  '来杯清醒还是糊涂？',
+  '人生苦短，先干为敬',
+  '调酒如人生，苦涩后是回甘',
+  '您来了，老位置？',
+  '今晚微醺，刚刚好',
+  '这杯我请，下杯你付',
+  '酒是粮食精，越喝越年轻',
+  '一杯敬明天，一杯敬过往',
+  '喝到位了，烦恼就退位了',
+  '来，走一个？',
+  '今天适合小酌一杯',
+  '喝完这杯，还有三杯',
+  '好酒不怕巷子深',
+  '酒逢知己千杯少'
+]
 const FLAVOR_TAGS = ['清爽', '果味', '甜味', '酸味', '苦味', '香料', '奶油']
 const ALCOHOL_LEVELS = [
   { label: '低', min: 0, max: 15 },
@@ -736,12 +755,32 @@ const elements = {
   animalGrid: document.querySelector('#animal-grid'),
   colorGrid: document.querySelector('#color-grid'),
   recommendBtn: document.querySelector('#recommend-btn'),
-  recommendResult: document.querySelector('#recommend-result')
+  recommendResult: document.querySelector('#recommend-result'),
+  animationCanvas: document.querySelector('#animation-canvas'),
+  progressFill: document.querySelector('#progress-fill'),
+  stepIndicator: document.querySelector('#step-indicator'),
+  animPrev: document.querySelector('#anim-prev'),
+  animPlay: document.querySelector('#anim-play'),
+  animNext: document.querySelector('#anim-next'),
+  playIcon: document.querySelector('#play-icon'),
+  pauseIcon: document.querySelector('#pause-icon'),
+  greetingText: document.querySelector('#greeting-text')
 }
 
 // 推荐状态
 let selectedAnimal = null
 let selectedColor = null
+
+// 动画状态
+let animationState = {
+  isPlaying: false,
+  isAutoPlay: false,
+  currentStep: 0,
+  totalSteps: 0,
+  animationFrame: null,
+  cocktail: null,
+  animationProgress: 0
+}
 
 // 数据加载
 const loadCocktails = async () => {
@@ -1036,6 +1075,9 @@ const showCocktailDetail = (cocktail) => {
   }
   document.body.style.overflow = 'hidden'
 
+  // 初始化动画播放器
+  initAnimationPlayer(cocktail)
+
   // 定位到弹窗头部（延迟执行确保DOM渲染完成）
   requestAnimationFrame(() => {
     const content = document.querySelector('.detail-content')
@@ -1234,6 +1276,295 @@ const closeRecommendModal = () => {
   document.body.style.overflow = ''
 }
 
+// ==========================================
+// 调酒动画功能
+// ==========================================
+
+// 动画类型配置
+const ANIMATION_CONFIG = {
+  pour: { duration: 1500, name: '倒入' },
+  shake: { duration: 1200, name: '摇晃' },
+  stir: { duration: 1500, name: '搅拌' },
+  ice: { duration: 800, name: '加冰' },
+  garnish: { duration: 800, name: '装饰' },
+  default: { duration: 1000, name: '操作' }
+}
+
+// 初始化动画播放器
+const initAnimationPlayer = (cocktail) => {
+  animationState.cocktail = cocktail
+  animationState.currentStep = 0
+  animationState.totalSteps = cocktail.preparation.length
+  animationState.isPlaying = false
+  animationState.isAutoPlay = false
+  animationState.animationProgress = 0
+
+  updateAnimationUI()
+  drawAnimationFrame(0)
+}
+
+// 更新动画 UI
+const updateAnimationUI = () => {
+  const { currentStep, totalSteps, isPlaying } = animationState
+  
+  // 更新进度条
+  const progress = totalSteps > 0 ? (currentStep / totalSteps) * 100 : 0
+  if (elements.progressFill) {
+    elements.progressFill.style.width = `${progress}%`
+  }
+  
+  // 更新步骤指示器
+  if (elements.stepIndicator) {
+    elements.stepIndicator.textContent = `步骤 ${currentStep}/${totalSteps}`
+  }
+  
+  // 更新按钮状态
+  if (elements.animPrev) {
+    elements.animPrev.disabled = currentStep <= 0
+  }
+  if (elements.animNext) {
+    elements.animNext.disabled = currentStep >= totalSteps
+  }
+  
+  // 更新播放/暂停图标
+  if (elements.playIcon && elements.pauseIcon) {
+    elements.playIcon.style.display = isPlaying ? 'none' : 'block'
+    elements.pauseIcon.style.display = isPlaying ? 'block' : 'none'
+  }
+  
+  // 更新播放按钮动画
+  if (elements.animPlay) {
+    elements.animPlay.classList.toggle('playing', isPlaying)
+  }
+}
+
+// 绘制动画帧
+const drawAnimationFrame = (stepIndex) => {
+  const canvas = elements.animationCanvas
+  if (!canvas) return
+  
+  const ctx = canvas.getContext('2d')
+  const { cocktail } = animationState
+  if (!cocktail) return
+  
+  // 清空画布
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  
+  // 获取杯子信息
+  const glassInfo = GLASS_TYPES[cocktail.glassType] || GLASS_TYPES['古典杯']
+  const liquidColor = SPIRIT_COLORS[cocktail.baseSpirit] || '#4A4A4A'
+  
+  // 绘制位置
+  const glassX = canvas.width / 2
+  const glassY = canvas.height / 2 + 20
+  
+  // 根据当前步骤绘制不同的动画状态
+  drawCocktailStep(ctx, glassX, glassY, glassInfo, liquidColor, stepIndex, cocktail)
+}
+
+// 绘制调酒步骤
+const drawCocktailStep = (ctx, x, y, glassInfo, liquidColor, stepIndex, cocktail) => {
+  const steps = cocktail.preparation
+  
+  // 绘制背景
+  ctx.fillStyle = '#212121'
+  ctx.fillRect(0, 0, 300, 250)
+  
+  // 绘制杯子（始终显示）
+  drawGlass(ctx, x, y, glassInfo, liquidColor)
+  
+  // 根据步骤绘制不同效果
+  if (stepIndex > 0) {
+    const currentStepText = steps[stepIndex - 1] || ''
+    const actionType = getStepAction(currentStepText)
+    
+    // 绘制步骤图标
+    drawStepIcon(ctx, x, y - 80, actionType)
+    
+    // 绘制步骤文字
+    ctx.fillStyle = '#FFFFFF'
+    ctx.font = '12px -apple-system, sans-serif'
+    ctx.textAlign = 'center'
+    ctx.textBaseline = 'middle'
+    
+    // 分行显示步骤文字
+    const maxWidth = 260
+    const words = currentStepText.split('')
+    let line = ''
+    let lineY = y + glassInfo.height / 2 + 30
+    
+    for (let i = 0; i < words.length; i++) {
+      const testLine = line + words[i]
+      const metrics = ctx.measureText(testLine)
+      if (metrics.width > maxWidth && i > 0) {
+        ctx.fillText(line, x, lineY)
+        line = words[i]
+        lineY += 16
+      } else {
+        line = testLine
+      }
+    }
+    ctx.fillText(line, x, lineY)
+  } else {
+    // 初始状态：显示"点击开始"
+    ctx.fillStyle = '#9E9E9E'
+    ctx.font = '14px -apple-system, sans-serif'
+    ctx.textAlign = 'center'
+    ctx.fillText('点击播放开始调酒动画', x, y + glassInfo.height / 2 + 40)
+  }
+}
+
+// 绘制步骤图标
+const drawStepIcon = (ctx, x, y, actionType) => {
+  ctx.save()
+  ctx.fillStyle = '#FFC107'
+  ctx.strokeStyle = '#FFC107'
+  ctx.lineWidth = 2
+  
+  switch (actionType) {
+    case 'pour':
+      // 倒入图标
+      ctx.beginPath()
+      ctx.moveTo(x - 15, y)
+      ctx.lineTo(x, y + 20)
+      ctx.lineTo(x + 15, y)
+      ctx.stroke()
+      ctx.beginPath()
+      ctx.moveTo(x, y + 20)
+      ctx.lineTo(x, y + 30)
+      ctx.stroke()
+      break
+    case 'shake':
+      // 摇晃图标
+      ctx.beginPath()
+      ctx.rect(x - 12, y, 24, 30)
+      ctx.stroke()
+      ctx.beginPath()
+      ctx.moveTo(x - 8, y + 10)
+      ctx.lineTo(x + 8, y + 10)
+      ctx.stroke()
+      break
+    case 'stir':
+      // 搅拌图标
+      ctx.beginPath()
+      ctx.arc(x, y + 15, 15, 0, Math.PI * 2)
+      ctx.stroke()
+      ctx.beginPath()
+      ctx.moveTo(x, y)
+      ctx.lineTo(x, y + 30)
+      ctx.stroke()
+      break
+    case 'garnish':
+      // 装饰图标
+      ctx.beginPath()
+      ctx.arc(x, y + 15, 12, 0, Math.PI * 2)
+      ctx.stroke()
+      ctx.beginPath()
+      ctx.arc(x, y + 15, 5, 0, Math.PI * 2)
+      ctx.fill()
+      break
+    default:
+      // 默认图标
+      ctx.beginPath()
+      ctx.arc(x, y + 15, 15, 0, Math.PI * 2)
+      ctx.stroke()
+      ctx.beginPath()
+      ctx.moveTo(x - 8, y + 15)
+      ctx.lineTo(x + 8, y + 15)
+      ctx.moveTo(x, y + 7)
+      ctx.lineTo(x, y + 23)
+      ctx.stroke()
+  }
+  
+  ctx.restore()
+}
+
+// 播放动画步骤
+const playAnimationStep = async () => {
+  if (!animationState.isPlaying) return
+  
+  const { currentStep, totalSteps, cocktail } = animationState
+  
+  if (currentStep >= totalSteps) {
+    // 动画完成
+    animationState.isPlaying = false
+    animationState.isAutoPlay = false
+    updateAnimationUI()
+    return
+  }
+  
+  // 获取当前步骤类型
+  const stepText = cocktail.preparation[currentStep]
+  const actionType = getStepAction(stepText)
+  const config = ANIMATION_CONFIG[actionType] || ANIMATION_CONFIG.default
+  
+  // 绘制当前步骤
+  drawAnimationFrame(currentStep + 1)
+  
+  // 更新状态
+  animationState.currentStep++
+  updateAnimationUI()
+  
+  // 等待动画完成
+  await new Promise(resolve => setTimeout(resolve, config.duration + 500))
+  
+  // 如果是自动播放模式，继续下一步
+  if (animationState.isAutoPlay && animationState.isPlaying) {
+    playAnimationStep()
+  } else {
+    animationState.isPlaying = false
+    updateAnimationUI()
+  }
+}
+
+// 开始自动播放
+const startAutoPlay = () => {
+  animationState.isAutoPlay = true
+  animationState.isPlaying = true
+  updateAnimationUI()
+  playAnimationStep()
+}
+
+// 暂停动画
+const pauseAnimation = () => {
+  animationState.isPlaying = false
+  animationState.isAutoPlay = false
+  updateAnimationUI()
+}
+
+// 下一步
+const nextStep = () => {
+  if (animationState.currentStep < animationState.totalSteps) {
+    animationState.isPlaying = true
+    animationState.isAutoPlay = false
+    updateAnimationUI()
+    playAnimationStep()
+  }
+}
+
+// 上一步
+const prevStep = () => {
+  if (animationState.currentStep > 0) {
+    animationState.currentStep--
+    drawAnimationFrame(animationState.currentStep)
+    updateAnimationUI()
+  }
+}
+
+// 切换播放/暂停
+const togglePlay = () => {
+  if (animationState.isPlaying) {
+    pauseAnimation()
+  } else {
+    if (animationState.currentStep >= animationState.totalSteps) {
+      // 重新开始
+      animationState.currentStep = 0
+      drawAnimationFrame(0)
+    }
+    startAutoPlay()
+  }
+}
+
 // 初始化事件监听
 const initEventListeners = () => {
   // 搜索输入
@@ -1325,6 +1656,35 @@ const initEventListeners = () => {
   if (elements.recommendBtn) {
     elements.recommendBtn.addEventListener('click', handleRecommend)
   }
+
+  // 动画播放器按钮
+  if (elements.animPlay) {
+    elements.animPlay.addEventListener('click', togglePlay)
+  }
+  if (elements.animPrev) {
+    elements.animPrev.addEventListener('click', prevStep)
+  }
+  if (elements.animNext) {
+    elements.animNext.addEventListener('click', nextStep)
+  }
+}
+
+// 随机切换问候语
+const changeGreeting = () => {
+  const bubble = document.querySelector('.speech-bubble')
+  if (!bubble || !elements.greetingText) return
+  
+  // 添加淡出动画
+  bubble.classList.add('fade-out')
+  
+  setTimeout(() => {
+    // 选择随机问候语
+    const randomIndex = Math.floor(Math.random() * GREETINGS.length)
+    elements.greetingText.textContent = GREETINGS[randomIndex]
+    
+    // 移除淡出，触发淡入
+    bubble.classList.remove('fade-out')
+  }, 300)
 }
 
 // 应用初始化
@@ -1339,6 +1699,9 @@ const initApp = async () => {
 
   // 初始化事件监听
   initEventListeners()
+  
+  // 启动问候语定时切换（每 6 秒）
+  setInterval(changeGreeting, 6000)
 }
 
 // DOM加载完成后初始化

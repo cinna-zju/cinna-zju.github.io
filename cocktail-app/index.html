@@ -32,6 +32,22 @@
         </svg>
         Y's Bar
       </h1>
+      <div class="bartender-area">
+        <svg class="bartender-icon" width="32" height="40" viewBox="0 0 32 40" fill="none" stroke="#FFC107" stroke-width="1.5">
+          <!-- 调酒壶 -->
+          <path d="M8 8 L12 2 L20 2 L24 8" stroke-linecap="round"/>
+          <path d="M8 8 L7 14 L25 14 L24 8" stroke-linecap="round"/>
+          <path d="M10 14 L12 20 L20 20 L22 14"/>
+          <path d="M16 20 L16 24"/>
+          <!-- 酒保身体轮廓 -->
+          <circle cx="16" cy="30" r="5" stroke-width="1.5"/>
+          <path d="M11 32 Q8 36 6 40" stroke-linecap="round"/>
+          <path d="M21 32 Q24 36 26 40" stroke-linecap="round"/>
+        </svg>
+        <div class="speech-bubble">
+          <span id="greeting-text">今晚想喝点什么？</span>
+        </div>
+      </div>
       <div class="search-wrapper">
         <input
           type="search"
@@ -223,6 +239,42 @@
       <section class="detail-section">
         <h3 class="detail-section-title">调制步骤</h3>
         <ol id="detail-steps" class="detail-steps"></ol>
+      </section>
+
+      <section class="detail-section animation-section">
+        <h3 class="detail-section-title">调酒动画</h3>
+        <div class="animation-player">
+          <div class="animation-canvas-wrapper">
+            <canvas id="animation-canvas" width="300" height="250"></canvas>
+          </div>
+          <div class="animation-progress">
+            <div class="progress-bar">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <span id="step-indicator" class="step-indicator">步骤 0/0</span>
+          </div>
+          <div class="animation-controls">
+            <button id="anim-prev" class="btn btn-secondary anim-btn" disabled>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button id="anim-play" class="btn btn-primary anim-btn anim-play-btn">
+              <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                <rect x="6" y="4" width="4" height="16"></rect>
+                <rect x="14" y="4" width="4" height="16"></rect>
+              </svg>
+            </button>
+            <button id="anim-next" class="btn btn-secondary anim-btn" disabled>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="detail-section">
