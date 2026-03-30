@@ -10,6 +10,158 @@ const ALCOHOL_LEVELS = [
   { label: '高', min: 25, max: 100 }
 ]
 
+// 动物-鸡尾酒特性映射
+const ANIMAL_TRAITS = {
+  lion: {
+    emoji: '🦁',
+    name: '狮子',
+    spirits: ['威士忌'],
+    flavors: ['强劲', '香料', '苦味'],
+    alcoholLevel: 'high',
+    reason: '狮子代表力量与威严，这款鸡尾酒强劲有力，如同狮王般令人敬畏'
+  },
+  rabbit: {
+    emoji: '🐰',
+    name: '兔子',
+    spirits: ['金酒'],
+    flavors: ['清爽', '果味', '草本'],
+    alcoholLevel: 'low',
+    reason: '兔子活泼可爱，这款鸡尾酒清新爽口，如同小兔子般轻盈灵动'
+  },
+  fox: {
+    emoji: '🦊',
+    name: '狐狸',
+    spirits: ['龙舌兰'],
+    flavors: ['酸味', '清爽', '果味'],
+    alcoholLevel: 'medium',
+    reason: '狐狸机智狡猾，这款鸡尾酒层次丰富，如同狐狸般充满变化'
+  },
+  bear: {
+    emoji: '🐻',
+    name: '熊',
+    spirits: ['朗姆酒'],
+    flavors: ['甜味', '果味', '奶油'],
+    alcoholLevel: 'medium',
+    reason: '熊代表沉稳与温暖，这款鸡尾酒圆润饱满，如同熊般令人安心'
+  },
+  owl: {
+    emoji: '🦉',
+    name: '猫头鹰',
+    spirits: ['金酒'],
+    flavors: ['草本', '苦味', '清爽'],
+    alcoholLevel: 'medium',
+    reason: '猫头鹰象征智慧，这款鸡尾酒经典优雅，如同猫头鹰般深邃'
+  },
+  dolphin: {
+    emoji: '🐬',
+    name: '海豚',
+    spirits: ['金酒', '伏特加', '葡萄酒'],
+    flavors: ['清爽', '气泡', '果味'],
+    alcoholLevel: 'low',
+    reason: '海豚活泼快乐，这款鸡尾酒充满气泡，如同海豚般欢快跳跃'
+  },
+  butterfly: {
+    emoji: '🦋',
+    name: '蝴蝶',
+    spirits: ['葡萄酒'],
+    flavors: ['花香', '果味', '清爽'],
+    alcoholLevel: 'low',
+    reason: '蝴蝶优雅美丽，这款鸡尾酒芬芳迷人，如同蝴蝶般翩翩起舞'
+  },
+  snake: {
+    emoji: '🐍',
+    name: '蛇',
+    spirits: ['威士忌', '白兰地'],
+    flavors: ['苦味', '香料', '复杂'],
+    alcoholLevel: 'high',
+    reason: '蛇神秘莫测，这款鸡尾酒复杂深邃，如同蛇般令人着迷'
+  },
+  eagle: {
+    emoji: '🦅',
+    name: '鹰',
+    spirits: ['威士忌'],
+    flavors: ['强劲', '苦味', '烟熏'],
+    alcoholLevel: 'high',
+    reason: '鹰代表自由与力量，这款鸡尾酒烈性十足，如同鹰般翱翔天际'
+  },
+  panda: {
+    emoji: '🐼',
+    name: '熊猫',
+    spirits: ['伏特加'],
+    flavors: ['甜味', '奶油', '咖啡'],
+    alcoholLevel: 'low',
+    reason: '熊猫可爱温顺，这款鸡尾酒甜美柔和，如同熊猫般惹人喜爱'
+  },
+  wolf: {
+    emoji: '🐺',
+    name: '狼',
+    spirits: ['威士忌'],
+    flavors: ['烟熏', '香料', '强劲'],
+    alcoholLevel: 'high',
+    reason: '狼野性不羁，这款鸡尾酒烟熏浓烈，如同狼般充满野性魅力'
+  },
+  hummingbird: {
+    emoji: '🐦',
+    name: '蜂鸟',
+    spirits: ['朗姆酒', '金酒'],
+    flavors: ['果味', '甜味', '清爽'],
+    alcoholLevel: 'low',
+    reason: '蜂鸟灵巧敏捷，这款鸡尾酒轻盈甜美，如同蜂鸟般充满活力'
+  }
+}
+
+// 颜色-鸡尾酒视觉映射
+const COLOR_TRAITS = {
+  red: {
+    emoji: '🔴',
+    name: '红色',
+    keywords: ['蔓越莓', '石榴', '樱桃', '红色'],
+    reason: '红色热情奔放'
+  },
+  orange: {
+    emoji: '🟠',
+    name: '橙色',
+    keywords: ['橙汁', '橙', '橙皮', '橙利口酒', '阿佩罗'],
+    reason: '橙色温暖活力'
+  },
+  yellow: {
+    emoji: '🟡',
+    name: '黄色',
+    keywords: ['柠檬', '金酒', '菠萝', '黄色', '金黄'],
+    reason: '黄色明亮欢快'
+  },
+  green: {
+    emoji: '🟢',
+    name: '绿色',
+    keywords: ['薄荷', '青柠', '绿色', '草本', '查特酒'],
+    reason: '绿色清新自然'
+  },
+  blue: {
+    emoji: '🔵',
+    name: '蓝色',
+    keywords: ['蓝橙', '蓝色'],
+    reason: '蓝色深邃神秘'
+  },
+  purple: {
+    emoji: '🟣',
+    name: '紫色',
+    keywords: ['黑莓', '黑加仑', '紫色', '蓝莓'],
+    reason: '紫色优雅神秘'
+  },
+  white: {
+    emoji: '⚪',
+    name: '白色',
+    keywords: ['奶油', '伏特加', '白色', '椰浆', '牛奶'],
+    reason: '白色纯净高雅'
+  },
+  brown: {
+    emoji: '🟤',
+    name: '棕色',
+    keywords: ['咖啡', '威士忌', '棕色', '朗姆酒', '白兰地', '可乐'],
+    reason: '棕色沉稳温暖'
+  }
+}
+
 // 基酒对应颜色（用于占位图）
 const SPIRIT_COLORS = {
   '伏特加': '#B8C5D6',
@@ -577,8 +729,19 @@ const elements = {
   detailIngredients: document.querySelector('#detail-ingredients'),
   detailGarnish: document.querySelector('#detail-garnish'),
   detailSteps: document.querySelector('#detail-steps'),
-  detailHistory: document.querySelector('#detail-history')
+  detailHistory: document.querySelector('#detail-history'),
+  funRecommend: document.querySelector('#fun-recommend'),
+  recommendModal: document.querySelector('#recommend-modal'),
+  recommendClose: document.querySelector('#recommend-close'),
+  animalGrid: document.querySelector('#animal-grid'),
+  colorGrid: document.querySelector('#color-grid'),
+  recommendBtn: document.querySelector('#recommend-btn'),
+  recommendResult: document.querySelector('#recommend-result')
 }
+
+// 推荐状态
+let selectedAnimal = null
+let selectedColor = null
 
 // 数据加载
 const loadCocktails = async () => {
@@ -892,6 +1055,185 @@ const closeModal = () => {
   document.body.style.overflow = ''
 }
 
+// 推荐算法：计算鸡尾酒匹配分数
+const calculateMatchScore = (cocktail, animal, color) => {
+  let score = 0
+  const animalTrait = ANIMAL_TRAITS[animal]
+  const colorTrait = COLOR_TRAITS[color]
+
+  // 动物匹配（基酒）
+  if (animalTrait.spirits.includes(cocktail.baseSpirit)) {
+    score += 40
+  }
+
+  // 动物匹配（酒精度）
+  if (animalTrait.alcoholLevel === 'high' && cocktail.alcoholContent >= 25) {
+    score += 20
+  } else if (animalTrait.alcoholLevel === 'low' && cocktail.alcoholContent < 15) {
+    score += 20
+  } else if (animalTrait.alcoholLevel === 'medium' && cocktail.alcoholContent >= 15 && cocktail.alcoholContent < 25) {
+    score += 20
+  }
+
+  // 动物匹配（风味）
+  const flavorMatches = animalTrait.flavors.filter(f => cocktail.flavor.includes(f))
+  score += flavorMatches.length * 10
+
+  // 颜色匹配（配料名称）
+  const allIngredients = cocktail.ingredients.map(i => i.name).join(' ')
+  const garnishText = cocktail.garnish || ''
+  const allText = `${allIngredients} ${garnishText} ${cocktail.name} ${cocktail.nameEn}`
+  
+  for (const keyword of colorTrait.keywords) {
+    if (allText.includes(keyword)) {
+      score += 30
+      break
+    }
+  }
+
+  // 添加随机因素（±10分）
+  score += Math.random() * 20 - 10
+
+  return score
+}
+
+// 推荐算法：获取推荐结果
+const getRecommendation = () => {
+  if (!selectedAnimal || !selectedColor) {
+    return null
+  }
+
+  // 确保数据已加载
+  if (!allCocktails || allCocktails.length === 0) {
+    console.error('鸡尾酒数据未加载')
+    return null
+  }
+
+  // 计算所有鸡尾酒的匹配分数
+  const scores = allCocktails.map(cocktail => ({
+    cocktail,
+    score: calculateMatchScore(cocktail, selectedAnimal, selectedColor)
+  }))
+
+  // 按分数排序
+  scores.sort((a, b) => b.score - a.score)
+
+  // 返回得分最高的鸡尾酒
+  return scores[0].cocktail
+}
+
+// 渲染推荐结果
+const renderRecommendation = (cocktail) => {
+  if (!cocktail) {
+    elements.recommendResult.innerHTML = '<p class="caption">未找到匹配的鸡尾酒</p>'
+    return
+  }
+
+  const animalTrait = ANIMAL_TRAITS[selectedAnimal]
+  const colorTrait = COLOR_TRAITS[selectedColor]
+  const placeholderUrl = generatePlaceholder(cocktail)
+
+  elements.recommendResult.innerHTML = `
+    <div class="recommend-result-card">
+      <div class="recommend-result-image">
+        <img 
+          src="./images/cocktails/${cocktail.image}" 
+          alt="${cocktail.name}"
+          onerror="this.onerror=null;this.src='${placeholderUrl}'"
+        >
+      </div>
+      <div class="recommend-result-info">
+        <h3 class="recommend-result-name">${cocktail.name}</h3>
+        <p class="recommend-result-name-en">${cocktail.nameEn}</p>
+        <div class="recommend-result-meta">
+          <span>${cocktail.baseSpirit}</span>
+          <span>${cocktail.alcoholContent}%</span>
+          <span>${cocktail.difficulty}</span>
+        </div>
+        <div class="recommend-result-flavors">
+          ${cocktail.flavor.map(f => `<span class="flavor-tag">${f}</span>`).join('')}
+        </div>
+        <div class="recommend-reason">
+          <p class="recommend-reason-title">为什么推荐这款？</p>
+          <p>${animalTrait.reason}。${colorTrait.reason}，这款鸡尾酒的色彩与你的选择完美契合。</p>
+        </div>
+      </div>
+    </div>
+  `
+}
+
+// 处理动物选择
+const handleAnimalSelect = (event) => {
+  const btn = event.target.closest('.animal-btn')
+  if (!btn) return
+
+  // 移除其他选中状态
+  elements.animalGrid.querySelectorAll('.animal-btn').forEach(b => b.classList.remove('selected'))
+  
+  // 添加选中状态
+  btn.classList.add('selected')
+  selectedAnimal = btn.dataset.animal
+
+  // 更新推荐按钮状态
+  updateRecommendBtn()
+}
+
+// 处理颜色选择
+const handleColorSelect = (event) => {
+  const btn = event.target.closest('.color-btn')
+  if (!btn) return
+
+  // 移除其他选中状态
+  elements.colorGrid.querySelectorAll('.color-btn').forEach(b => b.classList.remove('selected'))
+  
+  // 添加选中状态
+  btn.classList.add('selected')
+  selectedColor = btn.dataset.color
+
+  // 更新推荐按钮状态
+  updateRecommendBtn()
+}
+
+// 更新推荐按钮状态
+const updateRecommendBtn = () => {
+  elements.recommendBtn.disabled = !(selectedAnimal && selectedColor)
+}
+
+// 处理推荐按钮点击
+const handleRecommend = () => {
+  const cocktail = getRecommendation()
+  renderRecommendation(cocktail)
+}
+
+// 打开推荐模态框
+const openRecommendModal = () => {
+  // 重置状态
+  selectedAnimal = null
+  selectedColor = null
+  elements.animalGrid.querySelectorAll('.animal-btn').forEach(b => b.classList.remove('selected'))
+  elements.colorGrid.querySelectorAll('.color-btn').forEach(b => b.classList.remove('selected'))
+  elements.recommendBtn.disabled = true
+  elements.recommendResult.innerHTML = ''
+
+  // 显示模态框
+  if (elements.recommendModal.showModal) {
+    elements.recommendModal.showModal()
+  } else {
+    elements.recommendModal.setAttribute('open', '')
+  }
+  document.body.style.overflow = 'hidden'
+}
+
+// 关闭推荐模态框
+const closeRecommendModal = () => {
+  if (elements.recommendModal.close) {
+    elements.recommendModal.close()
+  } else {
+    elements.recommendModal.removeAttribute('open')
+  }
+  document.body.style.overflow = ''
+}
+
 // 初始化事件监听
 const initEventListeners = () => {
   // 搜索输入
@@ -949,6 +1291,40 @@ const initEventListeners = () => {
       closeModal()
     }
   })
+
+  // 趣味推荐按钮
+  if (elements.funRecommend) {
+    elements.funRecommend.addEventListener('click', openRecommendModal)
+  }
+
+  // 关闭推荐模态框
+  if (elements.recommendClose) {
+    elements.recommendClose.addEventListener('click', closeRecommendModal)
+  }
+
+  // 推荐模态框背景点击关闭
+  if (elements.recommendModal) {
+    elements.recommendModal.addEventListener('click', (event) => {
+      if (event.target === elements.recommendModal) {
+        closeRecommendModal()
+      }
+    })
+  }
+
+  // 动物选择
+  if (elements.animalGrid) {
+    elements.animalGrid.addEventListener('click', handleAnimalSelect)
+  }
+
+  // 颜色选择
+  if (elements.colorGrid) {
+    elements.colorGrid.addEventListener('click', handleColorSelect)
+  }
+
+  // 推荐按钮
+  if (elements.recommendBtn) {
+    elements.recommendBtn.addEventListener('click', handleRecommend)
+  }
 }
 
 // 应用初始化
