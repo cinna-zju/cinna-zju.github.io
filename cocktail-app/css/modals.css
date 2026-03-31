@@ -991,6 +991,7 @@
 }
 
 .share-section {
+  border-top: 1px solid var(--gray-800);
   text-align: center;
 }
 
@@ -1032,8 +1033,4 @@
 
 .share-btn svg {
   color: var(--primary-500);
-}
-
-.share-section {
-  border-top: 1px solid var(--gray-800);
 }

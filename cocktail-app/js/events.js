@@ -88,155 +88,76 @@ const handleRecommend = () => {
 }
 
 const initEventListeners = () => {
-  elements.searchInput.addEventListener('input', handleSearch)
+  on(elements.searchInput, 'input', handleSearch)
 
-  if (elements.searchClear) {
-    elements.searchClear.addEventListener('click', () => {
-      elements.searchInput.value = ''
-      currentFilters.search = ''
-      applyFilters()
-    })
-  }
+  on(elements.searchClear, 'click', () => {
+    elements.searchInput.value = ''
+    currentFilters.search = ''
+    applyFilters()
+  })
 
-  if (elements.filterToggle) {
-    elements.filterToggle.addEventListener('click', () => {
-      const isMobile = window.innerWidth < 768
-      if (isMobile) {
-        elements.filterPanel.classList.toggle('active')
-        elements.filterToggleMobile?.classList.toggle('active', elements.filterPanel.classList.contains('active'))
-      } else {
-        elements.filterBody.classList.toggle('collapsed')
-        elements.filterToggle.classList.toggle('collapsed')
-      }
-    })
-  }
-
-  if (elements.filterToggleMobile) {
-    elements.filterToggleMobile.addEventListener('click', () => {
+  on(elements.filterToggle, 'click', () => {
+    const isMobile = window.innerWidth < 768
+    if (isMobile) {
       elements.filterPanel.classList.toggle('active')
-      elements.filterToggleMobile.classList.toggle('active', elements.filterPanel.classList.contains('active'))
-    })
-  }
-  if (elements.filterClose) {
-    elements.filterClose.addEventListener('click', () => {
-      elements.filterPanel.classList.remove('active')
-      elements.filterToggleMobile?.classList.remove('active')
-    })
-  }
-
-  elements.spiritFilters.addEventListener('change', handleSpiritFilter)
-
-  elements.flavorFilters.addEventListener('click', handleFlavorFilter)
-
-  elements.alcoholFilters.addEventListener('click', handleAlcoholFilter)
-
-  elements.filterClear.addEventListener('click', clearAllFilters)
-
-  if (elements.emptyClear) {
-    elements.emptyClear.addEventListener('click', clearAllFilters)
-  }
-
-  elements.detailClose.addEventListener('click', closeModal)
-  elements.modal.addEventListener('click', (event) => {
-    if (event.target === elements.modal) {
-      closeModal()
+      elements.filterToggleMobile?.classList.toggle('active', elements.filterPanel.classList.contains('active'))
+    } else {
+      elements.filterBody.classList.toggle('collapsed')
+      elements.filterToggle.classList.toggle('collapsed')
     }
+  })
+
+  on(elements.filterToggleMobile, 'click', () => {
+    elements.filterPanel.classList.toggle('active')
+    elements.filterToggleMobile.classList.toggle('active', elements.filterPanel.classList.contains('active'))
+  })
+
+  on(elements.filterClose, 'click', () => {
+    elements.filterPanel.classList.remove('active')
+    elements.filterToggleMobile?.classList.remove('active')
+  })
+
+  on(elements.spiritFilters, 'change', handleSpiritFilter)
+  on(elements.flavorFilters, 'click', handleFlavorFilter)
+  on(elements.alcoholFilters, 'click', handleAlcoholFilter)
+  on(elements.filterClear, 'click', clearAllFilters)
+  on(elements.emptyClear, 'click', clearAllFilters)
+  on(elements.detailClose, 'click', closeModal)
+
+  on(elements.modal, 'click', (event) => {
+    if (event.target === elements.modal) closeModal()
   })
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && elements.modal.open) {
-      closeModal()
-    }
+    if (event.key === 'Escape' && elements.modal.open) closeModal()
   })
 
-  if (elements.funRecommend) {
-    elements.funRecommend.addEventListener('click', openRecommendModal)
-  }
+  on(elements.funRecommend, 'click', openRecommendModal)
+  on(elements.recommendClose, 'click', closeRecommendModal)
 
-  if (elements.recommendClose) {
-    elements.recommendClose.addEventListener('click', closeRecommendModal)
-  }
+  on(elements.recommendModal, 'click', (event) => {
+    if (event.target === elements.recommendModal) closeRecommendModal()
+  })
 
-  if (elements.recommendModal) {
-    elements.recommendModal.addEventListener('click', (event) => {
-      if (event.target === elements.recommendModal) {
-        closeRecommendModal()
-      }
-    })
-  }
+  on(elements.animalGrid, 'click', handleAnimalSelect)
+  on(elements.colorGrid, 'click', handleColorSelect)
+  on(elements.recommendBtn, 'click', handleRecommend)
 
-  if (elements.animalGrid) {
-    elements.animalGrid.addEventListener('click', handleAnimalSelect)
-  }
+  on(elements.myBarBtn, 'click', openMyBarModal)
+  on(elements.myBarClose, 'click', closeMyBarModal)
+  on(elements.myBarModal, 'click', (event) => {
+    if (event.target === elements.myBarModal) closeMyBarModal()
+  })
 
-  if (elements.colorGrid) {
-    elements.colorGrid.addEventListener('click', handleColorSelect)
-  }
+  on(elements.rouletteBtn, 'click', openRouletteModal)
+  on(elements.rouletteClose, 'click', closeRouletteModal)
+  on(elements.rouletteModal, 'click', (event) => {
+    if (event.target === elements.rouletteModal) closeRouletteModal()
+  })
 
-  if (elements.recommendBtn) {
-    elements.recommendBtn.addEventListener('click', handleRecommend)
-  }
-
-  if (elements.myBarBtn) {
-    elements.myBarBtn.addEventListener('click', openMyBarModal)
-  }
-  if (elements.myBarClose) {
-    elements.myBarClose.addEventListener('click', closeMyBarModal)
-  }
-  if (elements.myBarModal) {
-    elements.myBarModal.addEventListener('click', (event) => {
-      if (event.target === elements.myBarModal) {
-        closeMyBarModal()
-      }
-    })
-  }
-
-  if (elements.rouletteBtn) {
-    elements.rouletteBtn.addEventListener('click', openRouletteModal)
-  }
-  if (elements.rouletteClose) {
-    elements.rouletteClose.addEventListener('click', closeRouletteModal)
-  }
-  if (elements.rouletteModal) {
-    elements.rouletteModal.addEventListener('click', (event) => {
-      if (event.target === elements.rouletteModal) {
-        closeRouletteModal()
-      }
-    })
-  }
-
-  if (elements.worldmapBtn) {
-    elements.worldmapBtn.addEventListener('click', openWorldMapModal)
-  }
-  if (elements.worldmapClose) {
-    elements.worldmapClose.addEventListener('click', closeWorldMapModal)
-  }
-  if (elements.worldmapModal) {
-    elements.worldmapModal.addEventListener('click', (event) => {
-      if (event.target === elements.worldmapModal) {
-        closeWorldMapModal()
-      }
-    })
-  }
-
-  if (elements.shareBtn) {
-    elements.shareBtn.addEventListener('click', () => {
-      if (currentDetailCocktail) {
-        openShareModal(currentDetailCocktail)
-      }
-    })
-  }
-  if (elements.shareClose) {
-    elements.shareClose.addEventListener('click', closeShareModal)
-  }
-  if (elements.shareModal) {
-    elements.shareModal.addEventListener('click', (event) => {
-      if (event.target === elements.shareModal) {
-        closeShareModal()
-      }
-    })
-  }
-  if (elements.shareDownloadBtn) {
-    elements.shareDownloadBtn.addEventListener('click', downloadShareCard)
-  }
+  on(elements.worldmapBtn, 'click', openWorldMapModal)
+  on(elements.worldmapClose, 'click', closeWorldMapModal)
+  on(elements.worldmapModal, 'click', (event) => {
+    if (event.target === elements.worldmapModal) closeWorldMapModal()
+  })
 }

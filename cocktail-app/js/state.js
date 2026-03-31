@@ -108,3 +108,7 @@ const incrementClickCount = (id) => {
 const getPopularityLevel = (count) => {
   return POPULARITY_LEVELS.find(level => count >= level.min && count <= level.max) || POPULARITY_LEVELS[0]
 }
+
+const on = (el, event, handler) => {
+  if (el) el.addEventListener(event, handler)
+}

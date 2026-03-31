@@ -88,7 +88,6 @@ const renderWorldMap = () => {
     <path class="country" data-country="牙买加" d="M210,190 L225,188 L222,200 L208,202 Z" />
     <path class="country" data-country="波多黎各" d="M230,195 L245,192 L242,205 L228,208 Z" />
     <path class="country" data-country="百慕大" d="M260,140 L270,138 L268,148 L258,150 Z" />
-    <path class="country" data-country="哥伦比亚" d="M230,200 L260,200 L260,230 L230,230 Z" />
     <path class="country" data-country="特立尼达" d="M240,205 L255,202 L252,215 L238,218 Z" />
     <path class="country" data-country="加勒比" d="M220,185 L250,180 L245,200 L215,205 Z" />
     <path class="country" data-country="玻利维亚" d="M250,260 L280,260 L275,290 L255,290 Z" />

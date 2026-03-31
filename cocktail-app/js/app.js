@@ -1,5 +1,7 @@
 // 应用入口
 
+let greetingInterval = null
+
 const loadCocktails = async () => {
   try {
     const response = await fetch(COCKTAILS_URL)
@@ -15,6 +17,8 @@ const loadCocktails = async () => {
 }
 
 const initApp = async () => {
+  if (greetingInterval) clearInterval(greetingInterval)
+
   allCocktails = await loadCocktails()
   filteredCocktails = [...allCocktails]
 
@@ -27,9 +31,7 @@ const initApp = async () => {
   initWorldMap()
   initShareCard()
 
-  setInterval(changeGreeting, 6000)
+  greetingInterval = setInterval(changeGreeting, 6000)
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
-
-window.clearAllFilters = clearAllFilters

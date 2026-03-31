@@ -180,7 +180,7 @@ const closeShareModal = () => {
 
 const downloadShareCard = () => {
   const canvas = elements.shareCanvas
-  if (!canvas) return
+  if (!canvas || !currentShareCocktail) return
 
   const link = document.createElement('a')
   link.download = `${currentShareCocktail.name}-share.png`
