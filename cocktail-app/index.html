@@ -189,9 +189,19 @@
         <img id="detail-img" src="" alt="">
       </figure>
 
-      <section class="detail-info">
-        <h2 id="detail-name" class="detail-name"></h2>
-        <p id="detail-name-en" class="detail-name-en"></p>
+       <section class="detail-info">
+         <div class="detail-name-row">
+           <h2 id="detail-name" class="detail-name"></h2>
+           <span id="detail-popularity" class="detail-popularity">
+             <svg class="detail-flame" viewBox="0 0 24 24" fill="var(--flame-color)">
+               <path d="M12 23c-3.866 0-7-3.134-7-7 0-3.127 2.504-5.834 4.5-7.5.37-.308.872-.308 1.242 0 .37.308.872.308 1.242 0C13.496 10.166 16 12.873 16 16c0 3.866-3.134 7-7 7zm0-18.5C8.5 7 5 10.5 5 14c0 2.761 2.239 5 5 5s5-2.239 5-5c0-3.5-3.5-7-3-9.5z"/>
+               <path d="M12 20c-2.21 0-4-1.79-4-4 0-1.657 1.343-3.5 2.5-4.5.276-.24.676-.24.952 0C12.657 12.5 14 14.343 14 16c0 2.21-1.79 4-4 4z" opacity="0.6"/>
+             </svg>
+             <span class="detail-popularity-label"></span>
+             <span class="detail-popularity-count"></span>
+           </span>
+         </div>
+         <p id="detail-name-en" class="detail-name-en"></p>
 
         <div class="detail-attributes">
           <span class="attribute">

@@ -73,7 +73,41 @@
   font-family: var(--font-display);
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
-  margin: 0 0 var(--space-1) 0;
+  margin: 0;
+}
+
+.detail-name-row {
+  align-items: center;
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-1);
+}
+
+.detail-popularity {
+  align-items: center;
+  display: inline-flex;
+  flex-shrink: 0;
+  gap: var(--space-1);
+}
+
+.detail-flame {
+  height: 22px;
+  width: 22px;
+  filter: drop-shadow(0 0 6px var(--flame-color));
+  animation: flame-flicker 2s ease-in-out infinite;
+}
+
+.detail-popularity-label {
+  color: var(--flame-color);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+
+.detail-popularity-count {
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+  transition: color var(--duration-fast) var(--ease-default);
 }
 
 .detail-name-en {

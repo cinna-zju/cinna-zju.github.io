@@ -43,6 +43,7 @@ const elements = {
   detailImg: document.querySelector('#detail-img'),
   detailName: document.querySelector('#detail-name'),
   detailNameEn: document.querySelector('#detail-name-en'),
+  detailPopularity: document.querySelector('#detail-popularity'),
   detailSpirit: document.querySelector('#detail-spirit'),
   detailAlcohol: document.querySelector('#detail-alcohol'),
   detailDifficulty: document.querySelector('#detail-difficulty'),
@@ -68,4 +69,37 @@ const elements = {
   playIcon: document.querySelector('#play-icon'),
   pauseIcon: document.querySelector('#pause-icon'),
   greetingText: document.querySelector('#greeting-text')
+}
+
+const getClicks = () => {
+  try {
+    const data = localStorage.getItem(CLICK_STORAGE_KEY)
+    return data ? JSON.parse(data) : {}
+  } catch {
+    return {}
+  }
+}
+
+const saveClicks = (clicks) => {
+  try {
+    localStorage.setItem(CLICK_STORAGE_KEY, JSON.stringify(clicks))
+  } catch (e) {
+    console.warn('Failed to save click counts:', e)
+  }
+}
+
+const getClickCount = (id) => {
+  const clicks = getClicks()
+  return clicks[id] || 0
+}
+
+const incrementClickCount = (id) => {
+  const clicks = getClicks()
+  clicks[id] = (clicks[id] || 0) + 1
+  saveClicks(clicks)
+  return clicks[id]
+}
+
+const getPopularityLevel = (count) => {
+  return POPULARITY_LEVELS.find(level => count >= level.min && count <= level.max) || POPULARITY_LEVELS[0]
 }

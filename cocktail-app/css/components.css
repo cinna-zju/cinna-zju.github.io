@@ -237,6 +237,36 @@
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
+  margin: 0;
+}
+
+.cocktail-name-row {
+  align-items: center;
+  display: flex;
+  gap: var(--space-2);
+}
+
+.popularity {
+  align-items: center;
+  display: inline-flex;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.popularity-flame {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  filter: drop-shadow(0 0 4px var(--flame-color));
+  transition: all var(--duration-fast) var(--ease-default);
+  animation: flame-flicker 2s ease-in-out infinite;
+}
+
+@keyframes flame-flicker {
+  0%, 100% { transform: scale(1) rotate(-2deg); opacity: 0.9; }
+  25% { transform: scale(1.05) rotate(2deg); opacity: 1; }
+  50% { transform: scale(0.95) rotate(-1deg); opacity: 0.85; }
+  75% { transform: scale(1.02) rotate(1deg); opacity: 0.95; }
 }
 
 .cocktail-meta {

@@ -238,3 +238,14 @@ const ANIMATION_CONFIG = {
   garnish: { duration: 800, name: '装饰' },
   default: { duration: 1000, name: '操作' }
 }
+
+const POPULARITY_LEVELS = [
+  { min: 0, max: 0, color: '#6B7280', label: '未点燃' },
+  { min: 1, max: 5, color: '#60A5FA', label: '微温' },
+  { min: 6, max: 15, color: '#FB923C', label: '温热' },
+  { min: 16, max: 30, color: '#EF4444', label: '热门' },
+  { min: 31, max: Infinity, color: '#991B1B', label: '爆款' }
+]
+
+const CLICK_STORAGE_KEY = 'cocktail_clicks'
+

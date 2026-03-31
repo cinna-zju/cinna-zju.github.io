@@ -12,6 +12,9 @@ const renderCocktailCard = (cocktail) => {
 
   const placeholderUrl = generatePlaceholder(cocktail)
 
+  const clickCount = getClickCount(cocktail.id)
+  const popularity = getPopularityLevel(clickCount)
+
   card.innerHTML = `
     <div class="card-image">
       <img 
@@ -22,7 +25,15 @@ const renderCocktailCard = (cocktail) => {
       >
     </div>
     <div class="card-content">
-      <h3 class="cocktail-name">${cocktail.name}</h3>
+      <div class="cocktail-name-row">
+        <h3 class="cocktail-name">${cocktail.name}</h3>
+        <span class="popularity" data-id="${cocktail.id}" style="--flame-color: ${popularity.color}">
+          <svg class="popularity-flame" viewBox="0 0 24 24" fill="var(--flame-color)">
+            <path d="M12 23c-3.866 0-7-3.134-7-7 0-3.127 2.504-5.834 4.5-7.5.37-.308.872-.308 1.242 0 .37.308.872.308 1.242 0C13.496 10.166 16 12.873 16 16c0 3.866-3.134 7-7 7zm0-18.5C8.5 7 5 10.5 5 14c0 2.761 2.239 5 5 5s5-2.239 5-5c0-3.5-3.5-7-3-9.5z"/>
+            <path d="M12 20c-2.21 0-4-1.79-4-4 0-1.657 1.343-3.5 2.5-4.5.276-.24.676-.24.952 0C12.657 12.5 14 14.343 14 16c0 2.21-1.79 4-4 4z" opacity="0.6"/>
+          </svg>
+        </span>
+      </div>
       <div class="cocktail-meta">
         <span class="base-spirit">${cocktail.baseSpirit}</span>
         <span class="alcohol-content">${cocktail.alcoholContent}%</span>
@@ -33,8 +44,20 @@ const renderCocktailCard = (cocktail) => {
     </div>
   `
 
-  card.addEventListener('click', () => showCocktailDetail(cocktail))
+  card.addEventListener('click', () => {
+    const newCount = incrementClickCount(cocktail.id)
+    updateCardPopularity(card, newCount)
+    showCocktailDetail(cocktail)
+  })
   return card
+}
+
+const updateCardPopularity = (card, count) => {
+  const popularityEl = card.querySelector('.popularity')
+  if (!popularityEl) return
+
+  const popularity = getPopularityLevel(count)
+  popularityEl.style.setProperty('--flame-color', popularity.color)
 }
 
 const renderCocktailList = (cocktails) => {
@@ -88,6 +111,14 @@ const showCocktailDetail = (cocktail) => {
   }
   if (elements.detailNameEn) {
     elements.detailNameEn.textContent = cocktail.nameEn
+  }
+
+  if (elements.detailPopularity) {
+    const clickCount = getClickCount(cocktail.id)
+    const popularity = getPopularityLevel(clickCount)
+    elements.detailPopularity.style.setProperty('--flame-color', popularity.color)
+    elements.detailPopularity.querySelector('.detail-popularity-label').textContent = popularity.label
+    elements.detailPopularity.querySelector('.detail-popularity-count').textContent = `${clickCount}次点击`
   }
 
   if (elements.detailSpirit) {
