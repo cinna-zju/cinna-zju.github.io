@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a **static HTML/CSS/JS** cocktail recipe application. No build tools, bundlers, or frameworks are used. The app runs by directly opening `index.html` in a browser.
+This is a **static HTML/CSS/JS** cocktail recipe application. No build tools, bundlers, or frameworks are used. The app loads via `<script>` tags in `index.html` — no ES modules or bundlers.
 
 ## Build & Run Commands
 
@@ -11,12 +11,12 @@ This is a **static HTML/CSS/JS** cocktail recipe application. No build tools, bu
 # Open directly in browser:
 open index.html
 
-# Or use a local server (if needed):
+# Or use a local HTTP server (required for fetch/CORS):
 python3 -m http.server 8000
 # Then visit http://localhost:8000
 ```
 
-**No linting or testing tools are configured.** Add them only if explicitly requested.
+**No linting, type-checking, or testing tools are configured.** Add them only if explicitly requested.
 
 ---
 
@@ -24,41 +24,50 @@ python3 -m http.server 8000
 
 ```
 cocktail-app/
-├── index.html          # Main entry point
+├── index.html               # Main entry point, loads all CSS/JS
 ├── css/
-│   ├── style.css       # Main styles
-│   └── animations.css  # Animation definitions
+│   ├── base.css             # CSS variables, reset, utilities
+│   ├── layout.css           # Navbar, filter panel, grid, responsive
+│   ├── components.css       # Cards, buttons, tags, search, grids
+│   ├── modals.css           # Detail modal, recommend modal
+│   └── animations.css       # Keyframe animations
 ├── js/
-│   ├── app.js          # Main application logic
-│   ├── data.js         # Data loading and processing
-│   ├── filter.js       # Search and filter logic
-│   └── render.js       # DOM rendering functions
+│   ├── constants.js         # All constants: traits, colors, configs
+│   ├── state.js             # Global state + DOM element references
+│   ├── canvas.js            # Canvas drawing: glasses, decorations, placeholders
+│   ├── renderer.js          # DOM rendering: cards, detail, recommend
+│   ├── filter.js            # Filter logic: apply, clear
+│   ├── recommend.js         # Recommendation algorithm
+│   ├── animation.js         # Cocktail animation player
+│   ├── events.js            # All event handlers
+│   ├── bartender.js         # Greeting rotation
+│   └── app.js               # Entry point: init + data load
 ├── data/
-│   └── cocktails.json  # Cocktail data (Chinese content)
+│   └── cocktails.json       # Cocktail data (Chinese content)
 └── images/
-    └── cocktails/      # Cocktail images
+    └── cocktails/           # Cocktail images
 ```
+
+**Script load order matters** — modules share state via global scope. Always keep `app.js` last.
 
 ---
 
 ## Code Style Guidelines
 
 ### HTML
-
-- Use **semantic HTML5** elements (`<header>`, `<main>`, `<section>`, `<article>`, `<nav>`)
-- Include proper `lang="zh-CN"` attribute on `<html>`
-- Use descriptive `id` and `class` names in **kebab-case** (`cocktail-card`, `filter-panel`)
+- Use **semantic HTML5** elements (`<header>`, `<main>`, `<section>`, `<article>`)
+- `lang="zh-CN"` on `<html>`
+- IDs and classes: **kebab-case** (`cocktail-card`, `filter-panel`)
 - All images must have `alt` text in Chinese
-- Indent with **2 spaces**
+- **2-space** indentation
 
 ### CSS
-
-- Use **CSS custom properties** (variables) defined in `:root`
-- Follow the design system defined in `UI-DESIGN.md`
+- Use **CSS custom properties** from `:root` — never hardcode colors/sizes
 - Class names: **kebab-case** (`card-container`, `btn-primary`)
-- One selector per line, properties alphabetically ordered
-- Mobile-first approach with `min-width` media queries
-- Prefix animation classes with `anim-`
+- Alphabetize properties within rules
+- Mobile-first with `min-width` media queries
+- Animation classes prefixed with `anim-`
+- Put styles in the correct module file (base/layout/components/modals)
 
 ```css
 /* Good */
@@ -67,40 +76,24 @@ cocktail-app/
   border-radius: var(--radius-lg);
   padding: var(--space-4);
 }
-
-/* Bad */
-.cocktailCard {
-  padding: 16px;
-  background: #212121;
-}
 ```
 
 ### JavaScript
-
-- Use **ES6+** syntax (const/let, arrow functions, template literals)
-- **No semicolons** (follow standard JS style)
+- **No semicolons**
 - **2-space** indentation
-- Use `const` by default, `let` only when reassignment needed
+- `const` by default, `let` only when reassignment needed
 - Functions: **camelCase** (`loadCocktails`, `filterBySpirit`)
-- Constants: **UPPER_SNAKE_CASE** (`BASE_SPIRITS`, `FLAVOR_TAGS`)
-- Use `async/await` for asynchronous operations
-- DOM queries: use `querySelector` / `querySelectorAll`
+- Constants: **UPPER_SNAKE_CASE** (`BASE_SPIRITS`, `ANIMAL_TRAITS`)
+- Use `async/await` for async operations
+- DOM queries: `querySelector` / `querySelectorAll`
+- **No ES modules** — all files share global scope via `<script>` tags
+- State is managed in `state.js` — access via `elements`, `allCocktails`, etc.
 
 ```javascript
 // Good
 const loadCocktails = async () => {
   const response = await fetch('./data/cocktails.json')
   return response.json()
-}
-
-const renderCard = (cocktail) => {
-  const card = document.createElement('article')
-  card.className = 'cocktail-card'
-  card.innerHTML = `
-    <img src="./images/cocktails/${cocktail.image}" alt="${cocktail.name}">
-    <h3>${cocktail.name}</h3>
-  `
-  return card
 }
 
 // Bad
@@ -125,8 +118,7 @@ function LoadCocktails(){
 
 ## Data Format
 
-Cocktail data is stored in `data/cocktails.json`. Each entry must follow the schema defined in `PRD.md`. Key fields:
-
+Cocktail data in `data/cocktails.json`. Key fields:
 - `id`: kebab-case identifier
 - `name`: Chinese display name
 - `nameEn`: English name
@@ -138,28 +130,29 @@ Cocktail data is stored in `data/cocktails.json`. Each entry must follow the sch
 ---
 
 ## Important References
-
 - **PRD.md**: Product requirements, data schema, feature specs
 - **UI-DESIGN.md**: Colors, typography, spacing, component styles
-
-Always consult these files before making changes to ensure consistency.
 
 ---
 
 ## Common Tasks
 
 ### Add a new cocktail
-1. Add entry to `data/cocktails.json` following the schema
+1. Add entry to `data/cocktails.json`
 2. Add image to `images/cocktails/` with matching filename
 3. Verify JSON is valid
 
-### Modify styles
-1. Check `UI-DESIGN.md` for design tokens
-2. Use CSS variables from `:root`
-3. Test responsive behavior at 375px, 768px, 1024px
-
 ### Add new feature
-1. Update `PRD.md` with requirements
-2. Add HTML structure in `index.html`
-3. Style in `css/style.css`
-4. Logic in appropriate `js/` module
+1. Add constants to `constants.js`
+2. Add state to `state.js` if needed
+3. Add logic to appropriate module (`filter.js`, `recommend.js`, etc.)
+4. Add event handlers to `events.js`
+5. Wire up in `app.js`
+
+---
+
+## Known Issues & Solutions
+
+- **CORS**: `fetch()` fails with `file://` — always use `python3 -m http.server 8000`
+- **Duplicate declarations**: Check `state.js` before adding new global variables
+- **Canvas animation**: Initialize only after `showCocktailDetail()` is called
