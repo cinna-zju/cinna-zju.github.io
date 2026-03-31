@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/modals.css">
-  <link rel="stylesheet" href="./css/animations.css">
 </head>
 <body>
   <header class="navbar">
@@ -50,9 +49,7 @@
       </div>
       <button id="filter-toggle-mobile" class="filter-toggle-mobile" aria-label="筛选">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="4" y1="6" x2="20" y2="6"></line>
-          <line x1="8" y1="12" x2="20" y2="12"></line>
-          <line x1="12" y1="18" x2="20" y2="18"></line>
+          <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
         </svg>
       </button>
       <div class="search-wrapper">
@@ -78,6 +75,29 @@
           <circle cx="12" cy="19" r="3"></circle>
         </svg>
         <span>I feel lucky</span>
+      </button>
+      <button id="my-bar-btn" class="my-bar-btn" aria-label="我的吧台">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M8 2h8l2 10H6L8 2z"></path>
+          <path d="M6 12v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8"></path>
+          <line x1="12" y1="12" x2="12" y2="22"></line>
+        </svg>
+        <span>我的吧台</span>
+      </button>
+      <button id="roulette-btn" class="roulette-btn" aria-label="轮盘赌">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 2v10l7 4"></path>
+        </svg>
+        <span>轮盘赌</span>
+      </button>
+      <button id="worldmap-btn" class="worldmap-btn" aria-label="世界地图">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M2 12h20"></path>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        <span>世界地图</span>
       </button>
     </div>
   </header>
@@ -262,45 +282,23 @@
         <ol id="detail-steps" class="detail-steps"></ol>
       </section>
 
-      <section class="detail-section animation-section">
-        <h3 class="detail-section-title">调酒动画</h3>
-        <div class="animation-player">
-          <div class="animation-canvas-wrapper">
-            <canvas id="animation-canvas" width="300" height="250"></canvas>
-          </div>
-          <div class="animation-progress">
-            <div class="progress-bar">
-              <div id="progress-fill" class="progress-fill"></div>
-            </div>
-            <span id="step-indicator" class="step-indicator">步骤 0/0</span>
-          </div>
-          <div class="animation-controls">
-            <button id="anim-prev" class="btn btn-secondary anim-btn" disabled>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="15 18 9 12 15 6"></polyline>
-              </svg>
-            </button>
-            <button id="anim-play" class="btn btn-primary anim-btn anim-play-btn">
-              <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-              <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                <rect x="6" y="4" width="4" height="16"></rect>
-                <rect x="14" y="4" width="4" height="16"></rect>
-              </svg>
-            </button>
-            <button id="anim-next" class="btn btn-secondary anim-btn" disabled>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
       <section class="detail-section">
         <h3 class="detail-section-title">背景故事</h3>
         <p id="detail-history" class="detail-history"></p>
+      </section>
+
+      <section class="detail-section share-section">
+        <h3 class="detail-section-title">分享</h3>
+        <button id="share-btn" class="btn btn-secondary share-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          分享卡片
+        </button>
       </section>
     </article>
   </dialog>
@@ -362,13 +360,129 @@
     </article>
   </dialog>
 
+  <!-- 分享卡片模态框 -->
+  <dialog id="share-modal" class="share-modal">
+    <article class="share-content">
+      <header class="share-header">
+        <h2 class="share-title">分享卡片</h2>
+        <button id="share-close" class="share-close" aria-label="关闭">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <section class="share-section">
+        <div class="share-canvas-wrapper">
+          <canvas id="share-canvas" width="600" height="800"></canvas>
+        </div>
+        <button id="share-download-btn" class="btn btn-primary share-download-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          下载图片
+        </button>
+      </section>
+    </article>
+  </dialog>
+
+  <!-- 鸡尾酒轮盘赌模态框 -->
+  <dialog id="roulette-modal" class="roulette-modal">
+    <article class="roulette-content">
+      <header class="roulette-header">
+        <h2 class="roulette-title">鸡尾酒轮盘赌</h2>
+        <button id="roulette-close" class="roulette-close" aria-label="关闭">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <section class="roulette-section">
+        <p class="roulette-desc">选择困难？让命运来决定！</p>
+        <div class="roulette-canvas-wrapper">
+          <canvas id="roulette-canvas" width="400" height="400"></canvas>
+          <div class="roulette-pointer"></div>
+        </div>
+        <button id="roulette-spin-btn" class="btn btn-primary roulette-spin-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"></path>
+          </svg>
+          开始旋转
+        </button>
+      </section>
+
+      <section class="roulette-result" id="roulette-result">
+        <!-- 结果将在这里显示 -->
+      </section>
+    </article>
+  </dialog>
+
+  <!-- 世界地图模态框 -->
+  <dialog id="worldmap-modal" class="worldmap-modal">
+    <article class="worldmap-content">
+      <header class="worldmap-header">
+        <h2 class="worldmap-title">鸡尾酒世界地图</h2>
+        <button id="worldmap-close" class="worldmap-close" aria-label="关闭">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <section class="worldmap-section">
+        <p class="worldmap-desc">探索鸡尾酒的起源之地</p>
+        <div class="worldmap-container" id="worldmap-container">
+          <!-- 世界地图将由 JavaScript 动态渲染 -->
+        </div>
+      </section>
+
+      <section class="worldmap-results" id="worldmap-results">
+        <!-- 选中国家的鸡尾酒列表 -->
+      </section>
+    </article>
+  </dialog>
+
+  <!-- 我的吧台模态框 -->
+  <dialog id="my-bar-modal" class="my-bar-modal">
+    <article class="my-bar-content">
+      <header class="my-bar-header">
+        <h2 class="my-bar-title">我的吧台有什么？</h2>
+        <button id="my-bar-close" class="my-bar-close" aria-label="关闭">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <section class="my-bar-section">
+        <p class="my-bar-desc">勾选你拥有的原料，看看能调制哪些鸡尾酒</p>
+        <div class="my-bar-ingredients" id="my-bar-ingredients">
+          <!-- 原料分类将由 JavaScript 动态渲染 -->
+        </div>
+      </section>
+
+      <section class="my-bar-results" id="my-bar-results">
+        <!-- 匹配结果将在这里显示 -->
+      </section>
+    </article>
+  </dialog>
+
   <script src="./js/constants.js"></script>
   <script src="./js/state.js"></script>
-  <script src="./js/canvas.js"></script>
   <script src="./js/renderer.js"></script>
   <script src="./js/filter.js"></script>
   <script src="./js/recommend.js"></script>
-  <script src="./js/animation.js"></script>
+  <script src="./js/roulette.js"></script>
+  <script src="./js/worldmap.js"></script>
+  <script src="./js/sharecard.js"></script>
+  <script src="./js/mybar.js"></script>
   <script src="./js/events.js"></script>
   <script src="./js/bartender.js"></script>
   <script src="./js/app.js"></script>

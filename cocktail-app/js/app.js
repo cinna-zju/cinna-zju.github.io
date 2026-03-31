@@ -22,6 +22,10 @@ const initApp = async () => {
   updateCount(filteredCocktails.length)
 
   initEventListeners()
+  initMyBar()
+  initRoulette()
+  initWorldMap()
+  initShareCard()
 
   setInterval(changeGreeting, 6000)
 }

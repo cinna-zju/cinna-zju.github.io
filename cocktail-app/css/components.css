@@ -325,6 +325,84 @@
 }
 
 /* ========================================
+   My Bar Button
+   ======================================== */
+.my-bar-btn {
+  align-items: center;
+  background: none;
+  border: 1px solid var(--gray-700);
+  border-radius: var(--radius-md);
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--text-sm);
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.my-bar-btn:hover {
+  background-color: var(--gray-800);
+  color: #FFFFFF;
+}
+
+.my-bar-btn svg {
+  color: var(--primary-500);
+}
+
+/* ========================================
+   Roulette Button
+   ======================================== */
+.roulette-btn {
+  align-items: center;
+  background: none;
+  border: 1px solid var(--gray-700);
+  border-radius: var(--radius-md);
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--text-sm);
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.roulette-btn:hover {
+  background-color: var(--gray-800);
+  color: #FFFFFF;
+}
+
+.roulette-btn svg {
+  color: var(--primary-500);
+}
+
+/* ========================================
+   World Map Button
+   ======================================== */
+.worldmap-btn {
+  align-items: center;
+  background: none;
+  border: 1px solid var(--gray-700);
+  border-radius: var(--radius-md);
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--text-sm);
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.worldmap-btn:hover {
+  background-color: var(--gray-800);
+  color: #FFFFFF;
+}
+
+.worldmap-btn svg {
+  color: var(--primary-500);
+}
+
+/* ========================================
    Animal & Color Grids
    ======================================== */
 .animal-grid {
@@ -456,84 +534,4 @@
   color: var(--primary-400);
   font-weight: var(--font-semibold);
   margin-bottom: var(--space-2);
-}
-
-/* ========================================
-   Animation Player
-   ======================================== */
-.animation-section {
-  background-color: var(--gray-850, #1a1a1a);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
-}
-
-.animation-player {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-
-.animation-canvas-wrapper {
-  background-color: var(--gray-900);
-  border-radius: var(--radius-md);
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  padding: var(--space-4);
-}
-
-#animation-canvas {
-  background-color: var(--gray-800);
-  border-radius: var(--radius-sm);
-}
-
-.animation-progress {
-  align-items: center;
-  display: flex;
-  gap: var(--space-4);
-}
-
-.progress-bar {
-  background-color: var(--gray-700);
-  border-radius: var(--radius-full);
-  flex: 1;
-  height: 8px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  background-color: var(--primary-500);
-  border-radius: var(--radius-full);
-  height: 100%;
-  transition: width var(--duration-normal) var(--ease-default);
-  width: 0%;
-}
-
-.step-indicator {
-  color: var(--gray-400);
-  font-size: var(--text-sm);
-  white-space: nowrap;
-}
-
-.animation-controls {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-3);
-}
-
-.anim-btn {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-width: 48px;
-  padding: var(--space-2) var(--space-3);
-}
-
-.anim-btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.anim-play-btn {
-  min-width: 64px;
 }

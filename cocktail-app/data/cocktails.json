@@ -45,7 +45,8 @@
       "IBA官方",
       "墨西哥",
       "派对"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "mojito",
@@ -106,7 +107,8 @@
       "古巴",
       "夏日",
       "清爽"
-    ]
+    ],
+    "origin": "古巴"
   },
   {
     "id": "old-fashioned",
@@ -160,7 +162,8 @@
       "IBA官方",
       "美国",
       "威士忌爱好者"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "martini",
@@ -202,7 +205,8 @@
       "美国",
       "优雅",
       "经典"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "negroni",
@@ -249,7 +253,8 @@
       "意大利",
       "苦味",
       "开胃酒"
-    ]
+    ],
+    "origin": "意大利"
   },
   {
     "id": "daiquiri",
@@ -296,7 +301,8 @@
       "古巴",
       "清爽",
       "夏日"
-    ]
+    ],
+    "origin": "古巴"
   },
   {
     "id": "whiskey-sour",
@@ -348,7 +354,8 @@
       "IBA官方",
       "美国",
       "酸酒家族"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "pina-colada",
@@ -401,7 +408,8 @@
       "热带",
       "夏日",
       "派对"
-    ]
+    ],
+    "origin": "波多黎各"
   },
   {
     "id": "manhattan",
@@ -448,7 +456,8 @@
       "美国",
       "纽约",
       "威士忌爱好者"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "cosmopolitan",
@@ -500,7 +509,8 @@
       "美国",
       "现代经典",
       "都市"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "whiskey-highball",
@@ -542,7 +552,8 @@
       "日本",
       "清爽",
       "简单"
-    ]
+    ],
+    "origin": "日本"
   },
   {
     "id": "gin-fizz",
@@ -595,7 +606,8 @@
       "美国",
       "清爽",
       "气泡"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "tom-collins",
@@ -649,7 +661,8 @@
       "英国",
       "清爽",
       "气泡"
-    ]
+    ],
+    "origin": "英国"
   },
   {
     "id": "aperol-spritz",
@@ -699,7 +712,8 @@
       "开胃酒",
       "夏日",
       "清爽"
-    ]
+    ],
+    "origin": "意大利"
   },
   {
     "id": "bellini",
@@ -743,7 +757,8 @@
       "威尼斯",
       "果味",
       "浪漫"
-    ]
+    ],
+    "origin": "意大利"
   },
   {
     "id": "french-75",
@@ -798,7 +813,8 @@
       "巴黎",
       "优雅",
       "气泡"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "sidecar",
@@ -846,7 +862,8 @@
       "法国",
       "巴黎",
       "优雅"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "sazerac",
@@ -901,7 +918,8 @@
       "新奥尔良",
       "历史",
       "香料"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "vieux-carre",
@@ -959,7 +977,8 @@
       "美国",
       "新奥尔良",
       "复杂"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "mint-julep",
@@ -1010,7 +1029,8 @@
       "南部",
       "肯塔基",
       "夏日"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "espresso-martini",
@@ -1064,7 +1084,8 @@
       "咖啡",
       "提神",
       "现代经典"
-    ]
+    ],
+    "origin": "英国"
   },
   {
     "id": "white-russian",
@@ -1112,7 +1133,8 @@
       "电影",
       "奶油",
       "咖啡"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "black-russian",
@@ -1153,7 +1175,8 @@
       "比利时",
       "咖啡",
       "经典"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "screwdriver",
@@ -1196,7 +1219,8 @@
       "橙汁",
       "简单",
       "经典"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "bloody-mary",
@@ -1260,7 +1284,8 @@
       "巴黎",
       "早午餐",
       "咸味"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "moscow-mule",
@@ -1310,7 +1335,8 @@
       "美国",
       "姜味",
       "清爽"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "caipirinha",
@@ -1359,7 +1385,8 @@
       "巴西",
       "清爽",
       "热带"
-    ]
+    ],
+    "origin": "巴西"
   },
   {
     "id": "dark-n-stormy",
@@ -1408,7 +1435,8 @@
       "姜味",
       "热带",
       "清爽"
-    ]
+    ],
+    "origin": "百慕大"
   },
   {
     "id": "planters-punch",
@@ -1466,7 +1494,8 @@
       "牙买加",
       "热带",
       "果味"
-    ]
+    ],
+    "origin": "牙买加"
   },
   {
     "id": "mai-tai",
@@ -1526,7 +1555,8 @@
       "热带",
       "派对",
       "经典"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "zombie",
@@ -1596,7 +1626,8 @@
       "热带",
       "派对",
       "烈性"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "singapore-sling",
@@ -1670,7 +1701,8 @@
       "新加坡",
       "经典",
       "果味"
-    ]
+    ],
+    "origin": "新加坡"
   },
   {
     "id": "aviation",
@@ -1718,7 +1750,8 @@
       "德国",
       "花香",
       "优雅"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "bramble",
@@ -1772,7 +1805,8 @@
       "果味",
       "现代经典",
       "清爽"
-    ]
+    ],
+    "origin": "英国"
   },
   {
     "id": "last-word",
@@ -1825,7 +1859,8 @@
       "美国",
       "现代经典",
       "复杂"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "paper-plane",
@@ -1877,7 +1912,8 @@
       "现代经典",
       "酸味",
       "果味"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "penicillin",
@@ -1936,7 +1972,8 @@
       "现代经典",
       "姜味",
       "烟熏"
-    ]
+    ],
+    "origin": "澳大利亚"
   },
   {
     "id": "champagne-cocktail",
@@ -1990,7 +2027,8 @@
       "法国",
       "优雅",
       "庆典"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "mimosa",
@@ -2033,7 +2071,8 @@
       "早午餐",
       "清爽",
       "简单"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "kir",
@@ -2074,7 +2113,8 @@
       "开胃酒",
       "简单",
       "清爽"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "kir-royal",
@@ -2116,7 +2156,8 @@
       "庆典",
       "优雅",
       "气泡"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "americano",
@@ -2163,7 +2204,8 @@
       "意大利",
       "开胃酒",
       "清爽"
-    ]
+    ],
+    "origin": "意大利"
   },
   {
     "id": "hugo",
@@ -2219,7 +2261,8 @@
       "花香",
       "夏日",
       "清爽"
-    ]
+    ],
+    "origin": "意大利"
   },
   {
     "id": "corpse-reviver",
@@ -2277,7 +2320,8 @@
       "经典",
       "柑橘",
       "复杂"
-    ]
+    ],
+    "origin": "英国"
   },
   {
     "id": "between-the-sheets",
@@ -2330,7 +2374,8 @@
       "巴黎",
       "经典",
       "浓郁"
-    ]
+    ],
+    "origin": "法国"
   },
   {
     "id": "tequila-sunrise",
@@ -2379,7 +2424,8 @@
       "墨西哥",
       "热带",
       "美观"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "paloma",
@@ -2439,7 +2485,8 @@
       "清爽",
       "气泡",
       "经典"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "el-diablo",
@@ -2493,7 +2540,8 @@
       "热带",
       "姜味",
       "气泡"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "mexican-mule",
@@ -2542,7 +2590,8 @@
       "姜味",
       "清爽",
       "铜杯"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "mezcal-mule",
@@ -2591,7 +2640,8 @@
       "烟熏",
       "姜味",
       "进阶"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "b-52",
@@ -2639,7 +2689,8 @@
       "分层",
       "咖啡",
       "经典"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "jagerbomb",
@@ -2681,7 +2732,8 @@
       "能量",
       "德国",
       "激烈"
-    ]
+    ],
+    "origin": "德国"
   },
   {
     "id": "lemon-drop",
@@ -2735,7 +2787,8 @@
       "酸味",
       "柑橘",
       "清爽"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "kamikaze",
@@ -2783,7 +2836,8 @@
       "柑橘",
       "SHOT",
       "经典"
-    ]
+    ],
+    "origin": "未知"
   },
   {
     "id": "blue-lagoon",
@@ -2831,7 +2885,8 @@
       "蓝色",
       "柑橘",
       "美观"
-    ]
+    ],
+    "origin": "未知"
   },
   {
     "id": "cuba-libre",
@@ -2881,7 +2936,8 @@
       "经典",
       "可乐",
       "派对"
-    ]
+    ],
+    "origin": "古巴"
   },
   {
     "id": "long-island-iced-tea",
@@ -2956,7 +3012,8 @@
       "经典",
       "烈性",
       "派对"
-    ]
+    ],
+    "origin": "美国"
   },
   {
     "id": "tequila-old-fashioned",
@@ -3006,7 +3063,8 @@
       "经典",
       "烟熏",
       "香料"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "oaxaca-old-fashioned",
@@ -3064,7 +3122,8 @@
       "现代经典",
       "烟熏",
       "复杂"
-    ]
+    ],
+    "origin": "墨西哥"
   },
   {
     "id": "naked-and-famous",
@@ -3116,6 +3175,992 @@
       "现代经典",
       "Equal Parts",
       "平衡"
-    ]
+    ],
+    "origin": "墨西哥"
+  },
+  {
+    "id": "gimlet",
+    "name": "吉姆雷特",
+    "nameEn": "Gimlet",
+    "image": "gimlet.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 25,
+    "flavor": [
+      "清爽",
+      "酸味",
+      "草本"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "青柠片",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用青柠片装饰"
+    ],
+    "history": "吉姆雷特起源于19世纪英国皇家海军，最初是为了掩盖金酒的刺鼻味道而加入青柠汁。据说以海军军医Gimlette博士命名。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "英国",
+      "经典"
+    ],
+    "origin": "英国"
+  },
+  {
+    "id": "rob-roy",
+    "name": "罗布罗伊",
+    "nameEn": "Rob Roy",
+    "image": "rob-roy.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 32,
+    "flavor": [
+      "苦味",
+      "草本",
+      "强劲"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "苏格兰调和威士忌",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "甜味美思",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "樱桃",
+    "preparation": [
+      "将所有材料加入搅拌杯",
+      "加冰搅拌至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用樱桃装饰"
+    ],
+    "history": "罗布罗伊于1894年在纽约华尔道夫酒店首次调制，以苏格兰民间英雄Rob Roy命名。可以看作是苏格兰版的曼哈顿。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "godfather",
+    "name": "教父",
+    "nameEn": "Godfather",
+    "image": "godfather.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 30,
+    "flavor": [
+      "甜味",
+      "坚果",
+      "强劲"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "苏格兰威士忌",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "杏仁糖浆",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "在古典杯中加入冰块",
+      "倒入苏格兰威士忌",
+      "加入杏仁糖浆",
+      "轻轻搅拌均匀"
+    ],
+    "history": "教父鸡尾酒因同名电影而闻名，据说马龙·白兰度（电影主演）非常喜欢这款酒。简单却充满力量。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "french-connection",
+    "name": "法国连接",
+    "nameEn": "French Connection",
+    "image": "french-connection.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 28,
+    "flavor": [
+      "甜味",
+      "坚果",
+      "温暖"
+    ],
+    "baseSpirit": "白兰地",
+    "ingredients": [
+      {
+        "name": "干邑白兰地",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "杏仁糖浆",
+        "amount": "22",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "在古典杯中加入冰块",
+      "倒入干邑白兰地",
+      "加入杏仁糖浆",
+      "轻轻搅拌均匀"
+    ],
+    "history": "法国连接因同名电影而得名，是教父的法国版本，用干邑替代了威士忌。优雅而温暖。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "法国",
+      "经典"
+    ],
+    "origin": "法国"
+  },
+  {
+    "id": "sea-breeze",
+    "name": "海风",
+    "nameEn": "Sea Breeze",
+    "image": "sea-breeze.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 12,
+    "flavor": [
+      "果味",
+      "酸味",
+      "清爽"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "蔓越莓汁",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "西柚汁",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "西柚片，青柠角",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入伏特加",
+      "加入蔓越莓汁和西柚汁",
+      "轻轻搅拌均匀",
+      "用西柚片和青柠角装饰"
+    ],
+    "history": "海风是一款经典的伏特加果味鸡尾酒，因其清爽的口感如同海风拂面而得名。夏季派对的绝佳选择。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "清爽"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "salty-dog",
+    "name": "咸狗",
+    "nameEn": "Salty Dog",
+    "image": "salty-dog.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "酸味",
+      "清爽",
+      "果味"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "西柚汁",
+        "amount": "150",
+        "unit": "ml"
+      },
+      {
+        "name": "盐",
+        "amount": "适量",
+        "unit": ""
+      }
+    ],
+    "garnish": "盐边，西柚片",
+    "preparation": [
+      "用西柚片擦拭杯口边缘，蘸上盐制作盐边",
+      "在高球杯中加入冰块",
+      "倒入伏特加",
+      "加入西柚汁",
+      "轻轻搅拌均匀",
+      "用西柚片装饰"
+    ],
+    "history": "咸狗是灰狗的盐边版本，西柚的微苦与盐的咸味形成了独特的风味对比。名字来源已不可考。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "清爽"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "harvey-wallbanger",
+    "name": "哈维沃鲍尔",
+    "nameEn": "Harvey Wallbanger",
+    "image": "harvey-wallbanger.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 14,
+    "flavor": [
+      "果味",
+      "甜味",
+      "清爽"
+    ],
+    "baseSpirit": "伏特加",
+    "ingredients": [
+      {
+        "name": "伏特加",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "橙汁",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "加利安诺利口酒",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙片，樱桃",
+    "preparation": [
+      "在高球杯中加入冰块",
+      "倒入伏特加和橙汁",
+      "轻轻搅拌均匀",
+      "将加利安诺利口酒漂浮在顶部",
+      "用橙片和樱桃装饰"
+    ],
+    "history": "哈维沃鲍尔在1970年代非常流行，据说一位名叫Harvey的冲浪者在喝多了之后撞到了墙上（wallbanger）。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "果味"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "golden-dream",
+    "name": "金梦",
+    "nameEn": "Golden Dream",
+    "image": "golden-dream.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "甜味",
+      "奶油",
+      "果味"
+    ],
+    "baseSpirit": "利口酒",
+    "ingredients": [
+      {
+        "name": "加利安诺利口酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨橙汁",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "淡奶油",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用橙皮装饰"
+    ],
+    "history": "金梦是一款优雅的餐后鸡尾酒，金黄色的外观如同梦境般迷人。1960年代在意大利非常流行。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "意大利",
+      "餐后"
+    ],
+    "origin": "意大利"
+  },
+  {
+    "id": "grasshopper",
+    "name": "蚱蜢",
+    "nameEn": "Grasshopper",
+    "image": "grasshopper.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 15,
+    "flavor": [
+      "甜味",
+      "奶油",
+      "薄荷"
+    ],
+    "baseSpirit": "利口酒",
+    "ingredients": [
+      {
+        "name": "绿查特酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "白可可利口酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "淡奶油",
+        "amount": "22",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "薄荷叶",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用薄荷叶装饰"
+    ],
+    "history": "蚱蜢鸡尾酒因其翠绿色和薄荷味而得名，是1950-60年代最受欢迎的餐后鸡尾酒之一。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "餐后"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "brandy-alexander",
+    "name": "白兰地亚历山大",
+    "nameEn": "Brandy Alexander",
+    "image": "brandy-alexander.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 18,
+    "flavor": [
+      "甜味",
+      "奶油",
+      "咖啡"
+    ],
+    "baseSpirit": "白兰地",
+    "ingredients": [
+      {
+        "name": "干邑白兰地",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "黑可可利口酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "淡奶油",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "肉豆蔻粉",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "撒上肉豆蔻粉"
+    ],
+    "history": "白兰地亚历山大是一款经典的奶油鸡尾酒，据说最初是为了纪念英国国王爱德华七世与亚历山德拉王后的婚礼而创造的。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "英国",
+      "餐后"
+    ],
+    "origin": "英国"
+  },
+  {
+    "id": "rusty-nail",
+    "name": "锈钉",
+    "nameEn": "Rusty Nail",
+    "image": "rusty-nail.jpg",
+    "category": "经典",
+    "glassType": "古典杯",
+    "alcoholContent": 28,
+    "flavor": [
+      "甜味",
+      "香料",
+      "温暖"
+    ],
+    "baseSpirit": "威士忌",
+    "ingredients": [
+      {
+        "name": "苏格兰威士忌",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "杜林标利口酒",
+        "amount": "22",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "柠檬皮",
+    "preparation": [
+      "在古典杯中加入冰块",
+      "倒入苏格兰威士忌",
+      "加入杜林标利口酒",
+      "轻轻搅拌均匀",
+      "用柠檬皮装饰"
+    ],
+    "history": "锈钉在1940-60年代非常流行，据说名字来源于其独特的金属般余味。是许多名流的最爱。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "英国",
+      "经典"
+    ],
+    "origin": "英国"
+  },
+  {
+    "id": "pink-lady",
+    "name": "粉红佳人",
+    "nameEn": "Pink Lady",
+    "image": "pink-lady.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "甜味",
+      "果味",
+      "奶油"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "蛋清",
+        "amount": "1",
+        "unit": "个"
+      }
+    ],
+    "garnish": "樱桃",
+    "preparation": [
+      "将所有材料加入调酒壶（不加冰）",
+      "干摇10秒使蛋清起泡",
+      "加冰再次摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用樱桃装饰"
+    ],
+    "history": "粉红佳人是一款经典的蛋清鸡尾酒，以其美丽的粉红色和丝滑口感著称。最早出现在1910年代。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "horses-neck",
+    "name": "马颈",
+    "nameEn": "Horse's Neck",
+    "image": "horses-neck.jpg",
+    "category": "经典",
+    "glassType": "高球杯",
+    "alcoholContent": 10,
+    "flavor": [
+      "清爽",
+      "果味",
+      "气泡"
+    ],
+    "baseSpirit": "白兰地",
+    "ingredients": [
+      {
+        "name": "干邑白兰地",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "干姜水",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "安格斯图拉苦精",
+        "amount": "2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "长条橙皮螺旋",
+    "preparation": [
+      "将长条橙皮螺旋放入高球杯",
+      "加入冰块",
+      "倒入干邑白兰地",
+      "加入苦精",
+      "用干姜水补满",
+      "轻轻搅拌"
+    ],
+    "history": "马颈最初是一款无酒精饮料，后来加入了白兰地。橙皮螺旋如同马的脖子，因此得名。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "清爽"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "monkey-gland",
+    "name": "猴腺",
+    "nameEn": "Monkey Gland",
+    "image": "monkey-gland.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 25,
+    "flavor": [
+      "果味",
+      "酸味",
+      "平衡"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "橙汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "苦艾酒",
+        "amount": "2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用橙皮装饰"
+    ],
+    "history": "猴腺由巴黎Harry's New York Bar的调酒师Harry MacElhone于1920年代创造。名字来源于当时流行的猴子腺体移植手术。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "法国",
+      "经典"
+    ],
+    "origin": "法国"
+  },
+  {
+    "id": "martinez",
+    "name": "马丁内斯",
+    "nameEn": "Martinez",
+    "image": "martinez.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 30,
+    "flavor": [
+      "甜味",
+      "草本",
+      "平衡"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "老汤姆金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "甜味美思",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "Maraschino利口酒",
+        "amount": "1",
+        "unit": "茶匙"
+      },
+      {
+        "name": "橙味苦精",
+        "amount": "2",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "柠檬皮",
+    "preparation": [
+      "将所有材料加入搅拌杯",
+      "加冰搅拌至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用柠檬皮装饰"
+    ],
+    "history": "马丁内斯被认为是马天尼的前身，最早出现在1860年代。是一款甜美而复杂的经典鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "bronx",
+    "name": "布朗克斯",
+    "nameEn": "Bronx",
+    "image": "bronx.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "果味",
+      "酸味",
+      "平衡"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "干味美思",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "甜味美思",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "橙汁",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用橙皮装饰"
+    ],
+    "history": "布朗克斯是IBA官方鸡尾酒之一，以纽约布朗克斯区命名。是少数使用两种味美思的经典鸡尾酒。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "clover-club",
+    "name": "三叶草俱乐部",
+    "nameEn": "Clover Club",
+    "image": "clover-club.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 20,
+    "flavor": [
+      "果味",
+      "酸味",
+      "奶油"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "石榴糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "蛋清",
+        "amount": "1",
+        "unit": "个"
+      }
+    ],
+    "garnish": "覆盆子",
+    "preparation": [
+      "将所有材料加入调酒壶（不加冰）",
+      "干摇10秒使蛋清起泡",
+      "加冰再次摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用覆盆子装饰"
+    ],
+    "history": "三叶草俱乐部起源于费城的同名男士俱乐部，是一款优雅的蛋清鸡尾酒，以其美丽的粉红色和丝滑泡沫著称。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "hemingway-daiquiri",
+    "name": "海明威大吉利",
+    "nameEn": "Hemingway Daiquiri",
+    "image": "hemingway-daiquiri.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 25,
+    "flavor": [
+      "酸味",
+      "果味",
+      "清爽"
+    ],
+    "baseSpirit": "朗姆酒",
+    "ingredients": [
+      {
+        "name": "白朗姆酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "Maraschino利口酒",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "西柚汁",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "garnish": "无",
+    "preparation": [
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯"
+    ],
+    "history": "海明威大吉利是欧内斯特·海明威的最爱，他在古巴的El Floridita酒吧经常点这款酒。也被称为Papa Daiquiri。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "古巴",
+      "经典"
+    ],
+    "origin": "古巴"
+  },
+  {
+    "id": "southside",
+    "name": "南区",
+    "nameEn": "Southside",
+    "image": "southside.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 22,
+    "flavor": [
+      "清爽",
+      "薄荷",
+      "酸味"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨青柠汁",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "糖浆",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "薄荷叶",
+        "amount": "6-8",
+        "unit": "片"
+      }
+    ],
+    "garnish": "薄荷枝",
+    "preparation": [
+      "将薄荷叶放入调酒壶轻轻捣压",
+      "加入金酒、青柠汁和糖浆",
+      "加冰摇晃至冷却",
+      "过滤倒入冰镇马天尼杯",
+      "用薄荷枝装饰"
+    ],
+    "history": "南区鸡尾酒因芝加哥南区而得名，在禁酒令时期非常流行。是莫吉托的金酒版本，清爽而优雅。",
+    "difficulty": "简单",
+    "tags": [
+      "IBA官方",
+      "美国",
+      "经典"
+    ],
+    "origin": "美国"
+  },
+  {
+    "id": "corpse-reviver",
+    "name": "尸体复活2号",
+    "nameEn": "Corpse Reviver #2",
+    "image": "corpse-reviver.jpg",
+    "category": "经典",
+    "glassType": "马天尼杯",
+    "alcoholContent": 24,
+    "flavor": [
+      "酸味",
+      "草本",
+      "平衡"
+    ],
+    "baseSpirit": "金酒",
+    "ingredients": [
+      {
+        "name": "金酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "君度橙酒",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "利莱白",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "鲜榨柠檬汁",
+        "amount": "22",
+        "unit": "ml"
+      },
+      {
+        "name": "苦艾酒",
+        "amount": "1",
+        "unit": "滴"
+      }
+    ],
+    "garnish": "橙皮",
+    "preparation": [
+      "用苦艾酒冲洗马天尼杯",
+      "将所有材料加入调酒壶",
+      "加冰摇晃至冷却",
+      "过滤倒入准备好的马天尼杯",
+      "用橙皮装饰"
+    ],
+    "history": "尸体复活2号是一款经典的解酒鸡尾酒，最早出现在1930年代的萨伏伊鸡尾酒手册中。据说喝四杯就能复活尸体。",
+    "difficulty": "中等",
+    "tags": [
+      "IBA官方",
+      "英国",
+      "经典"
+    ],
+    "origin": "英国"
   }
 ]

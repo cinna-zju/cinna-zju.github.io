@@ -12,16 +12,7 @@ let currentFilters = {
 
 let selectedAnimal = null
 let selectedColor = null
-
-let animationState = {
-  isPlaying: false,
-  isAutoPlay: false,
-  currentStep: 0,
-  totalSteps: 0,
-  animationFrame: null,
-  cocktail: null,
-  animationProgress: 0
-}
+let currentDetailCocktail = null
 
 const elements = {
   cocktailGrid: document.querySelector('#cocktail-grid'),
@@ -61,15 +52,28 @@ const elements = {
   colorGrid: document.querySelector('#color-grid'),
   recommendBtn: document.querySelector('#recommend-btn'),
   recommendResult: document.querySelector('#recommend-result'),
-  animationCanvas: document.querySelector('#animation-canvas'),
-  progressFill: document.querySelector('#progress-fill'),
-  stepIndicator: document.querySelector('#step-indicator'),
-  animPrev: document.querySelector('#anim-prev'),
-  animPlay: document.querySelector('#anim-play'),
-  animNext: document.querySelector('#anim-next'),
-  playIcon: document.querySelector('#play-icon'),
-  pauseIcon: document.querySelector('#pause-icon'),
-  greetingText: document.querySelector('#greeting-text')
+  greetingText: document.querySelector('#greeting-text'),
+  myBarBtn: document.querySelector('#my-bar-btn'),
+  myBarModal: document.querySelector('#my-bar-modal'),
+  myBarClose: document.querySelector('#my-bar-close'),
+  myBarIngredients: document.querySelector('#my-bar-ingredients'),
+  myBarResults: document.querySelector('#my-bar-results'),
+  rouletteBtn: document.querySelector('#roulette-btn'),
+  rouletteModal: document.querySelector('#roulette-modal'),
+  rouletteClose: document.querySelector('#roulette-close'),
+  rouletteCanvas: document.querySelector('#roulette-canvas'),
+  rouletteSpinBtn: document.querySelector('#roulette-spin-btn'),
+  rouletteResult: document.querySelector('#roulette-result'),
+  worldmapBtn: document.querySelector('#worldmap-btn'),
+  worldmapModal: document.querySelector('#worldmap-modal'),
+  worldmapClose: document.querySelector('#worldmap-close'),
+  worldmapContainer: document.querySelector('#worldmap-container'),
+  worldmapResults: document.querySelector('#worldmap-results'),
+  shareBtn: document.querySelector('#share-btn'),
+  shareModal: document.querySelector('#share-modal'),
+  shareClose: document.querySelector('#share-close'),
+  shareCanvas: document.querySelector('#share-canvas'),
+  shareDownloadBtn: document.querySelector('#share-download-btn')
 }
 
 const getClicks = () => {

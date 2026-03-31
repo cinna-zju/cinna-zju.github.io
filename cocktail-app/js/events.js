@@ -177,13 +177,66 @@ const initEventListeners = () => {
     elements.recommendBtn.addEventListener('click', handleRecommend)
   }
 
-  if (elements.animPlay) {
-    elements.animPlay.addEventListener('click', togglePlay)
+  if (elements.myBarBtn) {
+    elements.myBarBtn.addEventListener('click', openMyBarModal)
   }
-  if (elements.animPrev) {
-    elements.animPrev.addEventListener('click', prevStep)
+  if (elements.myBarClose) {
+    elements.myBarClose.addEventListener('click', closeMyBarModal)
   }
-  if (elements.animNext) {
-    elements.animNext.addEventListener('click', nextStep)
+  if (elements.myBarModal) {
+    elements.myBarModal.addEventListener('click', (event) => {
+      if (event.target === elements.myBarModal) {
+        closeMyBarModal()
+      }
+    })
+  }
+
+  if (elements.rouletteBtn) {
+    elements.rouletteBtn.addEventListener('click', openRouletteModal)
+  }
+  if (elements.rouletteClose) {
+    elements.rouletteClose.addEventListener('click', closeRouletteModal)
+  }
+  if (elements.rouletteModal) {
+    elements.rouletteModal.addEventListener('click', (event) => {
+      if (event.target === elements.rouletteModal) {
+        closeRouletteModal()
+      }
+    })
+  }
+
+  if (elements.worldmapBtn) {
+    elements.worldmapBtn.addEventListener('click', openWorldMapModal)
+  }
+  if (elements.worldmapClose) {
+    elements.worldmapClose.addEventListener('click', closeWorldMapModal)
+  }
+  if (elements.worldmapModal) {
+    elements.worldmapModal.addEventListener('click', (event) => {
+      if (event.target === elements.worldmapModal) {
+        closeWorldMapModal()
+      }
+    })
+  }
+
+  if (elements.shareBtn) {
+    elements.shareBtn.addEventListener('click', () => {
+      if (currentDetailCocktail) {
+        openShareModal(currentDetailCocktail)
+      }
+    })
+  }
+  if (elements.shareClose) {
+    elements.shareClose.addEventListener('click', closeShareModal)
+  }
+  if (elements.shareModal) {
+    elements.shareModal.addEventListener('click', (event) => {
+      if (event.target === elements.shareModal) {
+        closeShareModal()
+      }
+    })
+  }
+  if (elements.shareDownloadBtn) {
+    elements.shareDownloadBtn.addEventListener('click', downloadShareCard)
   }
 }
