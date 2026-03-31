@@ -103,15 +103,24 @@ const initEventListeners = () => {
       const isMobile = window.innerWidth < 768
       if (isMobile) {
         elements.filterPanel.classList.toggle('active')
+        elements.filterToggleMobile?.classList.toggle('active', elements.filterPanel.classList.contains('active'))
       } else {
         elements.filterBody.classList.toggle('collapsed')
         elements.filterToggle.classList.toggle('collapsed')
       }
     })
   }
+
+  if (elements.filterToggleMobile) {
+    elements.filterToggleMobile.addEventListener('click', () => {
+      elements.filterPanel.classList.toggle('active')
+      elements.filterToggleMobile.classList.toggle('active', elements.filterPanel.classList.contains('active'))
+    })
+  }
   if (elements.filterClose) {
     elements.filterClose.addEventListener('click', () => {
       elements.filterPanel.classList.remove('active')
+      elements.filterToggleMobile?.classList.remove('active')
     })
   }
 

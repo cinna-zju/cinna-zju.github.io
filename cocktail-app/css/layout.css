@@ -154,6 +154,24 @@
   transform: rotate(-90deg);
 }
 
+.filter-toggle-mobile {
+  background: none;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: none;
+  padding: var(--space-2);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+
+.filter-toggle-mobile:hover {
+  color: var(--primary-500);
+}
+
+.filter-toggle-mobile.active {
+  color: var(--primary-500);
+}
+
 .filter-close {
   background: none;
   border: none;
@@ -326,12 +344,18 @@
     font-size: var(--text-lg);
   }
 
+  .filter-toggle-mobile {
+    display: block;
+    flex-shrink: 0;
+  }
+
   .main-content {
     padding-top: 56px;
   }
 
   .filter-panel {
     background-color: var(--gray-900);
+    border-bottom: 1px solid var(--gray-800);
     height: auto;
     left: 0;
     max-height: 0;
@@ -350,7 +374,10 @@
     max-height: 70vh;
     overflow-y: auto;
     padding: var(--space-4);
-    border-bottom: 1px solid var(--gray-800);
+  }
+
+  .filter-toggle-btn {
+    display: none;
   }
 
   .filter-close {

@@ -29,6 +29,7 @@ const elements = {
   searchInput: document.querySelector('#search-input'),
   searchClear: document.querySelector('#search-clear'),
   filterToggle: document.querySelector('#filter-toggle'),
+  filterToggleMobile: document.querySelector('#filter-toggle-mobile'),
   filterPanel: document.querySelector('#filter-panel'),
   filterBody: document.querySelector('#filter-body'),
   filterClose: document.querySelector('#filter-close'),
